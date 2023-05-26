@@ -1,0 +1,89 @@
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+const UserInfo = ({ name, role, href = "/", className = "" }) => {
+  return (
+    <div
+      className={`${className} text-center absolute left-1/2 -translate-x-1/2 top-[85%]`}
+    >
+      <p className="font-semibold text-2xl mb-2">{name}</p>
+      <p>{role}</p>
+      <Link
+        href={href}
+        className="p-2 mt-2 px-8 inline-block border-solid border-violet-500 text-violet-500 font-semibold uppercase border-2 rounded-full "
+      >
+        Email
+      </Link>
+    </div>
+  );
+};
+
+const Pastors = () => {
+  return (
+    <section id="" className="mt-14">
+      <div className="py-14">
+        <div className="flex flex-col items-center justify-center">
+          <h3 className="text-2xl font-medium uppercase">Our Pastors</h3>
+          <h2 className="text-7xl non-italic font-bold mt-2">Meet Our Team</h2>
+        </div>
+
+        <main>
+          <div className="grid grid-cols-3">
+            <div className=" inline-block relative">
+              <Image
+                src="/images/pastors/first.png"
+                width={700}
+                height={700}
+                className=" max-w-1/2"
+              />
+              <UserInfo name="Ptra. Edna Te" role="PULPIT & HEAD PASTOR" />
+            </div>
+            <div className="w-full  inline-block relative">
+              <Image
+                src="/images/pastors/second.png"
+                width={700}
+                height={700}
+                className=" max-w-1/2"
+              />
+              <UserInfo
+                name="Ptr. Ruden Barcelona"
+                role="CARE PASTOR"
+                className="left-[52%]"
+              />
+            </div>
+            <div className="w-full max-w-none inline-block relative">
+              <Image
+                src="/images/pastors/third.png"
+                width={700}
+                height={700}
+                className=" max-w-1/2"
+              />
+              <UserInfo name="Ptra. Almira Zonio" role="WORSHIP PASTOR" />
+            </div>
+          </div>
+
+          <div className="flex justify-center items-center">
+            <div className="relative">
+              <Image
+                src="/images/pastors/fourth.png"
+                width={700}
+                height={700}
+              />
+              <UserInfo
+                name="Ptra. Edna Heraldo"
+                role="CHRISTIAN EDUCATION PASTOR"
+              />
+            </div>
+            <div className="relative">
+              <Image src="/images/pastors/fifth.png" width={700} height={700} />
+              <UserInfo name="Ptr. Ronald Zonio" role="ADMINISTRATIVE PASTOR" />
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+  );
+};
+
+export default Pastors;

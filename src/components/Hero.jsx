@@ -27,9 +27,6 @@ const Hero = () => {
 
   const scrollPosition = useScrollPosition();
 
-  console.log(scrollPosition)
-
-
   const videoEl = useRef(null);
 
   const attemptPlay = () => {

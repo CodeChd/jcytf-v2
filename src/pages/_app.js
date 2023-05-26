@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={`${fontOs.variable} font-poppins w-full min-h-screen`}>
+      <main className={`${fontOs.variable} font-poppins min-h-screen`}>
         <Header />
         <Component {...pageProps} />
       </main>

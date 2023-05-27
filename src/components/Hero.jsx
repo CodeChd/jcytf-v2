@@ -79,7 +79,7 @@ const Hero = () => {
         className={`${classNames(
           scrollPosition > 760 && "bg-gray-950 text-white transition-all"
         )} 
-      w-full p-4 px-20 uppercase flex justify-between text-xl font-bold sticky top-0`}
+      w-full p-4 px-20 uppercase flex justify-between text-xl font-bold sticky top-0 z-30`}
       >
         <CustomLink href="#" title={<FaHome className="text-4xl" />} />
         <CustomLink href="#" title="About" />

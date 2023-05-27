@@ -28,23 +28,23 @@ const Pastors = () => {
           <h2 className="text-7xl non-italic font-bold mt-2">Meet Our Team</h2>
         </div>
 
-        <main>
-          <div className="grid grid-cols-3">
-            <div className=" inline-block relative">
+        <main className="">
+          <div className="grid grid-cols-3 justify-items-center">
+            <div className="inline-block relative">
               <Image
                 src="/images/pastors/first.png"
                 width={700}
                 height={700}
-                className=" max-w-1/2"
+                className=""
               />
               <UserInfo name="Ptra. Edna Te" role="PULPIT & HEAD PASTOR" />
             </div>
-            <div className="w-full  inline-block relative">
+            <div className="inline-block relative">
               <Image
                 src="/images/pastors/second.png"
                 width={700}
                 height={700}
-                className=" max-w-1/2"
+                className=""
               />
               <UserInfo
                 name="Ptr. Ruden Barcelona"
@@ -52,12 +52,12 @@ const Pastors = () => {
                 className="left-[52%]"
               />
             </div>
-            <div className="w-full max-w-none inline-block relative">
+            <div className="inline-block relative">
               <Image
                 src="/images/pastors/third.png"
                 width={700}
                 height={700}
-                className=" max-w-1/2"
+                className=""
               />
               <UserInfo name="Ptra. Almira Zonio" role="WORSHIP PASTOR" />
             </div>

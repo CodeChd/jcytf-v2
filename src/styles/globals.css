@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+#footer-line {
+    margin-inline: calc(50vh - theme('spacing.80'));
+  }

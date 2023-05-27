@@ -8,7 +8,7 @@ const UserInfo = ({ name, role, href = "/", className = "" }) => {
       className={`${className} text-center absolute left-1/2 -translate-x-1/2 top-[85%]`}
     >
       <p className="font-semibold text-2xl mb-2">{name}</p>
-      <p>{role}</p>
+      <p className="font-gilLight font-extrabold">{role}</p>
       <Link
         href={href}
         className="p-2 mt-2 px-8 inline-block border-solid border-violet-500 text-violet-500 font-semibold uppercase border-2 rounded-full "
@@ -24,8 +24,8 @@ const Pastors = () => {
     <section id="" className="mt-14">
       <div className="py-14">
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-2xl font-medium uppercase">Our Pastors</h3>
-          <h2 className="text-7xl non-italic font-bold mt-2">Meet Our Team</h2>
+          <h3 className="text-2xl font-gilLight font-extrabold uppercase">Our Pastors</h3>
+          <h2 className="text-7xl non-italic font-gil font-bold mt-2">Meet Our Team</h2>
         </div>
 
         <main className="">

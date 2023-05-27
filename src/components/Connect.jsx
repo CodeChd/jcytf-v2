@@ -4,7 +4,7 @@ const Connect = () => {
   return (
     <section className="w-full flex justify-center items-end mt-14 bg-gray-950 text-white min-h-[80vh]">
       <div className="flex flex-col gap-24">
-        <h2 className="self-center font-extrabold text-7xl non-italic">
+        <h2 className="self-center font-extrabold font-gil text-7xl not-italic">
           Get Connected
         </h2>
 
@@ -18,7 +18,7 @@ const Connect = () => {
             />
           </div>
           <div className="inline-block p-8 col-span-1 bg-white">
-            <p className="text-lg uppercase">Kids</p>
+            <p className="text-lg font-gilLight font-extrabold uppercase">Kids</p>
             <p className="font-medium text-xl mt-2">
               A fun and safe first step for kids to grow in their faith.
             </p>
@@ -32,13 +32,13 @@ const Connect = () => {
             />
           </div>
           <div className="inline-block p-8 col-span-1 bg-yellow-300">
-            <p className="text-lg uppercase">Youths</p>
+            <p className="text-lg font-gilLight font-extrabold uppercase">Youths</p>
             <p className="font-medium text-xl mt-2">
               Impacting students in their relationship with Jesus.
             </p>
           </div>
           <div className="inline-block p-8 col-span-1 bg-green-300">
-            <p className="text-lg uppercase">Group Life</p>
+            <p className="text-lg font-gilLight font-extrabold uppercase">Group Life</p>
             <p className="font-medium text-xl mt-2">
               Adults connecting and growing together. Find your group here.
             </p>
@@ -52,7 +52,7 @@ const Connect = () => {
             />
           </div>
           <div className="inline-block p-8 col-span-1 bg-blue-300">
-            <p className="text-lg uppercase">Join Us</p>
+            <p className="text-lg font-gilLight font-extrabold uppercase">Join Us</p>
             <p className="font-medium text-xl mt-2">
               Serving others, locally and internationally.
             </p>

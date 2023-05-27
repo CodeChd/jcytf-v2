@@ -11,6 +11,8 @@ module.exports = {
     extend: {
       fontFamily: {
         mont: ["var(--font-poppins)", ...fontFamily.sans],
+        gil: ["var(--font-gil-bold)", ...fontFamily.sans],
+        gilLight: ["var(--font-gil-light)", ...fontFamily.sans],
       },
     },
     screens: {

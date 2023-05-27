@@ -28,7 +28,7 @@ const Header = () => {
       </div>
 
       <nav className="flex gap-8 text-lg font-medium items-center uppercase ">
-        <CustomLink href="/visit" title="Visit" className="" />
+        <CustomLink href="/about" title="About" className="" />
         <CustomLink href="/connect" title="Connect" className="" />
         <CustomLink href="/events" title="Events" className="" />
         <CustomLink href="/devotional" title="Devotional" className="" />

@@ -9,40 +9,24 @@ const Footer = () => {
       <div id="container" className="pt-[40px] pb-[20px]">
         <div id="inner" className="flex justify-center gap-[12rem] uppercase">
           <div id="Contact" className="inline-block mr-14">
-            <h3 className="mb-2 text-2xl font-extrabold non-italic normal-case">
+            <h3 className="font-gil mb-2 text-2xl font-extrabold not-italic normal-case">
               Contact
             </h3>
-            <div className="w-[30ch] mb-2">
+            <div className="w-[30ch] mb-2 not-italic font-medium">
               <p> Madjaas Street Group 2, Area B, Quezon City, 1119 Manila</p>
             </div>
-            <div className="">
+            <div className="non-italic font-medium">
               <p>Monday - Sunday at 9:00AM - 5:00PM | Saturday - Closed</p>
               <p>(+63) 997 574 4318</p>
               <p>heraldoednas@gmail.com</p>
             </div>
-
-            <ul className="flex gap-4 mt-4 items-center">
-              <li>
-                <Link
-                  href="/https://web.facebook.com/jcytfchurchpayatas"
-                  className="text-xl"
-                >
-                  <FaFacebook />
-                </Link>
-              </li>
-              <li>
-                <Link href="mailto:heraldoednas@gmail.com" className="text-xl">
-                  <AiFillMail />
-                </Link>
-              </li>
-            </ul>
           </div>
 
           <div id="About" className="inline-block">
-            <h3 className="mb-2 text-2xl font-extrabold non-italic normal-case">
+            <h3 className="font-gil mb-2 text-2xl font-extrabold not-italic normal-case">
               About
             </h3>
-            <ul className="flex flex-col">
+            <ul className="flex flex-col not-italic font-medium">
               <li>
                 <Link href="/" className="">
                   Mission
@@ -50,7 +34,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="/" className="">
-                  About Us
+                  Events
                 </Link>
               </li>
               <li>
@@ -67,10 +51,10 @@ const Footer = () => {
           </div>
 
           <div id="Connect" className="inline-block">
-            <h3 className="mb-2 text-2xl font-extrabold non-italic normal-case">
+            <h3 className="font-gil mb-2 text-2xl font-extrabold not-italic normal-case">
               Connect
             </h3>
-            <ul className="flex flex-col">
+            <ul className="flex flex-col not-italic font-medium">
               <li>
                 <Link href="/" className="">
                   Kids
@@ -97,9 +81,9 @@ const Footer = () => {
       </div>
       <div
         id="footer-line"
-        className="flex justify-center items-center pt-4 pb-8"
+        className="flex justify-center items-center pt-4 pb-8 relative"
       >
-        <hr className="bg-amber-300 border-1 border-solid w-1/2 flex-grow-1" />
+        <hr className=" w-1/2 flex-grow-1" />
         <Link href="/">
           <Image
             src="/images/logo.png"
@@ -108,7 +92,25 @@ const Footer = () => {
             className="px-2"
           />
         </Link>
-        <hr className="bg-amber-300 border-1 border-solid w-1/2 flex-grow-1" />
+        <hr className=" w-1/2 flex-grow-1" />
+        <div className="relative">
+          <ul className="flex gap-4 mt-4 items-center -left-24 absolute">
+            <li>
+              <Link
+                href="https://web.facebook.com/jcytfchurchpayatas"
+                target="_blank"
+                className="text-xl"
+              >
+                <FaFacebook />
+              </Link>
+            </li>
+            <li>
+              <Link href="mailto:heraldoednas@gmail.com" className="text-xl">
+                <AiFillMail />
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

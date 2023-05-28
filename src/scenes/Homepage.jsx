@@ -5,13 +5,13 @@ import Ftevents from "@/components/Ftevents";
 import Hero from "@/components/Hero";
 import Pastors from "@/components/Pastors";
 
-const Homepage = () => {
+const Homepage = ({data}) => {
   return (
     <>
       <Hero id="home"/>
       <About id="about" />
       <Connect id="connect"/>
-      <Ftevents id="ftevents"/>
+      <Ftevents id="ftevents" data={data}/>
       <Pastors id="pastors"/>
       <Faq id="faq"/>
     </>

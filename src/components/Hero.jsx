@@ -41,19 +41,19 @@ const Hero = ({ id }) => {
         <div className="w-full flex gap-1 text-2xl font-bold uppercase">
           <Link
             href="#"
-            className="flex-1 text-center p-6 bg-black text-white hover:text-black hover:bg-white"
+            className="flex-1 text-center p-6 bg-neutral-700 text-white hover:text-black hover:bg-white"
           >
             <span>Partner With Us</span>
           </Link>
           <Link
             href="#"
-            className="flex-1 text-center p-6 bg-black text-white hover:text-black hover:bg-white"
+            className="flex-1 text-center p-6 bg-neutral-700 text-white hover:text-black hover:bg-white"
           >
             <span>Programs</span>
           </Link>
           <Link
             href="#"
-            className="flex-1 text-center p-6 bg-black text-white hover:text-black hover:bg-white"
+            className="flex-1 text-center p-6 bg-neutral-700 text-white hover:text-black hover:bg-white"
           >
             <span>Join Us</span>
           </Link>
@@ -61,7 +61,7 @@ const Hero = ({ id }) => {
       </section>
       <nav
         className={`${classNames(
-          scrollPosition > 760 && "bg-gray-950 text-white transition-all"
+          scrollPosition > 760 && "bg-white text-gray-950 transition-all"
         )} 
       w-full p-4 px-20 uppercase font-gil flex justify-between text-xl font-bold sticky top-0 z-30`}
       >

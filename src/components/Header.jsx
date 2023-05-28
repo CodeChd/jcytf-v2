@@ -7,7 +7,7 @@ const CustomLink = ({ href, title, className = "" }) => {
     <Link href={href} className={`${className}  relative group`}>
       {title}
       <span
-        className={`h-[2px] inline-block bg-white
+        className={`h-[2px] inline-block bg-amber-400
       absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
       ${router.pathname === href ? "w-full" : "w-0"}`}
       >
@@ -19,10 +19,10 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const Header = () => {
   return (
-    <header className="w-full h-full flex justify-between p-2 px-32 bg-slate-950 text-white">
+    <header className="w-full h-full flex justify-between p-2 px-32 bg-white text-gray-950">
       <div className="LOGO flex items-center">
         <img src="/images/logo.png" width={90} alt="logo" />
-        <h2 className="text-xl p-2 w-[7rem] ml-1 border-solid border-l-2">
+        <h2 className="text-xl p-2 w-[7rem] ml-1 border-solid border-gray-800 border-l-2">
           JCYTF CHURCH
         </h2>
       </div>

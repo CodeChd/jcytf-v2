@@ -11,7 +11,7 @@ const UserInfo = ({ name, role, href = "/", className = "" }) => {
       <p className="font-gilLight font-extrabold">{role}</p>
       <Link
         href={href}
-        className="p-2 mt-2 px-8 inline-block border-solid border-violet-500 text-violet-500 font-semibold uppercase border-2 rounded-full "
+        className="p-2 mt-2 px-8 inline-block border-solid border-amber-900 text-amber-900 font-semibold uppercase border-2 rounded-full "
       >
         Email
       </Link>

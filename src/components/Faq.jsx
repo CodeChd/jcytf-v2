@@ -11,11 +11,11 @@ const FaqItems = ({ q, desc }) => {
   return (
     <div id="faq-container" className="my-3 self-start select-none ">
       <h4 className="flex items-center gap-2 cursor-pointer border-solid border-1 border-gray-500">
-        <div className="bg-blue-300 p-1 rounded-full text-white transition-all">
+        <div className="bg-orange-600 p-1 rounded-full text-white transition-all">
           {isClick ? <FaMinus className="z-10" /> : <FaPlus className="z-10" />}
         </div>
         <a
-          className="text-[1.3rem] font-extrabold font-gilLight "
+          className="text-[1.3rem] font-extrabold font-gilLight"
           onClick={handleClick}
         >
           {q}
@@ -31,7 +31,7 @@ const FaqItems = ({ q, desc }) => {
 const Faq = ({ id }) => {
   return (
     <section id={id} className="py-[3.84rem] w-full min-h-[80vh]">
-      <div className="bg-gray-950 text-white text-center py-10">
+      <div className="bg-amber-900 text-white text-center py-10">
         <div className=" flex flex-col gap-2">
           <h2 className="text-7xl not-italic font-bold font-gil self-center border-b-4 py-2 mb-2 border-white">
             JCYTF FAQ
@@ -43,7 +43,7 @@ const Faq = ({ id }) => {
       </div>
 
       <div className="mt-14 flex flex-col items-center w-[58%] wide:w-[38%] mx-auto ">
-        <h3 className="uppercase text-3xl font-gil border-solid border-b-4 border-blue-400">
+        <h3 className="uppercase text-3xl font-gil border-solid border-b-4 border-orange-600">
           Questions
         </h3>
 

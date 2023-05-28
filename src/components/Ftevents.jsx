@@ -2,9 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaCalendarAlt, FaClock } from "react-icons/fa";
 
+const Ftevents = ({ id, data }) => {
+  const events = data[0];
+  
+  console.log(data)
 
-
-const Ftevents = ({ id }) => {
   return (
     <section id={id} className="w-full my-14 py-14 ">
       <main className="flex flex-col items-center">
@@ -29,20 +31,19 @@ const Ftevents = ({ id }) => {
             />
 
             <h2 className="text-4xl flex flex-wrap font-gilLight font-extrabold mt-2">
-              Kamusta Ka?
+              {events.Speaker}
             </h2>
 
             <div className="flex gap-4 mt-2 items-center">
               <p className="text-lg font-gilLight flex items-center gap-2">
                 <FaCalendarAlt className="inline-block " />
-                <span className="inline-block">08-10-2023</span>
+                <span className="inline-block">{events.Date}</span>
               </p>
               <p className="text-lg font-gilLight flex items-center gap-2">
                 <FaClock className="inline-block " />
-                <span className="inline-block">10:00 AM</span>
+                <span className="inline-block">{events.Time}</span>
               </p>
             </div>
-
           </div>
           <div>
             <Image
@@ -52,7 +53,7 @@ const Ftevents = ({ id }) => {
               className="rounded"
             />
 
-             <h2 className="text-4xl font-gilLight font-extrabold mt-2">
+            <h2 className="text-4xl font-gilLight font-extrabold mt-2">
               Kamusta Ka?
             </h2>
 
@@ -75,7 +76,7 @@ const Ftevents = ({ id }) => {
               className="rounded"
             />
 
-             <h2 className="text-4xl font-gilLight font-extrabold mt-2">
+            <h2 className="text-4xl font-gilLight font-extrabold mt-2">
               Kamusta Ka?
             </h2>
 

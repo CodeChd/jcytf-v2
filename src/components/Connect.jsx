@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Connect = ({id}) => {
   return (
-    <section id={id} className="w-full flex justify-center items-end  bg-gray-950 text-white min-h-[80vh]">
+    <section id={id} className="w-full flex justify-center items-end  bg-amber-900 text-white min-h-[80vh]">
       <div className="flex flex-col gap-24">
         <h2 className="self-center font-extrabold font-gil text-7xl not-italic">
           Get Connected
         </h2>
 
-        <div className="grid grid-cols-4 w-[65%] mx-auto text-gray-900 rounded overflow-hidden">
+        <div className="grid grid-cols-4 w-[65%] mx-auto text-gray-900 border-b-0 border-x-white mt-4 border-solid border-2 rounded overflow-hidden">
           <div className="inline-block col-span-1">
             <Image
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685075224/kids-2408614_1920_fxs3md.jpg"

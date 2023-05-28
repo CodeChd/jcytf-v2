@@ -1,15 +1,15 @@
 import Image from "next/image";
 
-const Connect = () => {
+const Connect = ({id}) => {
   return (
-    <section className="w-full flex justify-center items-end mt-14 bg-gray-950 text-white min-h-[80vh]">
+    <section id={id} className="w-full flex justify-center items-end pt-8 bg-gray-950 text-white min-h-[80vh]">
       <div className="flex flex-col gap-24">
         <h2 className="self-center font-extrabold font-gil text-7xl not-italic">
           Get Connected
         </h2>
 
-        <div className="grid grid-cols-4 self-center w-[70%] mx-auto text-gray-900 overflow-hidden">
-          <div className="inline-block  col-span-1">
+        <div className="grid grid-cols-4 w-[71%] mx-auto text-gray-900 rounded overflow-hidden">
+          <div className="inline-block col-span-1">
             <Image
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685075224/kids-2408614_1920_fxs3md.jpg"
               width={300}

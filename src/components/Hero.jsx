@@ -1,26 +1,10 @@
 import { FaHome } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
+import SmoothScroll from "@/hooks/smoothScroll";
 
-const CustomLink = ({ href, title, className = "" }) => {
-  const router = useRouter();
-  return (
-    <Link href={href} className={`${className}  relative group`}>
-      {title}
-      <span
-        className={`h-[2px] inline-block bg-dark
-        absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-        ${router.pathname === href ? "w-full" : "w-0"}`}
-      >
-        &nbsp;
-      </span>
-    </Link>
-  );
-};
-
-const Hero = () => {
+const Hero = ({ id }) => {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
@@ -43,7 +27,7 @@ const Hero = () => {
 
   return (
     <>
-      <section>
+      <section id={id}>
         <div className="w-full">
           <video
             className="w-full object-cover h-[35rem] "
@@ -81,12 +65,16 @@ const Hero = () => {
         )} 
       w-full p-4 px-20 uppercase font-gil flex justify-between text-xl font-bold sticky top-0 z-30`}
       >
-        <CustomLink href="#" title={<FaHome className="text-3xl" />} />
-        <CustomLink href="#" title="About" />
-        <CustomLink href="#" title="Connect" />
-        <CustomLink href="#" title="Upcoming Events" />
-        <CustomLink href="#" title="Pastors" />
-        <CustomLink href="#" title="FAQ" />
+        <SmoothScroll
+          id="home"
+          title={<FaHome className="text-3xl" />}
+          offset={-105}
+        />
+        <SmoothScroll id="about" title="About" offset={-90} />
+        <SmoothScroll id="connect" title="Connect" offset="" />
+        <SmoothScroll id="#" title="Upcoming Events" offset="" />
+        <SmoothScroll id="pastors" title="Pastors" offset="" />
+        <SmoothScroll id="faq" title="FAQ" offset="" />
       </nav>
     </>
   );

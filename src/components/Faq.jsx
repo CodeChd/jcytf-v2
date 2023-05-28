@@ -30,7 +30,7 @@ const FaqItems = ({ q, desc }) => {
 
 const Faq = ({ id }) => {
   return (
-    <section id={id} className="my-14">
+    <section id={id} className="py-[3.84rem] min-h-[80vh]">
       <div className="bg-gray-950 text-white text-center py-10">
         <div className=" flex flex-col gap-2">
           <h2 className="text-7xl not-italic font-bold font-gil self-center border-b-4 py-2 mb-2 border-white">
@@ -42,7 +42,7 @@ const Faq = ({ id }) => {
         </div>
       </div>
 
-      <div className="my-14 flex flex-col items-center w-[58%] mx-auto ">
+      <div className="mt-14 flex flex-col items-center w-[58%] mx-auto ">
         <h3 className="uppercase text-3xl font-gil border-solid border-b-4 border-blue-400">
           Questions
         </h3>

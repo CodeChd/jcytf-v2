@@ -7,7 +7,7 @@ import Pastors from "@/components/Pastors";
 const Homepage = () => {
   return (
     <>
-      <Hero />
+      <Hero id="home"/>
       <About id="about" />
       <Connect id="connect"/>
       <Pastors id="pastors"/>

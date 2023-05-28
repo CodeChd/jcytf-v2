@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = ({ id }) => {
   return (
-    <section id={id} className="w-full p-20 ">
+    <section id={id} className="w-full px-20 py-24 min-h-[50vh]">
       <div className="px-24 flex flex-col gap-4">
         <h2 className="flex self-center text-7xl not-italic font-extrabold uppercase border-solid border-b-[6px] pb-2 border-gray-900">
           About Jcytf church

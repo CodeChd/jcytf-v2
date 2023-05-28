@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }) {
           src="//code.tidio.co/c4xjzwfmgevog8zseo86d7sbpwijbjfj.js"
           async
         ></script>
-        <Component {...pageProps} />
+        <Component {...pageProps}/>
         <Footer />
       </main>
     </>

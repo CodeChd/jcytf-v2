@@ -10,8 +10,8 @@ const About = ({ id }) => {
 
         <div className="w-full mt-8 flex gap-12 justify-center">
           <article className="inline-block flex-1 max-w-2xl">
-            <h3 className="uppercase font-gilLight font-extrabold">|| WELCOME</h3>
-            <p className="text-[1.655rem] font-normal not-italic mt-4">
+            <h3 className="uppercase font-gilLight text-lg font-extrabold text-gray-700">WELCOME</h3>
+            <p className="text-[1.655rem] font-bold font-gilLight not-italic mt-4">
               We are a family of men and women who have encountered God and
               committed our lives to the lord, focused on making an impact
               through the work of the holy spirit in transforming lives,
@@ -32,7 +32,7 @@ const About = ({ id }) => {
               src="/images/about.jpg"
               width={450}
               height={450}
-              className="w-full inline-block object-fit"
+              className="w-full inline-block object-fit rounded"
             />
           </div>
         </div>

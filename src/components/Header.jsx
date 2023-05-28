@@ -33,6 +33,7 @@ const Header = () => {
         <CustomLink href="/events" title="Events" className="" />
         <CustomLink href="/devotional" title="Devotional" className="" />
         <CustomLink href="/partners" title="Partners" className="" />
+        <CustomLink href="/give" title="Give" className="" />
       </nav>
     </header>
   );

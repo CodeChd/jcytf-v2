@@ -5,7 +5,7 @@ import { AiFillMail } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-neutral-700 text-white mt-14">
+    <footer className="w-full bg-neutral-700 text-white pt-2">
       <div id="container" className="pt-[40px] pb-[20px]">
         <div id="inner" className="flex justify-center gap-[12rem] uppercase">
           <div id="Contact" className="inline-block mr-14">

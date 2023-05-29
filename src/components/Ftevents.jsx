@@ -1,5 +1,5 @@
 import Link from "next/link";
-import EventItem from "./EventItem";
+import EventHomeItem from "./EventIHomeitem";
 
 const Ftevents = ({ id, data }) => {
   const events = data;
@@ -21,17 +21,17 @@ const Ftevents = ({ id, data }) => {
         </div>
 
         <div className="flex py-14 gap-10 items-center justify-center overflow-hidden">
-          <EventItem
+          <EventHomeItem
             events={events}
             index={0}
             src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-wolfgang-2747449_nfsfqq.jpg"
           />
-          <EventItem
+          <EventHomeItem
             events={events}
             index={1}
             src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-josh-sorenson-976866_knj2dr.jpg"
           />
-          <EventItem
+          <EventHomeItem
             events={events}
             index={2}
             src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-teddy-yang-2263436_nxxwsy.jpg"
@@ -39,7 +39,7 @@ const Ftevents = ({ id, data }) => {
 
         </div>
         <Link
-          href="/"
+          href="/events"
           className="px-8 p-2 bg-amber-600 rounded text-white font-extrabold
           mt-4 text-lg uppercase font-gilLight"
         >

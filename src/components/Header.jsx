@@ -20,12 +20,12 @@ const CustomLink = ({ href, title, className = "" }) => {
 const Header = () => {
   return (
     <header className="w-full h-full flex justify-between p-2 px-32 bg-white text-gray-950">
-      <div className="LOGO flex items-center  py-1">
+      <Link href='/' className="LOGO flex items-center  py-1">
         <img src="/images/logo.png" width={90} alt="logo" />
         <h2 className=" uppercase text-lg px-2  font-medium w-[5rem] ml-1 border-solid border-gray-800 border-l-2">
           JCYTF CHURCH
         </h2>
-      </div>
+      </Link>
 
       <nav className="flex gap-8 text-lg font-medium items-center uppercase ">
         <CustomLink href="/about" title="About" className="" />

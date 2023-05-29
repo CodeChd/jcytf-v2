@@ -34,7 +34,7 @@ const Hero = ({ id }) => {
           <h1 className="capitalize text-[5.6rem] leading-[1] font-gil max-w-[10ch] drop-shadow-xl xxl:text-6xl xl:">Jesus Christ Yesterday Today and Forever Church</h1>
           </div>
           <video
-            className="w-full brightness-[.85] object-cover h-[37.55rem] "
+            className="w-full brightness-[.80] object-cover h-[37.55rem] "
             loop
             muted
             alt="All the devices"

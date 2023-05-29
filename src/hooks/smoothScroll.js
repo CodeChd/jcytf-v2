@@ -2,7 +2,6 @@ import { Link } from "react-scroll";
 
 const SmoothScroll = ({id, title,offset}) => {
     return (
-      <div>
         <Link
           activeClass="active"
           to={id}
@@ -15,7 +14,6 @@ const SmoothScroll = ({id, title,offset}) => {
         >
           {title}
         </Link>
-      </div>
     );
   };
   

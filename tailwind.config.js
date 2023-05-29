@@ -14,6 +14,16 @@ module.exports = {
         gil: ["var(--font-gil-bold)", ...fontFamily.sans],
         gilLight: ["var(--font-gil-light)", ...fontFamily.sans],
       },
+
+      backgroundImage: {
+          "search" : "url('/search.svg')"
+      }
+    },
+    backgroundSize: {
+      '16': '1.5rem',
+    },
+    backgroundPosition: {
+      'searchBt': '1rem',
     },
     screens: {
       wide: {min: "2200px"},

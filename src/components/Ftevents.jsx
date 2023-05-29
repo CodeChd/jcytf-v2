@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaCalendarAlt, FaClock } from "react-icons/fa";
 
+
+
+
 const Ftevents = ({ id, data }) => {
-  const events = data[6];
+  const events = data.slice(0, 3)
   
-  console.log(data)
+  console.log(events)
 
   return (
     <section id={id} className="w-full my-14 py-14 ">
@@ -22,6 +25,8 @@ const Ftevents = ({ id, data }) => {
         </div>
 
         <div className="flex py-14 gap-10 items-center justify-center overflow-hidden">
+        {/* <EventItem /> */}
+
           <div>
             <Image
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-wolfgang-2747449_nfsfqq.jpg"

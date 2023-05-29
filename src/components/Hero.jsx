@@ -28,9 +28,13 @@ const Hero = ({ id }) => {
   return (
     <>
       <section id={id}>
-        <div className="w-full">
+        <div className="w-full relative">
+          <div  className="z-10 flex flex-col items-start absolute text-white left-[8rem]  text-left py-7">
+          <p className="uppercase font-gilLight font-extrabold text-lg ml-2 mb-6  drop-shadow-xl  border-white border-l-2 p-2 rounded border-solid">Welcome Home</p>
+          <h1 className="capitalize text-[5.6rem] leading-[1] font-gil max-w-[10ch] drop-shadow-xl xxl:text-6xl xl:">Jesus Christ Yesterday Today and Forever Church</h1>
+          </div>
           <video
-            className="w-full object-cover h-[37.55rem] "
+            className="w-full brightness-[.85] object-cover h-[37.55rem] "
             loop
             muted
             alt="All the devices"

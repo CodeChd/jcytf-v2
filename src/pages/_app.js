@@ -5,6 +5,7 @@ import { Poppins } from "next/font/google";
 import localFont from "@next/font/local"
 import Head from "next/head";
 
+
 const gil = localFont({
   src: './fonts/Gilroy-ExtraBold.otf',
   variable: '--font-gil-bold',
@@ -25,9 +26,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>JCYTF Community Church</title>
+        <title>JCYTF</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main

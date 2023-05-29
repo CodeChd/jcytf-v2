@@ -23,7 +23,7 @@ const Header = () => {
       <div className="LOGO flex items-center  py-1">
         <img src="/images/logo.png" width={90} alt="logo" />
         <h2 className=" uppercase text-lg px-2  font-medium w-[5rem] ml-1 border-solid border-gray-800 border-l-2">
-          JCYTF Community CHURCH
+          JCYTF CHURCH
         </h2>
       </div>
 

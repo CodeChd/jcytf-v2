@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaCalendarAlt, FaClock } from "react-icons/fa";
 
 const Ftevents = ({ id, data }) => {
-  const events = data[0];
+  const events = data[6];
   
   console.log(data)
 

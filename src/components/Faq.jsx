@@ -34,9 +34,9 @@ const Faq = ({ id }) => {
       <div className="bg-amber-900 text-white text-center py-10">
         <div className=" flex flex-col gap-2">
           <h2 className="text-7xl not-italic font-bold font-gil self-center border-b-4 py-2 mb-2 border-white">
-            JCYTF FAQ
+            JCYTF CHURCH FAQ
           </h2>
-          <p className="text-lg font-medium">
+          <p className="text-xl font-medium">
             Below are Frequently Asked Questions on Our Church
           </p>
         </div>

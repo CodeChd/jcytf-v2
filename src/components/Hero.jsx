@@ -30,7 +30,7 @@ const Hero = ({ id }) => {
       <section id={id}>
         <div className="w-full">
           <video
-            className="w-full object-cover h-[35rem] "
+            className="w-full object-cover h-[37.55rem] "
             loop
             muted
             alt="All the devices"
@@ -72,7 +72,7 @@ const Hero = ({ id }) => {
         />
         <SmoothScroll id="about" title="About" offset={-90} />
         <SmoothScroll id="connect" title="Connect" offset={-55} />
-        <SmoothScroll id="ftevents" title="Upcoming Events" offset={-128} />
+        <SmoothScroll id="ftevents" title="Upcoming Events" offset={-115} />
         <SmoothScroll id="pastors" title="Pastors" offset={20} />
         <SmoothScroll id="faq" title="FAQ" offset="" />
       </nav>

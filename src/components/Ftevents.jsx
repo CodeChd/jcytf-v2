@@ -1,14 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
-import { FaCalendarAlt, FaClock } from "react-icons/fa";
-
-
-
+import EventItem from "./EventItem";
 
 const Ftevents = ({ id, data }) => {
-  const events = data.slice(0, 3)
-  
-  console.log(events)
+  const events = data;
+
+  console.log(events);
 
   return (
     <section id={id} className="w-full my-14 py-14 ">
@@ -25,77 +21,22 @@ const Ftevents = ({ id, data }) => {
         </div>
 
         <div className="flex py-14 gap-10 items-center justify-center overflow-hidden">
-        {/* <EventItem /> */}
+          <EventItem
+            events={events}
+            index={0}
+            src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-wolfgang-2747449_nfsfqq.jpg"
+          />
+          <EventItem
+            events={events}
+            index={1}
+            src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-josh-sorenson-976866_knj2dr.jpg"
+          />
+          <EventItem
+            events={events}
+            index={2}
+            src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-teddy-yang-2263436_nxxwsy.jpg"
+          />
 
-          <div>
-            <Image
-              src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-wolfgang-2747449_nfsfqq.jpg"
-              width={425}
-              height={400}
-              className="rounded"
-            />
-
-            <h2 className="text-4xl flex flex-wrap font-gilLight font-extrabold mt-2">
-              {events.Speaker}
-            </h2>
-
-            <div className="flex gap-4 mt-2 items-center">
-              <p className="text-lg font-gilLight flex items-center gap-2">
-                <FaCalendarAlt className="inline-block " />
-                <span className="inline-block">{events.Date}</span>
-              </p>
-              <p className="text-lg font-gilLight flex items-center gap-2">
-                <FaClock className="inline-block " />
-                <span className="inline-block">{events.Time}</span>
-              </p>
-            </div>
-          </div>
-          <div>
-            <Image
-              src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-josh-sorenson-976866_knj2dr.jpg"
-              width={425}
-              height={400}
-              className="rounded"
-            />
-
-            <h2 className="text-4xl font-gilLight font-extrabold mt-2">
-              Kamusta Ka?
-            </h2>
-
-            <div className="flex gap-4 mt-2 items-center">
-              <p className="text-lg font-gilLight flex items-center gap-2">
-                <FaCalendarAlt className="inline-block " />
-                <span className="inline-block">08-10-2023</span>
-              </p>
-              <p className="text-lg font-gilLight flex items-center gap-2">
-                <FaClock className="inline-block " />
-                <span className="inline-block">10:00 AM</span>
-              </p>
-            </div>
-          </div>
-          <div>
-            <Image
-              src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-teddy-yang-2263436_nxxwsy.jpg"
-              width={425}
-              height={400}
-              className="rounded"
-            />
-
-            <h2 className="text-4xl font-gilLight font-extrabold mt-2">
-              Kamusta Ka?
-            </h2>
-
-            <div className="flex gap-4 mt-2 items-center">
-              <p className="text-lg font-gilLight flex items-center gap-2">
-                <FaCalendarAlt className="inline-block " />
-                <span className="inline-block">08-10-2023</span>
-              </p>
-              <p className="text-lg font-gilLight flex items-center gap-2">
-                <FaClock className="inline-block " />
-                <span className="inline-block">10:00 AM</span>
-              </p>
-            </div>
-          </div>
         </div>
         <Link
           href="/"

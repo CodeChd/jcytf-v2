@@ -75,7 +75,7 @@ const Hero = ({ id }) => {
           offset={-105}
         />
         <SmoothScroll id="about" title="About" offset={-90} />
-        <SmoothScroll id="connect" title="Connect" offset={-55} />
+        <SmoothScroll id="connect" title="Connect" offset={-85} />
         <SmoothScroll id="ftevents" title="Upcoming Events" offset={-115} />
         <SmoothScroll id="pastors" title="Pastors" offset={20} />
         <SmoothScroll id="faq" title="FAQ" offset="" />

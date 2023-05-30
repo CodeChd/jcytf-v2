@@ -31,7 +31,7 @@ const FaqItems = ({ q, desc }) => {
 const Faq = ({ id }) => {
   return (
     <section id={id} className="py-[3.84rem] w-full min-h-[80vh]">
-      <div className="bg-amber-900 text-white text-center py-10">
+      <div className="bg-amber-800 text-white text-center py-10">
         <div className=" flex flex-col gap-2">
           <h2 className="text-7xl not-italic font-bold font-gil self-center border-b-4 py-2 mb-2 border-white">
             JCYTF CHURCH FAQ

@@ -16,14 +16,20 @@ module.exports = {
       },
 
       backgroundImage: {
-          "search" : "url('/search.svg')"
+          "search" : "url('/search.svg')",
+          "about" : "url('https://res.cloudinary.com/dgzvju87l/image/upload/v1685421203/pexels-i%CC%87sra-nilg%C3%BCn-%C3%B6zkan-14416770_tvgwic.jpg')",
+          "who": "url('https://res.cloudinary.com/dgzvju87l/image/upload/v1685451278/about_pklrxt.jpg')"
       }
     },
     backgroundSize: {
       '16': '1.5rem',
+      "100%": "100%",
     },
     backgroundPosition: {
       'searchBt': '1rem',
+      "aboutPos": "center top -100px",
+        "identityPos": "center bottom -120px"
+
     },
     screens: {
       wide: {min: "2200px"},

@@ -1,6 +1,6 @@
 const EventsSearch = () => {
   return (
-      <header className="flex flex-col items-center gap-14">
+      <header className="flex flex-col items-center gap-14 py-6">
         <h1 className="text-gray-950 font-gilLight font-extrabold text-7xl">Upcoming Events</h1>
 
         <div className="w-[60%]">
@@ -14,6 +14,18 @@ const EventsSearch = () => {
           <div className="mt-2 ">
             <select name="EVENTS" className="p-2">
               <option value="">Select Month</option>
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="Augost">Augost</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
             </select>
           </div>
         </div>

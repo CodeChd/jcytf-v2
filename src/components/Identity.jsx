@@ -6,7 +6,7 @@ const Identity = () => {
        
         <div className='z-30 w-full flex flex-col items-center justify-center'>
             <h3 className='self-center shadow-md text-3xl border-b-[3px] border-solid border-amber-800 font-gil mb-8' >Who We Are</h3>
-            <p className='w-1/2 text-2xl shadow-lg font-gilLight font-extrabold leading-10'> We prioritize simple and clear opportunities to help people take
+            <p className='w-1/2 mx-auto text-2xl shadow-lg font-gilLight font-extrabold leading-10'> We prioritize simple and clear opportunities to help people take
               their next steps toward Christ…together. We’re building a thriving
               volunteer culture that provides next-level kids, students and
               young adult ministries in addition to opportunities for women, men

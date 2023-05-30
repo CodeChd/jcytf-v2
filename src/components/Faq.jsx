@@ -10,17 +10,17 @@ const FaqItems = ({ q, desc }) => {
 
   return (
     <div id="faq-container" className="my-3 self-start select-none ">
-      <h4 className="flex items-center gap-2 cursor-pointer border-solid border-1 border-gray-500">
-        <div className="bg-orange-600 p-1 rounded-full text-white transition-all">
+      <article className="flex items-center gap-2 cursor-pointer border-solid border-1 border-gray-500">
+        <button onClick={handleClick} className="bg-orange-600 p-1 rounded-full text-white transition-all">
           {isClick ? <FaMinus className="z-10" /> : <FaPlus className="z-10" />}
-        </div>
+        </button>
         <a
           className="text-[1.3rem] font-extrabold font-gilLight"
           onClick={handleClick}
         >
           {q}
         </a>
-      </h4>
+      </article>
       <div className={`${isClick ? "block p-3" : "hidden"} `}>
         <p className="text-lg font-gilLight font-extrabold">{desc}</p>
       </div>

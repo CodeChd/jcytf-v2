@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 
-const SmoothScroll = ({id, title,offset}) => {
+const SmoothScroll = ({id, title,offset, icon = null , className = ""}) => {
     return (
         <Link
           activeClass="active"
@@ -10,9 +10,10 @@ const SmoothScroll = ({id, title,offset}) => {
           offset={offset}
           duration={500}
           
-          className="cursor-pointer"
+          className={`${className} cursor-pointer`}
         >
           {title}
+          {icon}
         </Link>
     );
   };

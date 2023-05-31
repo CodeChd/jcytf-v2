@@ -3,7 +3,7 @@ import Identity from "@/components/Identity";
 import Mission from "@/components/Mission";
 import Visit from "@/components/Visit";
 
-const AboutPage = () => {
+const AboutPage = ({dataImg}) => {
   return (
     <>
       <HeroComponent
@@ -11,6 +11,7 @@ const AboutPage = () => {
         desc="MONDAY - SUNDAY AT 9:00AM - 5:00PM | SATURDAY - CLOSED"
         btnName="New Here?"
         href="new"
+        className={dataImg}
       />
       <Mission/>
       <Identity/>

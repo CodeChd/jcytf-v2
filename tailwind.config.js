@@ -17,8 +17,10 @@ module.exports = {
 
       backgroundImage: {
           "search" : "url('/search.svg')",
-          "about" : "url('https://res.cloudinary.com/dgzvju87l/image/upload/v1685421203/pexels-i%CC%87sra-nilg%C3%BCn-%C3%B6zkan-14416770_tvgwic.jpg')",
-          "who": "url('https://res.cloudinary.com/dgzvju87l/image/upload/v1685451278/about_pklrxt.jpg')"
+          "about" : "url('https://res.cloudinary.com/dgzvju87l/image/upload/v1685499466/pexels-i%CC%87sra-nilg%C3%BCn-%C3%B6zkan-14416770_1_thwe9s.jpg')",
+          "who": "url('https://res.cloudinary.com/dgzvju87l/image/upload/v1685451278/about_pklrxt.jpg')",
+          "sched": "url('https://res.cloudinary.com/dgzvju87l/image/upload/v1685499912/imgonline-com-ua-CompressToSize-F7bsGe8ON2vKhQQY_dheivi.jpg')",
+
       }
     },
     backgroundSize: {
@@ -28,7 +30,8 @@ module.exports = {
     backgroundPosition: {
       'searchBt': '1rem',
       "aboutPos": "center top -100px",
-        "identityPos": "center bottom -120px"
+      "Pos": "center top -160px",
+      "identityPos": "center bottom -120px"
 
     },
     screens: {

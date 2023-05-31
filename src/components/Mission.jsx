@@ -33,7 +33,7 @@ const Mission = () => {
           </div>
 
           <div>
-            <Image src=" https://res.cloudinary.com/dgzvju87l/image/upload/v1685426790/place_fz3fxz.jpg" width={400} height={300} className="rounded"/>
+            <Image src="/images/place.jpg" width={400} height={300} className="rounded"/>
           </div>
         </div>
       </div>

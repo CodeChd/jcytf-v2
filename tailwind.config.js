@@ -17,9 +17,9 @@ module.exports = {
 
       backgroundImage: {
           "search" : "url('/search.svg')",
-          "about" : "url('https://res.cloudinary.com/dgzvju87l/image/upload/v1685499466/pexels-i%CC%87sra-nilg%C3%BCn-%C3%B6zkan-14416770_1_thwe9s.jpg')",
-          "who": "url('https://res.cloudinary.com/dgzvju87l/image/upload/v1685451278/about_pklrxt.jpg')",
-          "sched": "url('https://res.cloudinary.com/dgzvju87l/image/upload/v1685499912/imgonline-com-ua-CompressToSize-F7bsGe8ON2vKhQQY_dheivi.jpg')",
+          "about" : "url('/images/band-about.jpg')",
+          "who" : "url('/images/who.jpg')",
+          "sched": "url('/images/wheat.jpg')",
 
       }
     },

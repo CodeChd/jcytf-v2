@@ -1,5 +1,6 @@
 import HeroComponent from "@/components/HeroComponent";
 import Identity from "@/components/Identity";
+import Mapa from "@/components/Map";
 import Mission from "@/components/Mission";
 import Visit from "@/components/Visit";
 
@@ -16,6 +17,7 @@ const AboutPage = ({dataImg}) => {
       <Mission/>
       <Identity/>
       <Visit id="new"/>
+      <Mapa/>
     </>
   );
 };

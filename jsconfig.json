@@ -2,6 +2,7 @@
   "compilerOptions": {
     "paths": {
       "@/components/*": ["./src/components/*"],
+      "@/Loc/*": ["./src/components/Map/*"],
       "@/scenes/*": ["./src/scenes/*"],
       "@/hooks/*": ["./src/hooks/*"],
     }

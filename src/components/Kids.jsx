@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Kids = () => {
   return (
-    <section className="py-14 bg-[#ED9121] text-white ">
+    <section className="py-14 bg-[#d97706] text-white ">
       <div className="max-w-7xl mx-auto min-h-[50vh] flex  items-center">
         <div className="flex gap-18 font-gilLight  font-bold text-xl">
 
@@ -22,7 +22,7 @@ const Kids = () => {
               First Kids is excited to partner with you to help the children in your life on their journey to know, love and serve Jesus Christ. Our small group format encourages children to build relationships with peers and leaders while learning about God in creative and engaging ways.
               </p>
 
-              <Link href="/" className="uppercase mt-5 text-lg transition-transform hover:scale-110 self-start rounded-full text-yellow-100">Learn More </Link>
+              <Link href="/" className="uppercase mt-5 text-lg transition-transform hover:scale-110 self-start rounded-full p-2 px-4 bg-slate-50 text-gray-800 ring-2 ring-white">Learn More </Link>
 
             </div>
 

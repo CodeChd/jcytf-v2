@@ -45,20 +45,20 @@ const Hero = ({ id }) => {
         <div className="w-full flex gap-1 text-2xl font-bold uppercase">
           <Link
             href="#"
-            className="flex-1 text-center p-6 bg-[#ED9121] text-white hover:text-black hover:bg-white"
+            className="flex-1 text-center p-6 bg-[#d97706] text-white hover:text-black hover:bg-white"
           >
             {/* bg-gradient-to-r from-indigo-500  */}
             <span>Partner With Us</span>
           </Link>
           <Link
             href="#"
-            className="flex-1 text-center p-6 bg-[#ED9121] text-white hover:text-black hover:bg-white"
+            className="flex-1 text-center p-6 bg-[#d97706] text-white hover:text-black hover:bg-white"
           >
             <span>Programs</span>
           </Link>
           <Link
             href="#"
-            className="flex-1 text-center p-6 bg-[#ED9121] text-white hover:text-black hover:bg-white"
+            className="flex-1 text-center p-6 bg-[#d97706] text-white hover:text-black hover:bg-white"
           >
             <span>Join Us</span>
           </Link>

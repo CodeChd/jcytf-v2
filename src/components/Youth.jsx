@@ -28,7 +28,7 @@ const Youth = () => {
             The student ministry at our church exists to connect teens to Christ. We create safe environments that allow students to know, experience, and serve Jesus in community.
             </p>
 
-             <Link href="/" className="uppercase mt-5 text-lg transition-transform hover:scale-110 self-start rounded-full text-gray-800">Learn More </Link>
+             <Link href="/" className="uppercase mt-5 text-lg transition-transform hover:scale-110 self-start rounded-full text-white bg-amber-600 p-2 px-4">Learn More </Link>
 
           </div>
 

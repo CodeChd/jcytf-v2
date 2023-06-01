@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Connect = ({id}) => {
   return (
-    <section id={id} className="w-full flex justify-center items-end  bg-[#ED9121] text-white min-h-[80vh]">
+    <section id={id} className="w-full flex justify-center items-end  bg-[#d97706] text-white min-h-[80vh]">
       <div className="flex flex-col gap-24">
         <h2 className="self-center font-extrabold font-gil text-7xl not-italic">
           Get Connected

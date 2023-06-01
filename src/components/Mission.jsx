@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Mission = () => {
   return (
-    <section className="py-14 bg-[#ED9121] text-white min-h-[52vh] ">
+    <section className="py-14 bg-[#d97706] text-white min-h-[52vh] ">
       <div className="max-w-7xl mx-auto ">
      
 
@@ -32,7 +32,7 @@ const Mission = () => {
 
             <Link
               href="/"
-              className=" mt-2 rounded p-2 bg-amber-600 text-white self-start"
+              className=" mt-2 rounded p-2 bg-slate-50 text-gray-800 self-start"
             >
               Join Us
             </Link>

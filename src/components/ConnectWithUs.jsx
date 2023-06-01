@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Connect = ({id}) => {
   return (
-    <section id={id} className="w-full flex justify-center items-end  bg-amber-800 text-white min-h-[80vh]">
+    <section id={id} className="w-full flex justify-center items-end  bg-[#ED9121] text-white min-h-[80vh]">
       <div className="flex flex-col gap-24">
         <h2 className="self-center font-extrabold font-gil text-7xl not-italic">
           Get Connected
@@ -14,6 +14,7 @@ const Connect = ({id}) => {
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685075224/kids-2408614_1920_fxs3md.jpg"
               width={300}
               height={300}
+              loading="lazy"
               className="w-full h-full inline-block"
             />
           </div>
@@ -28,6 +29,7 @@ const Connect = ({id}) => {
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685075876/pexels-nappy-935944_h6qveq.jpg"
               width={300}
               height={300}
+              loading="lazy"
               className="w-full h-full"
             />
           </div>
@@ -48,6 +50,7 @@ const Connect = ({id}) => {
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685076438/second-grid_kyeuhe.jpg"
               width={300}
               height={300}
+              loading="lazy"
               className="w-full h-full"
             />
           </div>
@@ -62,6 +65,7 @@ const Connect = ({id}) => {
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685076354/pexels-fox-1595391_lafiwd.jpg"
               width={300}
               height={300}
+              loading="lazy"
               className="w-full h-full"
             />
           </div>

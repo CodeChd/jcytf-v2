@@ -17,20 +17,23 @@ module.exports = {
 
       backgroundImage: {
           "search" : "url('/search.svg')",
-          "about" : "url('/images/band-about.jpg')",
+          "about" : "url('/images/band.jpg')",
           "who" : "url('/images/who.jpg')",
           "sched": "url('/images/wheat.jpg')",
+          "connect": "url('/images/connect.jpg')",
 
       }
     },
     backgroundSize: {
       '16': '1.5rem',
       "100%": "100%",
+      "80%": "90%"
     },
     backgroundPosition: {
       'searchBt': '1rem',
       "aboutPos": "center top -100px",
       "Pos": "center top -160px",
+      "Pos2": "center top 10px",
       "identityPos": "center bottom -120px"
 
     },

@@ -6,7 +6,7 @@ const HeroComponent = ({ title, desc, btnName, href = "/", className}) => {
 
   return (
     <>
-      <header className={` ${className} flex items-end w-full brightness-[.45] min-h-[85vh] relative`}></header>
+      <header className={` ${className} flex items-end w-full brightness-[.65] min-h-[85vh] relative`}></header>
       <div className="absolute z-20 text-white top-1/2 translate-y-[50px] ">
         <div className="p-32 ">
           <h1 className="text-6xl font-gil shadow-lg">{title}</h1>

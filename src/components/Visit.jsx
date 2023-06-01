@@ -39,8 +39,8 @@ const Visit = ({ id }) => {
     <section id={id} className="bg-slate-50 pt-8">
       <div className="w-full h-full grid place-content-center min-h-[60vh]">
         <div className="flex flex-col items-center ">
-          <h3 className="text-xl font-gilLight font-bold">NEW HERE?</h3>
-          <h2 className="text-5xl uppercase font-gil font-bold mb-4">
+          <h3 className="text-xl font-gilLight font-bold text-amber-800">NEW HERE?</h3>
+          <h2 className="text-5xl uppercase font-gil font-bold mb-4 ">
             Coming to visit?
           </h2>
           <p className="max-w-4xl mx-auto font-gilLight font-bold text-xl">
@@ -83,38 +83,46 @@ const Visit = ({ id }) => {
           />
         </div>
       </div>
-      <section className="w-full bg-sched bg-Pos bg-no-repeat bg-cover bg-100% min-h-[45vh] mt-8">
+      <section className="w-full bg-sched bg-Pos bg-no-repeat bg-cover bg-100% min-h-[50vh] py-8">
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center ">
-          <h2 className="mt-8 text-3xl uppercase font-gilLight font-extrabold text-white border-b-2 border-solid border-white">
+          <h2 className="text-3xl uppercase font-gilLight font-extrabold text-white border-b-2 border-solid border-white">
             Schedule of Services
           </h2>
 
-          <div className="flex items-center gap-12 mt-8">
-            <div className=" uppercase font-gilLight font-extrabold text-xl text-white">
-              <div className="flex flex-col gap-2 mb-4">
-                <h3 className="mb-2">Sunday Service</h3>
+          <div className="grid grid-cols-2 justify-center gap-8">
+
+            <div className=" col-span-2 uppercase font-gilLight font-extrabold text-xl text-white">
+
+              <div className="flex flex-col items-center gap-2 mt-4">
+                <h3 className="mb-2 text-2xl">Sunday Service</h3>
                 <p>KID'S MINISTRY | 8:00AM - 9:00AM</p>
                 <p>SUNDAY SCHOOL | 9:30AM - 10:00AM</p>
                 <p>DIVINE SERVICE | 10:30AM - 12:30NN</p>
                 <p>YOUTH SERVICE | 3:00PM - 5:00PM</p>
+              <p className="text-2xl mt-2 flex flex-col items-center">WEDNESDAY PRAYER MEETING
+              
+              <span className="text-xl mt-2">7:00PM - 9:00PM</span>
+              </p>
               </div>
-              <p>WEDNESDAY PRAYER MEETING &nbsp; 7:00PM - 9:00PM</p>
+
+
             </div>
 
-            <p className=" text-3xl flex flex-col items-center text-white gap-2">
+            <p className=" text-2xl flex flex-col items-center text-white gap-2">
               <FaMapMarkerAlt />
               <span className="">Join Us</span>
               <span className="max-w-[30ch] text-center font-gilLight font-extrabold text-xl ">
                 MADJAAS STREET GROUP 2, AREA B, QUEZON CITY, 1119 MANILA
               </span>
             </p>
-            <p className="text-3xl flex flex-col items-center text-white gap-2">
+            <p className="text-2xl flex flex-col items-center text-white gap-2">
               <FaPhoneAlt />
               <span className="">Contact Us</span>
               <span className="max-w-[30ch] text-center font-gilLight font-extrabold text-xl ">
                 (+63) 997 574 4318 HERALDOEDNAS@GMAIL.COM
               </span>
             </p>
+
           </div>
         </div>
       </section>

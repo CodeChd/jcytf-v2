@@ -1,25 +1,34 @@
-import HeroComponent from '@/components/HeroComponent'
+import Devotionals from "@/components/Devotionals";
+
+const HeroDevotion = ({ title, desc, className }) => {
+  return (
+    <>
+      <header
+        className={` ${className} flex justify-center items-center w-full min-h-[85vh]`}
+        >
+      <div className="z-20 text-white ">
+        <div className="p-32 text-center">
+          <h1 className="text-8xl font-gil shadow-lg">{title}</h1>
+          <p className="text-xl shadow-lg pt-2">{desc}</p>
+        </div>
+      </div>
+        </header>
+    </>
+  );
+};
 
 const devotional = () => {
-
-
   return (
-   <main>
-     <HeroComponent
-     title="About Our Community"
-     desc="MONDAY - SUNDAY AT 9:00AM - 5:00PM | SATURDAY - CLOSED"
-     btnName="New Here?"
-     href="new"
-     className="bg-about bg-aboutPos bg-no-repeat bg-100%"
-     />
+    <main>
+      <HeroDevotion
+        title="Devotionals"
+        desc="Daily Inspiration, Devotional Verses to Uplift Your Soul"
+        className="bg-devotion bg-aboutPos bg-no-repeat bg-100%"
+      />
 
+      <Devotionals />
+    </main>
+  );
+};
 
-     
-   </main>
-  )
-}
-
-export default devotional
-
-
-  
+export default devotional;

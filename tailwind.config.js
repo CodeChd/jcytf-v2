@@ -22,6 +22,8 @@ module.exports = {
           "sched": "url('/images/wheat.jpg')",
           "connect": "url('/images/connect.jpg')",
           "ministry": "url('/images/ministries.jpeg')",
+          "devotion": "url('/images/devotion.jpeg')",
+          // "psalm": "url('/images/psalm.png')",
 
       }
     },

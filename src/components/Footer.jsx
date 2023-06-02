@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="non-italic font-medium">
               <p>Monday - Sunday at 9:00AM - 5:00PM | Saturday - Closed</p>
               <p>(+63) 997 574 4318</p>
-              <p>heraldoednas@gmail.com</p>
+              <p>jcytfchurch92@gmail.com</p>
             </div>
           </div>
 
@@ -105,7 +105,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="mailto:heraldoednas@gmail.com" className="text-xl">
+              <Link href="mailto:jcytfchurch92@gmail.com" className="text-xl">
                 <AiFillMail />
               </Link>
             </li>

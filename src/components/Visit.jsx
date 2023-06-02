@@ -118,8 +118,8 @@ const Visit = ({ id }) => {
             <p className="text-2xl flex flex-col items-center text-white gap-2">
               <FaPhoneAlt />
               <span className="">Contact Us</span>
-              <span className="max-w-[30ch] text-center font-gilLight font-extrabold text-xl ">
-                (+63) 997 574 4318 HERALDOEDNAS@GMAIL.COM
+              <span className=" uppercase max-w-[30ch] text-center font-gilLight font-extrabold text-xl ">
+                (+63) 997 574 4318 jcytfchurch92@gmail.com
               </span>
             </p>
 

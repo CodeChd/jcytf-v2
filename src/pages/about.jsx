@@ -15,7 +15,7 @@ const about = () => {
         className="bg-about bg-aboutPos bg-no-repeat bg-100%"
       />
       <Mission />
-      {/* <Identity /> */}
+      <Identity />
       <Visit id="new" />
       <Mapa />
     </main>

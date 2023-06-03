@@ -4,7 +4,7 @@ import Link from "next/link";
 const Mission = () => {
   return (
     <section className="py-14 bg-[#d97706] text-white min-h-[52vh] ">
-      <div className="max-w-7xl mx-auto ">
+      <div className="max-w-7xl mx-auto xxl:max-w-6xl wide:max-w-8xl">
      
 
         <div className="flex gap-18 font-gilLight font-bold text-xl">

@@ -1,11 +1,11 @@
 const Identity = () => {
   return (
-    <section className="py-14 xxl:py-8 text-white min-h-[50vh] bg-who bg-no-repeat bg-cover bg-100% bg-identityPos flex items-center ">
+    <section className="py-14 xxl:py-8 text-white min-h-[50vh]  wide:bg-ultrasc bg-who bg-no-repeat bg-cover bg-mediumsc bg-identityPos flex items-center ">
       <div className="z-30 w-full flex flex-col items-center justify-center">
         <h3 className="self-center shadow-md text-3xl border-b-[3px] border-solid border-amber-800 font-gil mb-8">
           Who We Are
         </h3>
-        <p className="w-1/2 mx-auto text-xl shadow-lg font-gilLight font-extrabold leading-10">
+        <p className="max-w-4xl mx-auto text-xl shadow-lg font-gilLight font-extrabold leading-10">
           We prioritize simple and clear opportunities to help people take Jesus
           Christ Yesterday, Today and Forever is a church in La Trinidad Street,
           Payatas Quezon City. It is founded by Pastora Casimira "Baby" Cabacoy

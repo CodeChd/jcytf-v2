@@ -12,7 +12,7 @@ const about = () => {
         desc="MONDAY - SUNDAY AT 9:00AM - 5:00PM | SATURDAY - CLOSED"
         btnName="New Here?"
         href="new"
-        className="bg-about bg-aboutPos bg-no-repeat bg-100%"
+        className="bg-about bg-aboutPos bg-no-repeat bg-mediumsc wide:bg-ultrasc "
       />
       <Mission />
       <Identity />

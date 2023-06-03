@@ -29,8 +29,9 @@ module.exports = {
     },
     backgroundSize: {
       '16': '1.5rem',
-      "100%": "100%",
-      "80%": "90%"
+      "widesc": "135rem",
+      "ultrasc": "150rem",
+      "mediumsc": "100rem"
     },
     backgroundPosition: {
       'searchBt': '1rem',
@@ -41,7 +42,8 @@ module.exports = {
 
     },
     screens: {
-      wide: {min: "2200px"},
+      wide: {min: "2000px"},
+      sml: {max: "2000px"},
       xxl: { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
   

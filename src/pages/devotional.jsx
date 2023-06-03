@@ -22,8 +22,8 @@ const devotional = () => {
     <main>
       <HeroDevotion
         title="Devotionals"
-        desc="Daily Inspiration, Devotional Verses to Uplift Your Soul"
-        className="bg-devotion bg-aboutPos bg-no-repeat bg-100%"
+        desc="Devotional Verses to Uplift Your Soul"
+        className="bg-devotion bg-aboutPos bg-no-repeat bg-mediumsc wide:bg-ultrasc"
       />
 
       <Devotionals />

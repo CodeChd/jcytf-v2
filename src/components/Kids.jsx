@@ -4,7 +4,7 @@ import Link from "next/link"
 const Kids = () => {
   return (
     <section className="py-14 bg-[#d97706] text-white ">
-      <div className="max-w-7xl mx-auto min-h-[50vh] flex  items-center">
+      <div className="max-w-7xl sml:max-w-6xl mx-auto min-h-[50vh] flex  items-center">
         <div className="flex gap-18 font-gilLight  font-bold text-xl">
 
             <div className="flex flex-col justify-end gap-2 py-2">

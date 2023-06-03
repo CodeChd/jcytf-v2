@@ -4,12 +4,12 @@ import Link from "next/link";
 const Connect = ({id}) => {
   return (
     <section id={id} className="w-full flex justify-center items-end  bg-[#d97706] text-white min-h-[80vh]">
-      <div className="flex flex-col gap-24">
+      <div className="flex flex-col gap-24 sml:gap-8">
         <h2 className="self-center font-extrabold font-gil text-7xl not-italic">
           Get Connected
         </h2>
 
-        <div className="grid grid-cols-4 w-[65%] mx-auto text-gray-900 border-b-0 border-x-white mt-4 border-solid border-2 rounded overflow-hidden">
+        <div className="grid grid-cols-4 w-[75%] mx-auto text-gray-900 border-b-0 border-x-white mt-4 border-solid border-2 rounded overflow-hidden">
           <div className="inline-block col-span-1">
             <Image
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685075224/kids-2408614_1920_fxs3md.jpg"
@@ -21,7 +21,7 @@ const Connect = ({id}) => {
           </div>
           <div className="inline-block p-8 col-span-1 bg-white">
             <p className="text-lg font-gilLight font-extrabold uppercase">Kids</p>
-            <p className="font-medium text-xl mt-2">
+            <p className="font-medium text-xl mt-2 mb-4">
               A fun and safe first step for kids to grow in their faith.
             </p>
 
@@ -38,7 +38,7 @@ const Connect = ({id}) => {
           </div>
           <div className="inline-block p-8 col-span-1 bg-yellow-300">
             <p className="text-lg font-gilLight font-extrabold uppercase">Youths</p>
-            <p className="font-medium text-xl mt-2">
+            <p className="font-medium text-xl mt-2 mb-4">
               Impacting students in their relationship with Jesus.
             </p>
             <Link href="/">LEARN MORE ||</Link>
@@ -46,7 +46,7 @@ const Connect = ({id}) => {
           </div>
           <div className="inline-block p-8 col-span-1 bg-green-300">
             <p className="text-lg font-gilLight font-extrabold uppercase">Group Life</p>
-            <p className="font-medium text-xl mt-2">
+            <p className="font-medium text-xl mt-2 mb-4">
               Adults connecting and growing together. Find your group here.
             </p>
             <Link href="/">LEARN MORE ||</Link>
@@ -63,7 +63,7 @@ const Connect = ({id}) => {
           </div>
           <div className="inline-block p-8 col-span-1 bg-blue-300">
             <p className="text-lg font-gilLight font-extrabold uppercase">Join Us</p>
-            <p className="font-medium text-xl mt-2">
+            <p className="font-medium text-xl mt-2 mb-4">
               Serving others, locally and internationally.
             </p>
             <Link href="/">LEARN MORE ||</Link>

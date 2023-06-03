@@ -4,7 +4,7 @@ import Link from "next/link"
 const Youth = () => {
   return (
     <section className="py-14 bg-slate-50 text-black ">
-      <div className="max-w-7xl mx-auto flex items-cente min-h-[50vh]">
+      <div className="max-w-7xl sml:max-w-6xl mx-auto flex items-cente min-h-[50vh]">
 
         <div className="flex gap-[5rem] items-center font-gilLight font-bold text-xl">
 

@@ -83,7 +83,7 @@ const Visit = ({ id }) => {
           />
         </div>
       </div>
-      <section className="w-full bg-sched bg-Pos bg-no-repeat bg-cover bg-100% min-h-[50vh] py-8">
+      <section className="w-full bg-sched bg-Pos bg-no-repeat bg-cover bg-mediumsc wide:bg-ultrasc min-h-[50vh] py-8">
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center ">
           <h2 className="text-3xl uppercase font-gilLight font-extrabold text-white border-b-2 border-solid border-white">
             Schedule of Services

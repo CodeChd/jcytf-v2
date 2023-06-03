@@ -31,10 +31,10 @@ const Hero = ({ id }) => {
         <div className="w-full relative ">
           <div  className="z-10 flex flex-col items-start absolute text-white left-[8rem]  text-left py-7">
           <p className="uppercase font-gilLight font-extrabold text-lg ml-2 mb-6  drop-shadow-xl  border-white border-l-2 p-2 rounded border-solid">Welcome Home</p>
-          <h1 className="capitalize text-[5.6rem] leading-[1] font-gil max-w-[10ch] drop-shadow-xl xl:text-4xl ">Jesus Christ Yesterday Today and Forever Church</h1>
+          <h1 className="capitalize text-[5.6rem] leading-[1] font-gil max-w-[10ch] drop-shadow-xl xl:text-5xl sml:text-[4.2rem]">Jesus Christ Yesterday Today and Forever Church</h1>
           </div>
           <video
-            className="w-full brightness-[.80] object-cover h-[37.55rem] "
+            className="w-full brightness-[.80] object-cover h-[37.55rem] sml:h-[28rem] "
             loop
             muted
             alt="All the devices"

@@ -30,7 +30,7 @@ const LifeGroup = () => {
                         <div>
                             <span className="border-solid border-b-4 border-gray-800 py-2">Livelihood</span>
                         </div>
-                    <Link href="/" className="ml-4 border-2 border-amber-800 border-solid p-3 rounded text-amber-800">
+                    <Link href="/groups" className="ml-4 border-2 border-amber-800 border-solid p-3 rounded text-amber-800">
                         Join Group <FaArrowRight className="inline-block "/>
                     </Link>
                 </div>

@@ -63,7 +63,7 @@ const Pastors = ({id}) => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center sml:mt-8 sml:max-w-5xl sml:mx-auto ">
             <div className="relative">
               <Image
                 src="/images/pastors/fourth.png"

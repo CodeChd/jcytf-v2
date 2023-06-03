@@ -25,7 +25,7 @@ const Pastors = ({id}) => {
       <div className="py-8">
         <div className="flex flex-col items-center justify-center">
           <h3 className="text-2xl font-gilLight font-extrabold uppercase text-gray-700">Our Pastors</h3>
-          <h2 className="text-7xl non-italic font-gil font-bold mt-2">Meet Our Team</h2>
+          <h2 className="text-7xl sml:text-6xl non-italic font-gil font-bold mt-2">Meet Our Team</h2>
         </div>
 
         <main className="">

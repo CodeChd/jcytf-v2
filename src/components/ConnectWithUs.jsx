@@ -5,7 +5,7 @@ const Connect = ({id}) => {
   return (
     <section id={id} className="w-full flex justify-center items-end  bg-[#d97706] text-white min-h-[80vh]">
       <div className="flex flex-col gap-24 sml:gap-8">
-        <h2 className="self-center font-extrabold font-gil text-7xl not-italic">
+        <h2 className="self-center font-extrabold font-gil text-7xl sml:text-6xl not-italic">
           Get Connected
         </h2>
 

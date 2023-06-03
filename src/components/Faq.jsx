@@ -33,7 +33,7 @@ const Faq = ({ id }) => {
     <section id={id} className="py-[3.84rem] w-full min-h-[80vh]">
       <div className="bg-[#d97706] text-white text-center py-10">
         <div className=" flex flex-col gap-2">
-          <h2 className="text-7xl not-italic font-bold font-gil self-center border-b-4 py-2 mb-2 border-white">
+          <h2 className="text-7xl sml:text-6xl not-italic font-bold font-gil self-center border-b-4 py-2 mb-2 border-white">
             JCYTF CHURCH FAQ
           </h2>
           <p className="text-xl font-medium">

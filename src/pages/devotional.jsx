@@ -22,7 +22,7 @@ const devotional = () => {
     <main>
       <HeroDevotion
         title="Devotionals"
-        desc="Devotional Verses to Uplift Your Soul"
+        desc="Devotional Verse to Uplift Your Soul"
         className="bg-devotion bg-aboutPos bg-no-repeat bg-mediumsc wide:bg-ultrasc"
       />
 

@@ -4,7 +4,7 @@ const About = ({ id }) => {
   return (
     <section id={id} className="w-full px-20 py-14 sml:py-8 min-h-[70vh] wide:min-h-[45vh]">
       <div className="px-24 flex flex-col gap-4">
-        <h2 className="flex self-center text-7xl not-italic font-extrabold uppercase border-solid border-b-[6px] pb-2 border-gray-900">
+        <h2 className="flex self-center text-7xl sml:text-6xl not-italic font-extrabold uppercase border-solid border-b-[6px] pb-2 border-gray-900">
           About Jcytf church
         </h2>
 

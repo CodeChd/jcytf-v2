@@ -5,8 +5,8 @@ import { FaEnvelope, FaFacebook } from "react-icons/fa";
 
 const Devotionals = () => {
   return (
-    <section className="w-full py-14 min-h-[80vh] grid place-content-center font-gilLight font-bold">
-      <div className="max-w-5xl ">
+    <section className="w-full py-14 min-h-[80vh] grid place-content-center font-gilLight font-bold ">
+      <div className="max-w-5xl border-l-2 border-r-2 border-dotted border-gray-400 px-8">
         <div className="w-full flex flex-col gap-12 sml:gap-8 text-2xl ">
           <h2 className="text-4xl">Walking in the Garden</h2>
 
@@ -29,12 +29,12 @@ const Devotionals = () => {
 
             <h3 className="font-gil">SHARE:</h3>
             <ul className="flex gap-4 mt-2">
-              <li><FaFacebook/></li>
-              <li><FaEnvelope/></li>
+              <li><a className="cursor-pointer" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://jcytfchurch.vercel.app/devotional"><FaFacebook/></a></li>
+              <li><a className="cursor-pointer" href="mailto:"><FaEnvelope/></a></li>
             </ul>
           </div>
 
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-8">
             <p>
               While hiking the Appalachian Trail, I enjoyed the early April
               wildflowers blooming along the pathway. I particularly noticed a
@@ -66,7 +66,7 @@ const Devotionals = () => {
 
             <a
               href="https://developer.enewhope.org/api/bible.php?churchname=Jesus%20Christ%20Yesterday%20Today%20and%20Forever%20Church&churchweb=https://jcytfchurch.vercel.app&h1color=003399&h2color=003399&navigationcolor=003399"
-              className="border-solid border-b-4 border-amber-600 p-3 rounded text-amber-800 font-gilLight uppercase hover:scale-105 transition-transform hover:text-amber-500"
+              className="mr-[8rem] border-solid border-b-4 border-amber-600 p-3 rounded text-amber-800 font-gilLight uppercase hover:scale-105 transition-transform hover:text-amber-500"
               target="_blank"
             >
               More of Our Devotionals

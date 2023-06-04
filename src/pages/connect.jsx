@@ -11,8 +11,8 @@ const connect = () => {
       <ConnectHero dataImg="bg-connect bg-Pos2 bg-no-repeat bg-mediumsc wide:bg-ultrasc" />
       <Kids />
       <Youth/>
-      <LifeGroup/>
-      <Ministry/>
+      <LifeGroup id="programs"/>
+      <Ministry id="ministry"/>
     </main>
   );
 };

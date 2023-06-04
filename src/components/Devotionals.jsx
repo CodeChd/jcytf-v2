@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FaEnvelope, FaFacebook } from "react-icons/fa";
 
 
@@ -6,7 +5,7 @@ import { FaEnvelope, FaFacebook } from "react-icons/fa";
 const Devotionals = () => {
   return (
     <section className="w-full py-14 min-h-[80vh] grid place-content-center font-gilLight font-bold ">
-      <div className="max-w-5xl border-l-2 border-r-2 border-dotted border-gray-400 px-8">
+      <div className="max-w-5xl  px-8">
         <div className="w-full flex flex-col gap-12 sml:gap-8 text-2xl ">
           <h2 className="text-4xl">Walking in the Garden</h2>
 

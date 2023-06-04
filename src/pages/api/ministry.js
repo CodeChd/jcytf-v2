@@ -38,7 +38,7 @@ export default async function handler(req, res) {
       await transporter.sendMail({
         ...mailOptions,
         ...genEmailTemplate(data),
-        subject: "LIFE GROUP",
+        subject: "MINISTRIES",
       });
 
       res.status(200).json({ success: true });

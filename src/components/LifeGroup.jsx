@@ -3,9 +3,9 @@ import { FaArrowRight } from "react-icons/fa";
 
 
 
-const LifeGroup = () => {
+const LifeGroup = ({id}) => {
   return (
-    <section className="w-full min-h-[70vh] py-20">
+    <section id={id} className="w-full min-h-[90vh] py-20">
             <div id="outer" className="flex justify-center">
                 <div id="inner">
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import { SendFormGroup } from "../lib/sendformgroup";
+import { SendFormMinistry } from "../lib/sendformministry";
 import { toast } from "react-hot-toast";
 
 const initValues = {
@@ -11,7 +11,7 @@ const initValues = {
 };
 const initState = { values: initValues };
 
-const MailPrograms = () => {
+const MailMinistry = () => {
   const [state, setState] = useState(initState)
 
   const {values} = state
@@ -46,7 +46,7 @@ const MailPrograms = () => {
     }
 
     try {
-      await SendFormGroup(values)
+      await SendFormMinistry(values)
       toast.success("Email Sent!")
       setState(initState)
     } catch (error) {
@@ -63,20 +63,18 @@ const MailPrograms = () => {
     <main className="min-h-screen py-8 flex items-center">
       <div className="h-full max-w-6xl mx-auto">
         <div>
-          <h1 className="text-5xl text-center font-gil">
-            Let us know what Group you would like to find out more about.
+          <h1 className="text-7xl text-center font-gil">
+          Got Questions? Want More Information?
           </h1>
-          <p className="text-2xl my-4 font-gilLight">
-            If you have questions about a specific Group Life group, or if you
-            would like more information, please fill out this form and we will
-            be in touch with you soon.
+          <p className="text-2xl text-center my-4 font-gilLight">
+          Fill out the form below and one of our staff will get in contact with you as soon as we can.
           </p>
         </div>
 
         <div className="w-full flex mt-8 gap-8">
           <div className="w-full">
             <Image
-              src="/images/collegeminimage.jpg"
+              src="/images/cross.jpg"
               width={700}
               height={400}
               className="rounded-md"
@@ -114,7 +112,7 @@ const MailPrograms = () => {
               value={values.phone}
               onChange={handleChange}
             />
-            <label htmlFor="message">Questions?</label>
+            <label htmlFor="message">How Can we help you?</label>
 
             <textarea
               type="text"
@@ -141,4 +139,4 @@ const MailPrograms = () => {
   );
 };
 
-export default MailPrograms;
+export default MailMinistry;

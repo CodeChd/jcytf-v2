@@ -20,7 +20,7 @@ const ChurchPartners = () => {
               <Image src="/images/samaritana.jpg" width={500} height={300} />
             </div>
 
-            <div>
+            <div className="flex flex-col justify-center">
               <h3 className="text-2xl mb-2">Samaritana</h3>
               <p className="text-xl">
                 Samaritana is a non-profit,
@@ -32,7 +32,7 @@ const ChurchPartners = () => {
           </div>
 
           <div className="bg-gray-100 p-4 rounded-md flex gap-8">
-            <div>
+            <div className="flex flex-col justify-center">
               <h3 className="text-2xl mb-2">Bawat Isa Mahalaga - B1M</h3>
               <p className="text-xl">
                 A movement of citizens and groups of citizens, whose mission is
@@ -50,11 +50,13 @@ const ChurchPartners = () => {
               <Image src="/images/pem.jpg" width={400} height={300} />
             </div>
 
-            <div>
+            <div className="flex flex-col justify-center">
               <h3 className="text-2xl mb-2">Payatas Evangical Movement</h3>
               <p className="text-xl">
                 Association of churches in Payatas to reach out to the less
                 fortunate, whether in spiritual or financial need
+
+                
               </p>
             </div>
           </div>
@@ -73,7 +75,7 @@ const ChurchPartners = () => {
                 <p className="text-xl mt-2"><span className="text-2xl font-gil">Community</span>  - is at the heart of everything we do at our church. We believe that relationships are key to living a fulfilling life and growing in our faith. That's why we're committed to creating a welcoming and inclusive environment where people from all walks of life can come together, share their stories, and support one another.</p>
             </div>
 
-            <Link href="/" className="bg-amber-600 p-3 px-8 text-white text-2xl font-gil rounded-full ">Get Involved</Link>
+            <Link href="/becomeapartner" className="bg-amber-600 p-3 px-8 text-white text-2xl font-gil rounded-full ">Get Involved</Link>
 
           </div>
 
@@ -89,7 +91,7 @@ const ChurchPartners = () => {
             <div className="uppercase bg-slate-100 flex flex-col rounded p-4 mt-8">
                 <h3 className="text-center text-3xl font-gilLight font-bold">FIND OUT MORE ABOUT PARTNERS IN THE CHURCH</h3>
                 <div className="flex justify-center mt-8 -translate-x-[2rem] gap-8">
-                    <Link href="/" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4">Become A Partner</Link>
+                    <Link href="/becomeapartner" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4">Become A Partner</Link>
                     <Link href="/" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4">Give Now</Link>
                 </div>
             </div>

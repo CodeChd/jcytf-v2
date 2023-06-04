@@ -39,16 +39,18 @@ const Visit = ({ id }) => {
     <section id={id} className="bg-slate-50 pt-8">
       <div className="w-full h-full grid place-content-center min-h-[60vh]">
         <div className="flex flex-col items-center ">
-          <h3 className="text-xl font-gilLight font-bold text-amber-800">NEW HERE?</h3>
+          <h3 className="text-xl font-gilLight font-bold text-amber-800">
+            NEW HERE?
+          </h3>
           <h2 className="text-5xl uppercase font-gil font-bold mb-4 ">
             Coming to visit?
           </h2>
           <p className="max-w-4xl mx-auto font-gilLight font-bold text-xl">
             We know visiting a church for the first time can be intimidating,
-            and we want to make your visit at First United Methodist a great
-            one! When you come in. Further inquiries? you can just click the
-            message icon at the right bottom corner of your screen to message
-            us.
+            and we want to make your visit at Jesus Christ Yesterday Today And
+            Forever Church a great one! When you come in. Further inquiries? you
+            can just click the message icon at the right bottom corner of your
+            screen to message us.
           </p>
         </div>
 
@@ -90,22 +92,18 @@ const Visit = ({ id }) => {
           </h2>
 
           <div className="grid grid-cols-2 justify-center gap-8">
-
             <div className=" col-span-2 uppercase font-gilLight font-extrabold text-xl text-white">
-
               <div className="flex flex-col items-center gap-2 mt-4">
                 <h3 className="mb-2 text-2xl">Sunday Service</h3>
                 <p>KID'S MINISTRY | 8:00AM - 9:00AM</p>
                 <p>SUNDAY SCHOOL | 9:30AM - 10:00AM</p>
                 <p>DIVINE SERVICE | 10:30AM - 12:30NN</p>
                 <p>YOUTH SERVICE | 3:00PM - 5:00PM</p>
-              <p className="text-2xl mt-2 flex flex-col items-center">WEDNESDAY PRAYER MEETING
-              
-              <span className="text-xl mt-2">7:00PM - 9:00PM</span>
-              </p>
+                <p className="text-2xl mt-2 flex flex-col items-center">
+                  WEDNESDAY PRAYER MEETING
+                  <span className="text-xl mt-2">7:00PM - 9:00PM</span>
+                </p>
               </div>
-
-
             </div>
 
             <p className=" text-2xl flex flex-col items-center text-white gap-2">
@@ -122,7 +120,6 @@ const Visit = ({ id }) => {
                 (+63) 997 574 4318 jcytfchurch92@gmail.com
               </span>
             </p>
-
           </div>
         </div>
       </section>

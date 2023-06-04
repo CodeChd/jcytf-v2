@@ -78,6 +78,7 @@ const MailMinistry = () => {
               width={700}
               height={400}
               className="rounded-md"
+              priority
             />
           </div>
           

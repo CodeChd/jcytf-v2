@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const About = ({ id }) => {
   return (
@@ -11,20 +12,20 @@ const About = ({ id }) => {
         <div className="w-full mt-12 flex gap-12 justify-center">
           <article className="inline-block flex-1 max-w-2xl">
             {/* <h3 className="uppercase font-gilLight text-lg font-extrabold text-gray-700">WELCOME</h3> */}
-            <p className="text-[1.655rem] font-bold font-gilLight not-italic mt-4">
+            <p className="text-[1.655rem] font-bold font-gilLight not-italic my-4">
               We are a family of men and women who have encountered God and
               committed our lives to the lord, focused on making an impact
               through the work of the holy spirit in transforming lives,
               families, communities and nations, for the glory of God.
             </p>
 
-            <button
-              role="button"
-              className="px-8 p-2 bg-amber-600 rounded text-white font-extrabold
+            <Link
+              href="/about"
+              className="px-8 p-3 bg-amber-600 rounded text-white font-extrabold
           mt-4 text-lg uppercase font-gilLight"
             >
               Read more
-            </button>
+            </Link>
           </article>
 
           <div className="inline-block ">

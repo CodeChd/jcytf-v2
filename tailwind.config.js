@@ -23,7 +23,7 @@ module.exports = {
           "connect": "url('/images/connect.jpg')",
           "ministry": "url('/images/ministries.jpeg')",
           "devotion": "url('/images/devotion.jpeg')",
-          // "psalm": "url('/images/psalm.png')",
+          "partners": "url('/images/partners.jpg')",
 
       }
     },

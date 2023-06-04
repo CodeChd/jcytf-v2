@@ -1,5 +1,5 @@
+import SmoothScroll from "@/hooks/smoothScroll"
 import Image from "next/image"
-import Link from "next/link"
 
 const Youth = () => {
   return (
@@ -28,8 +28,12 @@ const Youth = () => {
             The student ministry at our church exists to connect teens to Christ. We create safe environments that allow students to know, experience, and serve Jesus in community.
             </p>
 
-             <Link href="/" className="uppercase mt-5 text-lg transition-transform hover:scale-110 self-start rounded-full text-white bg-amber-600 p-2 px-4">Learn More </Link>
-
+             <SmoothScroll
+              id="ministry"
+              title="Learn More"
+              className="font-gilLight uppercase mt-5 text-lg transition-transform hover:scale-110 self-start rounded-full text-white bg-amber-600 p-2 px-4"
+              offset={-90}
+            />
           </div>
 
          

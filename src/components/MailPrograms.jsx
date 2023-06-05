@@ -79,13 +79,13 @@ const MailPrograms = () => {
               src="/images/collegeminimage.jpg"
               width={700}
               height={400}
-              className="rounded-md"
+              className="rounded-md h-full"
               priority
             />
           </div>
           
           <form onSubmit={handleSubmit} className="w-full  bg-slate-200 rounded-md flex flex-col p-4 outline-none">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name" className="my-2">Name</label>
             <input
               type="text"
               placeholder="Your Name"
@@ -95,7 +95,7 @@ const MailPrograms = () => {
               value={values.name}
               onChange={handleChange}
             />
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" className="my-2">Email</label>
             <input
               type="email"
               placeholder="example@gmail.com"
@@ -105,7 +105,7 @@ const MailPrograms = () => {
               value={values.email}
               onChange={handleChange}
             />
-            <label htmlFor="phone">Phone</label>
+            <label htmlFor="phone" className="my-2">Phone</label>
             <input
               type="text"
               placeholder="Phone Number"
@@ -115,7 +115,7 @@ const MailPrograms = () => {
               value={values.phone}
               onChange={handleChange}
             />
-            <label htmlFor="message">Questions?</label>
+            <label htmlFor="message" className="my-2">Questions?</label>
 
             <textarea
               type="text"

@@ -71,20 +71,20 @@ const PartnersContact = () => {
           </p>
         </div>
 
-        <div className="w-full flex mt-8 max-w-5xl gap-8 mx-auto">
+        <div className="w-full flex mt-8 max-w-5xl gap-10 mx-auto">
           <div className=" flex flex-col items-center gap-2">
             <h2 className="text-4xl font-gil text-gray-600">Way to Give:</h2>
             <Image
               src="/images/gcash.jpg"
               width={400}
               height={400}
-              className="object-fill rounded-md"
+              className="hover:scale-125 rounded-md"
               priority
             />
           </div>
           
           <form onSubmit={handleSubmit} className="w-full h-[33rem] bg-slate-200 rounded-md flex flex-col p-4 justify-around  outline-none text-xl">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name" className="my-2">Name</label>
             <input
               type="text"
               placeholder="Your Name"
@@ -94,7 +94,7 @@ const PartnersContact = () => {
               value={values.name}
               onChange={handleChange}
             />
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" className="my-2">Email</label>
             <input
               type="email"
               placeholder="example@gmail.com"
@@ -104,7 +104,7 @@ const PartnersContact = () => {
               value={values.email}
               onChange={handleChange}
             />
-            <label htmlFor="phone">Phone</label>
+            <label htmlFor="phone" className="my-2">Phone</label>
             <input
               type="text"
               placeholder="Phone Number"
@@ -114,7 +114,7 @@ const PartnersContact = () => {
               value={values.phone}
               onChange={handleChange}
             />
-            <label htmlFor="message">Questions?</label>
+            <label htmlFor="message" className="my-2">Questions?</label>
 
             <textarea
               type="text"

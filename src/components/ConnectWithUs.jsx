@@ -21,7 +21,7 @@ const Connect = ({id}) => {
           </div>
           <div className="inline-block p-8 col-span-1 bg-white">
             <p className="text-lg font-gilLight font-extrabold uppercase">Kids</p>
-            <p className="font-medium text-xl mt-2 mb-4">
+            <p className="font-medium text-xl sml:text-[0.980rem] mt-2 mb-4">
               A fun and safe first step for kids to grow in their faith.
             </p>
 
@@ -38,7 +38,7 @@ const Connect = ({id}) => {
           </div>
           <div className="inline-block p-8 col-span-1 bg-yellow-300">
             <p className="text-lg font-gilLight font-extrabold uppercase">Youths</p>
-            <p className="font-medium text-xl mt-2 mb-4">
+            <p className="font-medium text-xl sml:text-[0.980rem] mt-2 mb-4">
               Impacting students in their relationship with Jesus.
             </p>
             <Link href="/">LEARN MORE ||</Link>
@@ -46,7 +46,7 @@ const Connect = ({id}) => {
           </div>
           <div className="inline-block p-8 col-span-1 bg-green-300">
             <p className="text-lg font-gilLight font-extrabold uppercase">Group Life</p>
-            <p className="font-medium text-xl mt-2 mb-4">
+            <p className="font-medium text-xl sml:text-[0.980rem] mt-2 mb-4">
               Adults connecting and growing together. Find your group here.
             </p>
             <Link href="/">LEARN MORE ||</Link>
@@ -63,7 +63,7 @@ const Connect = ({id}) => {
           </div>
           <div className="inline-block p-8 col-span-1 bg-blue-300">
             <p className="text-lg font-gilLight font-extrabold uppercase">Join Us</p>
-            <p className="font-medium text-xl mt-2 mb-4">
+            <p className="font-medium text-xl sml:text-[0.980rem] mt-2 mb-4">
               Serving others, locally and internationally.
             </p>
             <Link href="/">LEARN MORE ||</Link>

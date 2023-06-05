@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const ChurchPartners = () => {
+const ChurchPartners = ({id}) => {
   return (
-    <main className="">
+    <main>
       <div>
-        <div className="bg-[#d97706] text-white flex flex-col items-center py-8 gap-4">
-          <h2 className="text-7xl sml:text-6xl font-gil">
+        <div className="bg-[#d97706] text-white flex flex-col items-center  py-8 lgDesktop:py-14  gap-4">
+          <h2 className="text-7xl sml:text-6xl lgDesktop:text-7xl font-gil">
             PARTNERS IN THE CHURCH
           </h2>
           <p className="text-2xl">
@@ -79,7 +79,7 @@ const ChurchPartners = () => {
 
           </div>
 
-        <section id="BecomePartner">
+        <section id={id}>
             <div className="flex flex-col items-center gap-4">
 
             <hr className="h-[3px] bg-gray-500 w-[10rem]"/>
@@ -92,7 +92,7 @@ const ChurchPartners = () => {
                 <h3 className="text-center text-3xl font-gilLight font-bold">FIND OUT MORE ABOUT PARTNERS IN THE CHURCH</h3>
                 <div className="flex justify-center mt-8 -translate-x-[2rem] gap-8">
                     <Link href="/becomeapartner" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4">Become A Partner</Link>
-                    <Link href="/" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4">Give Now</Link>
+                    <Link href="/give" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4">Give Now</Link>
                 </div>
             </div>
 

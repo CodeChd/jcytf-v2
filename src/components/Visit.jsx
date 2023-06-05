@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaPlus, FaMinus, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import VisitMail from "./VisitMail";
 
 const FaqItems = ({ q, desc, className = "" }) => {
   const [isClick, setIsClick] = useState(false);
@@ -36,7 +37,7 @@ const FaqItems = ({ q, desc, className = "" }) => {
 
 const Visit = ({ id }) => {
   return (
-    <section id={id} className="bg-slate-50 pt-8">
+    <section id={id} className="bg-slate-50 pt-12">
       <div className="w-full h-full grid place-content-center min-h-[60vh]">
         <div className="flex flex-col items-center ">
           <h3 className="text-xl font-gilLight font-bold text-amber-800">
@@ -45,16 +46,19 @@ const Visit = ({ id }) => {
           <h2 className="text-5xl uppercase font-gil font-bold mb-4 ">
             Coming to visit?
           </h2>
-          <p className="max-w-4xl mx-auto font-gilLight font-bold text-xl">
+          <p className="max-w-5xl mx-auto font-gilLight font-extrabold text-2xl leading-10">
             We know visiting a church for the first time can be intimidating,
             and we want to make your visit at Jesus Christ Yesterday Today And
-            Forever Church a great one! When you come in. Further inquiries? you
+            Forever Church a great one! When you come in. Further inquiries about the church? you
             can just click the message icon at the right bottom corner of your
-            screen to message us.
+            screen to message us or fill out the form below and one of our staff will get in contact with you as soon as we can.
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto mt-4">
+        <div className="max-w-5xl mx-auto my-8 flex gap-32">
+          <div>
+
+
           <FaqItems
             q="WHAT SHOULD I WEAR?"
             desc="To find directions to our church, you can check the address at the
@@ -65,10 +69,10 @@ const Visit = ({ id }) => {
           <FaqItems
             q="WHAT IS A TYPICAL SERVICE LIKE?"
             desc="To find directions to our church, you can check the address at the
-              bottom of our page or visit our About page
-              where you will find a map showing our location."
+            bottom of our page or visit our About page
+            where you will find a map showing our location."
             className="justify-center ml-4"
-          />
+            />
           <FaqItems
             q="WHERE DO I GO WHEN I ARRIVE?"
             desc="To find directions to our church, you can check the address at the
@@ -81,11 +85,21 @@ const Visit = ({ id }) => {
             desc="To find directions to our church, you can check the address at the
               bottom of our page or visit our About page
               where you will find a map showing our location."
-            className="justify-center mr-7 "
-          />
+              className="justify-center mr-7 "
+              />
+          <FaqItems
+            q="HOW CAN I GIVE?"
+            desc="To find directions to our church, you can check the address at the
+              bottom of our page or visit our About page
+              where you will find a map showing our location."
+              className="justify-center mr-[8.5rem] "
+              />
+              </div>
+
+              <VisitMail/>
         </div>
       </div>
-      <section className="w-full bg-sched bg-Pos bg-no-repeat bg-cover bg-mediumsc wide:bg-ultrasc min-h-[50vh] py-8">
+      <section className="w-full bg-sched bg-mediumPos bg-no-repeat bg-cover lgDesktop:bg-widesc wide:bg-ultrasc min-h-[50vh] py-8">
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center ">
           <h2 className="text-3xl uppercase font-gilLight font-extrabold text-white border-b-2 border-solid border-white">
             Schedule of Services

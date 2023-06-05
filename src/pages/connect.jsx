@@ -8,7 +8,7 @@ import Youth from "@/components/Youth";
 const connect = () => {
   return (
     <main>
-      <ConnectHero dataImg="bg-connect bg-Pos2 bg-no-repeat bg-mediumsc wide:bg-ultrasc" />
+      <ConnectHero dataImg="bg-connect bg-no-repeat sml:bg-smallsc  lgDesktop:bg-widesc wide:bg-ultrasc" />
       <Kids />
       <Youth/>
       <LifeGroup id="programs"/>

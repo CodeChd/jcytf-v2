@@ -42,8 +42,8 @@ const Faq = ({ id }) => {
         </div>
       </div>
 
-      <div className="mt-14 flex flex-col items-center w-[58%] wide:w-[38%] mx-auto ">
-        <h3 className="uppercase text-3xl font-gil border-solid border-b-4 border-orange-600">
+      <div className="mt-14 flex flex-col items-center w-full wide:w-[38%] mx-auto ">
+        <h3 className="uppercase text-3xl font-gil border-solid border-b-4 border-orange-600 mb-8">
           Questions
         </h3>
 

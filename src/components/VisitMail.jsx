@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { useState } from "react";
-import { SendFormMinistry } from "../lib/sendformministry";
+import { SendFormVisit } from "../lib/sendformvisit";
 import { toast } from "react-hot-toast";
 
 const initValues = {
@@ -11,7 +10,7 @@ const initValues = {
 };
 const initState = { values: initValues };
 
-const MailMinistry = () => {
+const VisitMail = () => {
   const [state, setState] = useState(initState)
 
   const {values} = state
@@ -46,7 +45,7 @@ const MailMinistry = () => {
     }
 
     try {
-      await SendFormMinistry(values)
+      await SendFormVisit(values)
       toast.success("Email Sent!")
       setState(initState)
     } catch (error) {
@@ -60,30 +59,13 @@ const MailMinistry = () => {
 // console.log(values)
 
   return (
-    <main className="min-h-screen py-8 flex items-center">
-      <div className="h-full max-w-6xl mx-auto">
-        <div>
-          <h1 className="text-7xl text-center font-gil">
-          Got Questions? Want More Information?
-          </h1>
-          <p className="text-2xl text-center my-4 font-gilLight">
-          Fill out the form below and one of our staff will get in contact with you as soon as we can.
-          </p>
-        </div>
+    <main className=" flex items-center">
+      <div className="max-w-6xl mx-auto">
 
-        <div className="w-full flex mt-8 gap-8">
-          <div className="w-full">
-            <Image
-              src="/images/cross.jpg"
-              width={700}
-              height={400}
-              className="h-full rounded-md"
-              priority
-            />
-          </div>
-          
-          <form onSubmit={handleSubmit} className="w-full  bg-slate-200 rounded-md flex flex-col p-4 outline-none">
-            <label htmlFor="name" className="my-3">Name</label>
+        <div className="">
+        
+          <form onSubmit={handleSubmit} className="w-[30rem] h-[30rem] bg-slate-200 rounded-md flex flex-col p-4 justify-around  outline-none text-xl">
+            <label htmlFor="name" className='mb-2'>Name</label>
             <input
               type="text"
               placeholder="Your Name"
@@ -93,7 +75,7 @@ const MailMinistry = () => {
               value={values.name}
               onChange={handleChange}
             />
-            <label htmlFor="email" className="my-3">Email</label>
+            <label htmlFor="email" className='mb-2'>Email</label>
             <input
               type="email"
               placeholder="example@gmail.com"
@@ -103,7 +85,7 @@ const MailMinistry = () => {
               value={values.email}
               onChange={handleChange}
             />
-            <label htmlFor="phone" className="my-3">Phone</label>
+            <label htmlFor="phone" className='mb-2'>Phone</label>
             <input
               type="text"
               placeholder="Phone Number"
@@ -113,11 +95,11 @@ const MailMinistry = () => {
               value={values.phone}
               onChange={handleChange}
             />
-            <label htmlFor="message" className="my-3">How Can we help you?</label>
+            <label htmlFor="message" className='mb-2'>Questions?</label>
 
             <textarea
               type="text"
-              rows={4}
+              rows={3}
               placeholder="Message"
               name="message"
               id="message"
@@ -140,4 +122,4 @@ const MailMinistry = () => {
   );
 };
 
-export default MailMinistry;
+export default VisitMail;

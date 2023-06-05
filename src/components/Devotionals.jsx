@@ -24,14 +24,14 @@ const Devotionals = () => {
         </div>
 
         <div className="flex gap-12 mt-8 text-2xl leading-10">
-          <div className="self-center">
+          {/* <div className="self-center">
 
             <h3 className="font-gil">SHARE:</h3>
             <ul className="flex gap-4 mt-2">
               <li><a className="cursor-pointer" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://jcytfchurch.vercel.app/devotional"><FaFacebook/></a></li>
               <li><a className="cursor-pointer" href="mailto:"><FaEnvelope/></a></li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="flex flex-col items-center gap-8">
             <p>

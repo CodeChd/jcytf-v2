@@ -17,6 +17,7 @@ module.exports = {
 
       backgroundImage: {
           "search" : "url('/search.svg')",
+          "home" : "url('/images/home.jpg')",
           "about" : "url('/images/band.jpg')",
           "who" : "url('/images/who.jpg')",
           "sched": "url('/images/wheat.jpg')",
@@ -24,43 +25,44 @@ module.exports = {
           "ministry": "url('/images/ministries.jpeg')",
           "devotion": "url('/images/devotion.jpeg')",
           "partners": "url('/images/partners.jpg')",
+          "give": "url('/images/reachout.jpg')",
 
       }
     },
     backgroundSize: {
-      '16': '1.5rem',
-      "widesc": "135rem",
+      'iconsize': '1.8rem',
       "ultrasc": "150rem",
-      "mediumsc": "100rem"
+      "widesc": "120rem",
+      "mediumsc": "100rem",
+      "smallsc": "93rem",
+      "ultraschome": "143rem",
     },
     backgroundPosition: {
-      'searchBt': '1rem',
+      'searchBt': '10px',
       "aboutPos": "center top -100px",
-      "Pos": "center top -160px",
-      "Pos2": "center top 10px",
+      "widePos": "center top -38rem",
+      "mediumPos": "center top -160px",
+      "home": "center top -22rem",
       "identityPos": "center bottom -120px"
 
     },
     screens: {
-      wide: {min: "2000px"},
-      sml: {max: "2000px"},
-      xxl: { max: "1535px" },
-      // => @media (max-width: 1535px) { ... }
+
+      wide: {max: "3000px"},
+
+      lgDesktop: {max: "1920px"},
+
+      sml: {max: "1500px"},
   
-      xl: { max: "1279px" },
-      // => @media (max-width: 1279px) { ... }
+      xl: { max: "1200px" },
   
       lg: { max: "1023px" },
-      // => @media (max-width: 1023px) { ... }
   
       md: { max: "767px" },
-      // => @media (max-width: 767px) { ... }
   
       sm: { max: "639px" },
-      // => @media (max-width: 639px) { ... }
   
       xs: { max: "479px" },
-      // => @media (max-width: 479px) { ... }
   },
   },
   plugins: [],

@@ -1,9 +1,9 @@
-import SmoothScroll from "@/hooks/smoothScroll"
 import Image from "next/image"
+import Link from "next/link"
 
 const Youth = () => {
   return (
-    <section className="py-14 bg-slate-50 text-black ">
+    <section className="py-12 bg-slate-50 text-black ">
       <div className="max-w-7xl sml:max-w-6xl mx-auto flex items-cente min-h-[50vh]">
 
         <div className="flex gap-[5rem] items-center font-gilLight font-bold text-xl">
@@ -24,16 +24,17 @@ const Youth = () => {
         </div>
         
 
-            <p className="max-w-[50ch]">
+            <p className="max-w-[50ch] text-2xl">
             The student ministry at our church exists to connect teens to Christ. We create safe environments that allow students to know, experience, and serve Jesus in community.
             </p>
 
-             <SmoothScroll
-              id="ministry"
-              title="Learn More"
-              className="font-gilLight uppercase mt-5 text-lg transition-transform hover:scale-110 self-start rounded-full text-white bg-amber-600 p-2 px-4"
-              offset={-90}
-            />
+             <Link
+              href="/ministry"
+              className="font-gilLight uppercase mt-5 text-lg transition-transform hover:scale-110 self-start rounded-full text-white bg-amber-600 p-1 px-4"
+            >
+             Learn More
+
+            </Link>
           </div>
 
          

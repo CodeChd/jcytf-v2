@@ -9,7 +9,8 @@ const EventItem = ({events}) => {
       <div id="inner" className="flex w-full border-2 border-solid border-slate-400 bg-slate-50 rounded
        ">
         <div className="flex-1 w-full">
-          <Image src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-josh-sorenson-976866_knj2dr.jpg" width={300} height={300} className='w-full h-full rounded'/>
+          <Image src={`https://jcytfchurch.online/images/${events.featuredimage}`} alt={events.featuredimage} width={300} height={300} className='w-full h-full rounded'/>
+          {/* <Image src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-josh-sorenson-976866_knj2dr.jpg" width={300} height={300} className='w-full h-full rounded'/> */}
         </div>
 
         <div className="flex-[2] flex flex-col justify-center p-4">

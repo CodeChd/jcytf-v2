@@ -2,7 +2,7 @@ import Link from "next/link";
 import EventHomeItem from "./EventIHomeitem";
 
 const Ftevents = ({ id, data }) => {
-  const events = data;
+  const events = data.slice(0,3);
 
   console.log(events);
 
@@ -21,22 +21,14 @@ const Ftevents = ({ id, data }) => {
         </div>
 
         <div className="flex py-14 gap-10 items-center justify-center overflow-hidden">
-          <EventHomeItem
-            events={events}
-            index={0}
-            src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-wolfgang-2747449_nfsfqq.jpg"
-          />
-          <EventHomeItem
-            events={events}
-            index={1}
-            src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-josh-sorenson-976866_knj2dr.jpg"
-          />
-          <EventHomeItem
-            events={events}
-            index={2}
-            src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685261903/pexels-teddy-yang-2263436_nxxwsy.jpg"
-          />
-
+          {data.length === 0 ? (
+            <h1 className="text-4xl font-gilLight font-bold italic">No events to show&nbsp;!</h1>
+          ) : (
+            events.map((evt)=> (
+              <EventHomeItem key={evt.id} events={evt}/>
+            ))
+            
+          )}
         </div>
         <Link
           href="/events"

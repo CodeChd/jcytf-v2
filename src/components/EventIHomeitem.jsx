@@ -2,28 +2,28 @@ import Image from "next/image";
 import { FaCalendarAlt, FaClock } from "react-icons/fa";
 
 
-const EventHomeItem = ({events, index, src}) => {
+const EventHomeItem = ({events}) => {
   return (
     <div>
       <Image
-        src={src ? src : "/favicon.svg"}
+        src={events.length === 0 ? "/favicon.svg" : `https://jcytfchurch.online/images/${events.featuredimage}`}
         width={425}
         height={400}
         className="rounded"
       />
 
       <h2 className="text-4xl flex flex-wrap font-gilLight font-extrabold mt-2">
-        {events[index].EventName}
+        {events.EventName}
       </h2>
 
       <div className="flex gap-4 mt-2 items-center">
         <p className="text-lg font-gilLight flex items-center gap-2">
           <FaCalendarAlt className="inline-block " />
-          <span className="inline-block">{events[index].Date}</span>
+          <span className="inline-block">{events.Date}</span>
         </p>
         <p className="text-lg font-gilLight flex items-center gap-2">
           <FaClock className="inline-block " />
-          <span className="inline-block">{events[index].Time}</span>
+          <span className="inline-block">{events.Time}</span>
         </p>
       </div>
     </div>

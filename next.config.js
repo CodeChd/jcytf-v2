@@ -3,10 +3,10 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
+        hostname: '*',
         // You can add these as well
         // port: '',
+        protocol: 'https',
         // pathname: 'arifscloud/image/upload/**',
       },
     ],

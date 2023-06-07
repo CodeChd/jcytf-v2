@@ -11,21 +11,18 @@ const Events = ({ eventsData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-  
-      
-      setSubmit(true);
-      const newFilterData = eventsData.filter((event) =>
+    setSubmit(true);
+    const newFilterData = eventsData.filter((event) =>
       event.EventName.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-      setFilterData(newFilterData);
-    
+    );
+    setFilterData(newFilterData);
   };
 
   const handleChange = (e) => {
-    if(e.target.value.length === 24){
-     toast.error("Input exceed 24 characters!")
-     setSearchTerm("")
-      return
+    if (e.target.value.length === 24) {
+      toast.error("Input exceed 24 characters!");
+      setSearchTerm("");
+      return;
     }
     setSearchTerm(e.target.value);
   };
@@ -47,13 +44,19 @@ const Events = ({ eventsData }) => {
           JUNE 2023
         </h2>
 
-        {submit && searchTerm !== ""
-          ? filterData.map((events) => (
+        {submit && searchTerm !== "" ? (
+          filterData.length > 0 ? (
+            filterData.map((events) => (
               <EventItem key={events.id} events={events} />
             ))
-          : eventsData.map((events) => (
-              <EventItem key={events.id} events={events} />
-            ))}
+          ) : (
+           submit === true && <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">There's No Such Event...</h1>
+          )
+        ) : (
+          eventsData
+            .slice(0, 3)
+            .map((events) => <EventItem key={events.id} events={events} />)
+        )}
       </section>
     </>
   );

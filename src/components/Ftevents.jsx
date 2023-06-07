@@ -2,9 +2,6 @@ import Link from "next/link";
 import EventHomeItem from "./EventIHomeitem";
 
 const Ftevents = ({ id, data }) => {
-  const events = data.slice(0,3);
-
-  console.log(events);
 
   return (
     <section id={id} className="w-full my-14 py-14 ">
@@ -24,8 +21,8 @@ const Ftevents = ({ id, data }) => {
           {data.length === 0 ? (
             <h1 className="text-4xl font-gilLight font-bold italic">No events to show&nbsp;!</h1>
           ) : (
-            events.map((evt)=> (
-              <EventHomeItem key={evt.id} events={evt}/>
+            data.db.slice(0,3).map((evt)=> (
+              <EventHomeItem key={evt.id} data={data} events={evt}/>
             ))
             
           )}

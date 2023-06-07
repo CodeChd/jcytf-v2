@@ -3,6 +3,8 @@ import { FaCalendarAlt, FaClock } from "react-icons/fa";
 
 
 const EventHomeItem = ({events}) => {
+
+
   return (
     <div>
       <Image

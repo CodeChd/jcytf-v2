@@ -1,8 +1,11 @@
+import { DateFormatter } from "@/hooks/DateFormatter";
 import Image from "next/image";
 import { FaCalendarAlt, FaClock } from "react-icons/fa";
 
 
 const EventHomeItem = ({events}) => {
+
+  const EventDate = DateFormatter(events)
 
 
   return (
@@ -24,7 +27,7 @@ const EventHomeItem = ({events}) => {
       <div className="flex gap-4 mt-2 items-center">
         <p className="text-lg font-gilLight flex items-center gap-2">
           <FaCalendarAlt className="inline-block " />
-          <span className="inline-block">{events.Date}</span>
+          <span className="inline-block text-lg font-gilLight font-extrabold">{EventDate}</span>
         </p>
         <p className="text-lg font-gilLight flex items-center gap-2">
           <FaClock className="inline-block " />

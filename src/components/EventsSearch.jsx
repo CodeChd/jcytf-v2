@@ -1,5 +1,14 @@
+import { toast } from "react-hot-toast";
 
-const EventsSearch = ({handleChange,handleSubmit,handleSelect, inputVal}) => {
+const EventsSearch = ({
+  handleChange,
+  handleSubmit,
+  handleSelect,
+  inputVal,
+  handleReset,
+}) => {
+
+
 
   return (
     <header className="flex flex-col items-center gap-14 py-6">
@@ -8,17 +17,42 @@ const EventsSearch = ({handleChange,handleSubmit,handleSelect, inputVal}) => {
       </h1>
 
       <div className="w-[60%]">
-        <form onSubmit={handleSubmit} className="uppercase bg-white flex p-2 rounded">
+        <form className="uppercase bg-white flex p-2 rounded">
+
           <input
-            type="search"
+             type="text"
             className="p-4 w-full bg-search bg-no-repeat bg-iconsize bg-searchBt pl-[4rem] outline-none"
             placeholder="Search Events"
             value={inputVal}
             onChange={handleChange}
           />
-          <button className="bg-amber-600 p-2 font-gilLight rounded text-white cursor-pointer font-extrabold w-[10rem]">
-            Find events
-          </button>
+
+
+
+
+          <div className="flex gap-4 items-center">
+            <button
+              onClick={handleSubmit}
+              className="bg-amber-600 p-1 font-gilLight rounded text-white cursor-pointer font-extrabold w-[7rem] h-[3rem]"
+            >
+              Find events
+            </button>
+
+
+
+
+            <button
+              onClick={handleReset}
+              className="bg-amber-600 p-1 font-gilLight rounded text-white cursor-pointer font-extrabold w-[7rem] h-[3rem]"
+            >
+              Reset
+            </button>
+          </div>
+
+
+
+
+
         </form>
 
         <div className="mt-2 ">

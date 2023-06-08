@@ -1,11 +1,11 @@
+import { DateFormatter} from "@/hooks/DateFormatter";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineCalendar, AiOutlineClockCircle } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-const EventItem = ({ events, months }) => {
-  const currentMonthIndex = events.Date.split("T").shift().split("-")[1] - 1;
-  const currentMonthName = months[currentMonthIndex];
+const EventItem = ({ events }) => {
+  const currentDate = DateFormatter(events)
 
   return (
     <div id="outer" className="w-[70%] mx-auto my-8">
@@ -34,8 +34,7 @@ const EventItem = ({ events, months }) => {
 
         <div className=" flex-1  flex flex-col gap-5 py-4 font-gilLight font-bold justify-center items-center border-l-2 border-orange-100 border-solid text-left ">
           <span className=" text-xl font-gil ">
-            <AiOutlineCalendar className="inline-block" /> {currentMonthName}{" "}
-            {events.Date.split("T").shift().split("-")[2]}
+            <AiOutlineCalendar className="inline-block" />&nbsp;{currentDate}
           </span>
           <span className="">
             <AiOutlineClockCircle className="inline-block" /> {events.Time}

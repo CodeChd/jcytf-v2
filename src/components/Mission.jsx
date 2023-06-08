@@ -31,7 +31,7 @@ const Mission = () => {
             </p>
 
             <Link
-              href="/"
+              href="/ministry"
               className=" mt-2 rounded p-2 bg-slate-50 text-gray-800 self-start"
             >
               Join Us

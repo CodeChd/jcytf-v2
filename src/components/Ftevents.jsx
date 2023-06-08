@@ -3,6 +3,9 @@ import EventHomeItem from "./EventIHomeitem";
 
 const Ftevents = ({ id, data }) => {
 
+  const evt = data.db.filter((e) => e.Status === "1");
+
+
   return (
     <section id={id} className="w-full my-14 py-14 ">
       <main className="flex flex-col items-center">
@@ -21,7 +24,7 @@ const Ftevents = ({ id, data }) => {
           {data.length === 0 ? (
             <h1 className="text-4xl font-gilLight font-bold italic">No events to show&nbsp;!</h1>
           ) : (
-            data.db.slice(0,3).map((evt)=> (
+            evt.slice(0,3).map((evt)=> (
               <EventHomeItem key={evt.id} data={data} events={evt}/>
             ))
             

@@ -1,5 +1,5 @@
 
-const EventsSearch = ({handleChange,handleSubmit, inputVal}) => {
+const EventsSearch = ({handleChange,handleSubmit,handleSelect, inputVal}) => {
 
   return (
     <header className="flex flex-col items-center gap-14 py-6">
@@ -22,7 +22,7 @@ const EventsSearch = ({handleChange,handleSubmit, inputVal}) => {
         </form>
 
         <div className="mt-2 ">
-          <select name="EVENTS" className="p-2">
+          <select onChange={handleSelect} name="EVENTS" className="p-2">
             <option value="">Select Month</option>
             <option value="January">January</option>
             <option value="February">February</option>
@@ -31,7 +31,7 @@ const EventsSearch = ({handleChange,handleSubmit, inputVal}) => {
             <option value="May">May</option>
             <option value="June">June</option>
             <option value="July">July</option>
-            <option value="Augost">Augost</option>
+            <option value="August">August</option>
             <option value="September">September</option>
             <option value="October">October</option>
             <option value="November">November</option>

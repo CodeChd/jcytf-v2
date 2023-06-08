@@ -1,6 +1,6 @@
 import Map from "@/Loc/Map"
 
-const DEFAULT_CENTER = [14.709175571906982  , 121.0994340561237]
+const DEFAULT_CENTER = [14.7089628  , 121.099202420]
 
 const Mapa = () => {
   return (

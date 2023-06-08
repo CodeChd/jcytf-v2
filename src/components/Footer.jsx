@@ -13,7 +13,7 @@ const Footer = () => {
               Contact
             </h3>
             <div className="w-[30ch] mb-2 not-italic font-medium">
-              <p> Madjaas Street Group 2, Area B, Quezon City, 1119 Manila</p>
+              <p> Group 2, Area B La Trinidad Street, Quezon City, 1119 Metro Manila</p>
             </div>
             <div className="non-italic font-medium">
               <p>Monday - Sunday at 9:00AM - 5:00PM | Saturday - Closed</p>

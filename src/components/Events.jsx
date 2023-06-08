@@ -3,10 +3,26 @@ import EventItem from "./EventItem";
 import EventsSearch from "./EventsSearch";
 import { useEffect, useState } from "react";
 
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 const Events = ({ eventsData }) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [filterData, setFilterData] = useState(eventsData);
+  const [filterInput, setFilterInput] = useState([]);
   const [submit, setSubmit] = useState(false);
+  const [month, setMonth] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,7 +31,7 @@ const Events = ({ eventsData }) => {
     const newFilterData = eventsData.filter((event) =>
       event.EventName.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    setFilterData(newFilterData);
+    setFilterInput(newFilterData);
   };
 
   const handleChange = (e) => {
@@ -25,12 +41,24 @@ const Events = ({ eventsData }) => {
       return;
     }
     setSearchTerm(e.target.value);
+    setMonth("");
   };
 
-  useEffect(() => {
-    setFilterData(eventsData);
-    // console.log(searchTerm)
-  }, [searchTerm]);
+  const handleSelect = (e) => {
+    const data = e.target.value;
+    setMonth(data);
+    const monthIndex = months.indexOf(data);
+    const filteredByMonth = eventsData.filter((event) => {
+      const eventMonth = event.Date.split("T").shift().split("-")[1] - 1;
+      return eventMonth === monthIndex;
+    });
+    setFilterInput(filteredByMonth);
+  };
+
+  //side effects
+  // useEffect(() => {
+  //   setFilterInput(eventsData);
+  // }, [searchTerm]);
 
   return (
     <>
@@ -38,26 +66,33 @@ const Events = ({ eventsData }) => {
         inputVal={searchTerm}
         handleSubmit={handleSubmit}
         handleChange={handleChange}
+        handleSelect={handleSelect}
       />
       <section className="w-full mt-14 flex flex-col relative">
-        <h2 className="border-b-4 border-solid border-amber-700 self-center text-2xl font-gilLight ">
-          JUNE 2023
+        <h2 className="border-b-4 border-solid border-amber-700 self-center text-3xl font-gilLight font-bold ">
+          {month === "" ? null : month}
         </h2>
 
-        {submit && searchTerm !== "" ? (
-          filterData.length > 0 ? (
-            filterData.map((events) => (
-              <EventItem key={events.id} events={events} />
+        {searchTerm !== "" || month ? 
+          filterInput.length > 0 ? (
+            filterInput.slice(0, 3).map((events) => (
+              <EventItem key={events.id} months={months} events={events} />
             ))
-          ) : (
-           submit === true && <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">There's No Such Event...</h1>
-          )
-        ) : (
+          ) : filterInput.length === 0  &&(
+            <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">
+              No Events to Show...
+            </h1>)
+          
+         : (
+          searchTerm === "" &&
           eventsData
             .slice(0, 3)
-            .map((events) => <EventItem key={events.id} events={events} />)
+            .map((events) => (
+              <EventItem key={events.id} months={months} events={events} />
+            ))
         )}
       </section>
+      
     </>
   );
 };

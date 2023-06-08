@@ -7,12 +7,15 @@ const EventHomeItem = ({events}) => {
 
   return (
     <div>
+      <div className="w-full">
+
       <Image
         src={events.length === 0 ? "/favicon.svg" : `https://jcytfchurch.online/images/${events.featuredimage}`}
-        width={425}
+        width={440}
         height={400}
         className="rounded"
-      />
+        />
+        </div>
 
       <h2 className="text-4xl flex flex-wrap font-gilLight font-extrabold mt-2">
         {events.EventName}

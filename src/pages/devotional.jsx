@@ -9,7 +9,7 @@ const HeroDevotion = ({ title, desc, className }) => {
       <div className="z-20 text-white ">
         <div className="p-32 text-center">
           <h1 className="text-8xl font-gil shadow-lg">{title}</h1>
-          <p className="text-xl shadow-lg pt-2">{desc}</p>
+          <p className="text-xl shadow-lg pt-2 max-w-2xl">{desc}</p>
         </div>
       </div>
         </header>
@@ -22,7 +22,7 @@ const devotional = () => {
     <main>
       <HeroDevotion
         title="Devotionals"
-        desc="Devotional Verse to Uplift Your Soul"
+        desc="Our devotionals, to provide a moment of reflection and inspiration, whether you're looking to start your day with a positive mindset or wind down before bedtime."
         className="bg-devotion bg-aboutPos bg-no-repeat bg-mediumsc wide:bg-ultrasc"
       />
 

@@ -14,6 +14,7 @@ const initState = { values: initValues };
 const MailPrograms = () => {
   const [state, setState] = useState(initState)
 
+
   const {values} = state
 
   const handleChange = ({target}) => {
@@ -46,14 +47,15 @@ const MailPrograms = () => {
     }
 
     try {
-      await SendFormGroup(values)
-      toast.success("Email Sent!")
+    await SendFormGroup(values)
       setState(initState)
     } catch (error) {
+
       setState((prev) => ({
         ...prev,
         error: error.message
     }))
+
     }
   }
 

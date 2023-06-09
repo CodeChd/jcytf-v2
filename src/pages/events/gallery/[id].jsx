@@ -1,86 +1,51 @@
-// import { useState } from 'react';
-// import Lightbox, { ImagesListType } from 'react-spring-lightbox';
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
-// const mosaicImages = [
-//   {
-//     src: "https://i.imgur.com/8oNzu0S.png",
-//     alt: "README.md",
-//     caption: "README.md",
-//     width: 2486,
-//     height: 1469
-//   },
-//   {
-//     src:
-//       "https://timellenberger.com/static/blog-content/dark-mode/win10-dark-mode.jpg",
-//     alt: "Windows 10 Dark Mode Setting",
-//     caption: "Windows 10 Dark Mode Setting",
-//     width: 2848,
-//     height: 2035
-//   },
-//   {
-//     src:
-//       "https://timellenberger.com/static/blog-content/dark-mode/macos-dark-mode.png",
-//     alt: "macOS Mojave Dark Mode Setting",
-//     caption: "macOS Mojave Dark Mode Setting",
-//     width: 1200,
-//     height: 1218
-//   },
-//   {
-//     src:
-//       "https://timellenberger.com/static/blog-content/dark-mode/android-9-dark-mode.jpg",
-//     alt: "Android 9.0 Dark Mode Setting",
-//     caption: "Android 9.0 Dark Mode Setting",
-//     width: 1280,
-//     height: 600
-//   },
-//   {
-//     src: "https://i.imgur.com/8oNzu0S.png",
-//     alt: "README.md",
-//     caption: "README.md",
-//     width: 2486,
-//     height: 1469
-//   },
-//   {
-//     src:
-//       "https://timellenberger.com/static/blog-content/dark-mode/win10-dark-mode.jpg",
-//     alt: "Windows 10 Dark Mode Setting",
-//     caption: "Windows 10 Dark Mode Setting",
-//     width: 2848,
-//     height: 2035
-//   },
-//   {
-//     src:
-//       "https://timellenberger.com/static/blog-content/dark-mode/macos-dark-mode.png",
-//     alt: "macOS Mojave Dark Mode Setting",
-//     caption: "macOS Mojave Dark Mode Setting",
-//     width: 1200,
-//     height: 1218
-//   },
-//   {
-//     src:
-//       "https://timellenberger.com/static/blog-content/dark-mode/android-9-dark-mode.jpg",
-//     alt: "Android 9.0 Dark Mode Setting",
-//     caption: "Android 9.0 Dark Mode Setting",
-//     width: 1280,
-//     height: 600
-//   }
-// ];
+const gallery = ({ data, detailsId }) => {
+  const evtData = data.filter((e) => e.id === detailsId);
 
-// const lightboxImages = mosaicImages.map(({ src, alt, caption }) => ({
-//   src,
-//   alt,
-//   caption
-// }));
+  const pictures = evtData[0].pictures.split(",");
 
-const gallery = () => {
-  // const [isOpen, setOpen] = useState(true);
-  // const [currentImageIndex, setCurrentIndex] = useState(0);
+  let images = pictures.map((e) => {
+    const url = `https://jcytfchurch.online/images/${e}`;
+    const parts = url.split("/");
+      return {
+        original: url,
+        thumbnail: url,
+        isValid: parts,
+      };
+  });
+
+  console.log(images[0].isValid);
 
   return (
-    <>
-      hello
-    </>
-  );
-}
+    <main className="p-14 flex flex-col  gap-8 bg-slate-100 min-h-screen ">
+      <h1 className="text-4xl font-gil font-sm italic self-center border-solid border-b-[3px] pb-4 border-amber-600">
+        <span className="inline-block">{evtData[0].EventName}</span> Gallery
+      </h1>
 
-export default gallery
+      {images[0].isValid[4] === "" || images[0].isValid[4] === undefined ? (
+        <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight pt-20">
+         No Images yet, try adding an Image
+        </h1>
+      ) : (
+        <ImageGallery items={images} />
+      )}
+    </main>
+  );
+};
+export default gallery;
+
+export async function getServerSideProps({ params: { id } }) {
+  //fetch events
+
+  const res = await fetch(`https://jcytfchurch.online/api.php`);
+
+  const detailsId = id;
+
+  const data = await res.json();
+
+  return {
+    props: { data, detailsId },
+  };
+}

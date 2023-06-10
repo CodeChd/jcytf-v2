@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaPlus, FaMinus, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
-import VisitMail from "./VisitMail";
+import VisitMail from "./MailVisit";
 
 const FaqItems = ({ q, desc, className = "" }) => {
   const [isClick, setIsClick] = useState(false);
@@ -46,7 +46,7 @@ const Visit = ({ id }) => {
           <h2 className="text-5xl uppercase font-gil font-bold mb-4 ">
             Coming to visit?
           </h2>
-          <p className="max-w-5xl mx-auto font-gilLight font-extrabold text-2xl leading-10">
+          <p className="max-w-5xl mx-auto font-gilLight font-extrabold text-[1.40rem] leading-10">
             We know visiting a church for the first time can be intimidating,
             and we want to make your visit at Jesus Christ Yesterday Today And
             Forever Church a great one! When you come in. Further inquiries about the church? you

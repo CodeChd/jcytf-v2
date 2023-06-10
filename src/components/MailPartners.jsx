@@ -47,7 +47,6 @@ const PartnersContact = () => {
 
     try {
       await SendFormPartners(values)
-      toast.success("Email Sent!")
       setState(initState)
     } catch (error) {
       setState((prev) => ({

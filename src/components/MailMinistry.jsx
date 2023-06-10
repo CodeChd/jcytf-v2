@@ -47,7 +47,6 @@ const MailMinistry = () => {
 
     try {
       await SendFormMinistry(values)
-      toast.success("Email Sent!")
       setState(initState)
     } catch (error) {
       setState((prev) => ({
@@ -63,7 +62,7 @@ const MailMinistry = () => {
     <main className="min-h-screen py-8 flex items-center">
       <div className="h-full max-w-6xl mx-auto">
         <div>
-          <h1 className="text-7xl text-center font-gil">
+          <h1 className="text-6xl text-center font-gil">
           Got Questions? Want More Information?
           </h1>
           <p className="text-2xl text-center my-4 font-gilLight">

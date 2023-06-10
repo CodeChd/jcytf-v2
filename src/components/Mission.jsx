@@ -19,12 +19,12 @@ const Mission = () => {
           </p>
         </div>
 
-            <p className="max-w-[50ch]">
+            <p className="max-w-[50ch] text-[1.40rem]">
               To connect with God, connect with others, and connect others with
               God
             </p>
 
-            <p className="max-w-[60ch]">
+            <p className="max-w-[60ch] text-[1.40rem]">
               A transformed followers of jesus christ who extend God's love to
               the neighborhood and will effect transformation in the community
               and beyond.
@@ -32,7 +32,7 @@ const Mission = () => {
 
             <Link
               href="/ministry"
-              className=" mt-2 rounded p-2 bg-slate-50 text-gray-800 self-start"
+              className=" mt-2 rounded-full p-2 px-4 bg-slate-50 text-gray-800 self-start"
             >
               Join Us
             </Link>

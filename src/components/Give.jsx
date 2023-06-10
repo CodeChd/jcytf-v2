@@ -9,7 +9,7 @@ const Give = ({id}) => {
         <div className="bg-[#d97706] p-14">
           <div className="max-w-5xl mx-auto text-center text-white">
             <p className="text-5xl font-gil mb-4">Why We Give</p>
-            <p className="text-xl font-gilLight font-bold">
+            <p className="text-[1.35rem] leading-9 font-gilLight font-bold">
               At our church we want to see people know Christ, grow together,
               and go serve the world. When you give it fuels the ministries of
               the church to help more and more people become disciples of Jesus

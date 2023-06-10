@@ -22,7 +22,7 @@ const About = ({ id }) => {
             <Link
               href="/about"
               className="px-8 p-3 bg-amber-600 rounded text-white font-extrabold
-          mt-4 text-lg uppercase font-gilLight"
+        inline-block text-lg uppercase font-gilLight"
             >
               Read more
             </Link>

@@ -1,4 +1,7 @@
+import { get, set } from "lodash";
 import {mailOptions, transporter } from "../../config/nodemailer"
+
+
 
 const genEmailTemplate = (data) => {
   const msgFields = {
@@ -26,7 +29,36 @@ const genEmailTemplate = (data) => {
 
 
 
+const rateLimit = 2; // Number of allowed requests per minute
+
+const rateLimiter = {};
+
+const rateLimiterMiddleware = (ip) => {
+  const now = Date.now();
+  const windowStart = now - 60 * 1000; // 1 minute ago
+
+  const requestTimestamps = get(rateLimiter, ip, []).filter(
+    (timestamp) => timestamp > windowStart
+  );
+  requestTimestamps.push(now);
+
+  set(rateLimiter, ip, requestTimestamps);
+
+  return requestTimestamps.length <= rateLimit;
+};
+
+
+
+
 export default async function handler(req, res) {
+  const ip = req.headers["x-real-ip"] || req.connection.remoteAddress;
+
+  if (!rateLimiterMiddleware(ip)) {
+    res.status(429).json({ message: "Wag abusuhin!" });
+    return;
+  }
+
+
   if(req.method === "POST"){
     const data = req.body
     if(!data.name || !data.email || !data.phone || !data.message){

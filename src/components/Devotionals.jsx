@@ -2,8 +2,8 @@ const Devotionals = () => {
   return (
     <section className="w-full py-20 grid place-content-center font-gilLight font-bold ">
       <div className="max-w-5xl  px-8 border-solid border-2 border-black rounded-md rounded-br-3xl p-4">
-        <div className="w-full flex flex-col gap-12 sml:gap-8 text-2xl ">
-          <h2 className="text-3xl">Walking in the Garden</h2>
+        <div className="w-full flex flex-col gap-10 sml:gap-8 text-2xl ">
+          <h2 className="text-4xl">Walking in the Garden</h2>
 
           <p >
             SCRIPTURE READING — 
@@ -60,7 +60,7 @@ const Devotionals = () => {
               </span>
             <a
               href="https://odb.org/deeper"
-              className="bg-amber-600 text-white text-2xl rounded-full p-1 px-4 font-gilLight capitalize hover:scale-105 transition-transform hover:text-amber-500 self-center -translate-x-[0.25rem]"
+              className="bg-amber-600 text-white text-2xl rounded-full p-1 px-4 font-gilLight border-2  border-solid capitalize transition-all hover:text-gray-900 hover:bg-white hover:hover:border-amber-600 self-center -translate-x-[0.25rem]"
               target="_blank"
               >
               More of Our Devotionals

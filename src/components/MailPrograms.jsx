@@ -59,8 +59,6 @@ const MailPrograms = () => {
     }
   }
 
-// console.log(values)
-
   return (
     <main className="min-h-screen py-8 flex items-center">
       <div className="h-full max-w-6xl mx-auto">
@@ -68,7 +66,7 @@ const MailPrograms = () => {
           <h1 className="text-5xl text-center font-gil">
             Let us know what Group you would like to find out more about.
           </h1>
-          <p className="text-2xl my-4 font-gilLight">
+          <p className="text-2xl text-center my-4 font-gilLight">
             If you have questions about a specific Group Life group, or if you
             would like more information, please fill out this form and we will
             be in touch with you soon.

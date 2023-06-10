@@ -1,3 +1,4 @@
+import { toast } from "react-hot-toast";
 export const SendFormMinistry = async (data) => {
 
     fetch("/api/ministry", {
@@ -8,8 +9,12 @@ export const SendFormMinistry = async (data) => {
             "Accept": "application/json",
         }
     }).then((res) => {
-        if(!res.ok) throw new Error("Failed to send data")
-        return res.json()
+        if (!res.ok) {
+            toast.error("Too Many Requests.. try again in 1 minute");
+
+          } else if (res.ok) {
+            toast.success("Email Sent!");
+          }
     })
 
 

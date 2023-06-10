@@ -11,33 +11,33 @@ const Ministry = ({id}) => {
             <div id='inner' className='flex flex-col items-center gap-12'>
 
                 <div className='text-center text-white'>
-                <h2 className='text-6xl uppercase font-gil font-extrabold mb-2 text-amber-700'>Ministries</h2>
-                <p className='text-4xl font-gilLight font-semibold mt-4'>Our Team is committed to walking you through life's events.</p>
+                <h2 className='text-6xl uppercase font-gil font-extrabold mb-2 text-amber-600'>Ministries</h2>
+                <p className='text-3xl font-gilLight font-semibold mt-4'>Our Team is committed to walking you through life's events.</p>
                 </div>
 
             <div className='flex gap-20 font-gilLight font-semibold text-white'>
                 <p className='flex flex-col items-center  '>
                     <Kids className="h-24 fill-white"/>
-                    <span className='text-2xl inline-block mt-4'>KIDS MINISTRY</span>
+                    <span className='text-2xl inline-block mt-4'>Kids Ministry</span>
                 </p>
                 <p className='flex flex-col items-center'>
                 <Youth className="h-24 fill-white"/>
-                    <span className='text-2xl inline-block mt-4'>YOUTH MINISTRY</span>
+                    <span className='text-2xl inline-block mt-4'>Youth Ministry</span>
                     
                 </p>
                 <p className='flex flex-col items-center'>
                     <Junior className="h-24 fill-white"/>
-                    <span className='text-2xl inline-block mt-4'>JUNIOR MINISTRY</span>
+                    <span className='text-2xl inline-block mt-4'>Junior Ministry</span>
                     
                 </p>
                 <p className='flex flex-col items-center mt-2'>
                     <Prayer className="h-24 fill-white"/>
-                    <span className='text-2xl inline-block mt-4'>PRAYER MINISTRY</span>
+                    <span className='text-2xl inline-block mt-4'>Prayer Ministry</span>
                     
                 </p>
                 <p className='flex flex-col items-center mt-2'>
                     <Worship className="h-24 fill-white"/>
-                    <span className='text-2xl inline-block mt-4'>WORSHIP MINISTRY</span>
+                    <span className='text-2xl inline-block mt-4'>Worship Ministry</span>
                     
                 </p>
 

@@ -16,7 +16,7 @@ const Kids = () => {
               </p>
             </div>
 
-            <p className="max-w-[50ch] text-2xl">
+            <p className="max-w-[50ch] text-[1.40rem] leading-8">
               First Kids is excited to partner with you to help the children in
               your life on their journey to know, love and serve Jesus Christ.
               Our small group format encourages children to build relationships
@@ -35,11 +35,11 @@ const Kids = () => {
 
           <div>
             <Image
-              src="/images/place.jpg"
+              src="/images/Kids.jpg"
               loading="lazy"
               width={600}
               height={500}
-              className="rounded"
+              className="rounded-md brightness-90 "
             />
           </div>
         </div>

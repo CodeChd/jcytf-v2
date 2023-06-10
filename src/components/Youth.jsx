@@ -9,7 +9,7 @@ const Youth = () => {
         <div className="flex gap-[5rem] items-center font-gilLight font-bold text-xl">
 
           <div>
-            <Image src="/images/place.jpg"  loading="lazy" width={600} height={500} className="rounded"/>
+            <Image src="/images/Youth.jpg"  loading="lazy" width={600} height={500} className="rounded-md"/>
           </div>
 
           <div className="flex flex-col justify-end gap-2 py-2">
@@ -24,7 +24,7 @@ const Youth = () => {
         </div>
         
 
-            <p className="max-w-[50ch] text-2xl">
+            <p className="max-w-[50ch] text-[1.40rem] leading-8">
             The student ministry at our church exists to connect teens to Christ. We create safe environments that allow students to know, experience, and serve Jesus in community.
             </p>
 

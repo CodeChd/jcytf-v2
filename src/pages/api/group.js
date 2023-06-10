@@ -27,7 +27,6 @@ const genEmailTemplate = (data) => {
 
 
 
-
 const rateLimit = 2; // Number of allowed requests per minute
 
 const rateLimiter = {};
@@ -55,7 +54,7 @@ export default async function handler(req, res) {
   const ip = req.headers["x-real-ip"] || req.connection.remoteAddress;
 
   if (!rateLimiterMiddleware(ip)) {
-    res.status(429).json({ message: "Wag abuso!" });
+    res.status(429).json({ message: "Wag abusuhin!" });
     return;
   }
 
@@ -65,7 +64,7 @@ export default async function handler(req, res) {
     const data = req.body;
 
     if (!data.name || !data.email || !data.phone || !data.message) {
-      res.status(400).json({ message: "Bawal po iyan" });
+      res.status(400).json({ message: "Bawal yan" });
     }
 
     try {

@@ -46,7 +46,6 @@ const VisitMail = () => {
 
     try {
       await SendFormVisit(values)
-      toast.success("Email Sent!")
       setState(initState)
     } catch (error) {
       setState((prev) => ({

@@ -32,7 +32,7 @@ const VisitMail = () => {
     e.preventDefault()
 
     if(values.name.length < 6){
-        toast.error("Please input name with at least 6 letters")
+        toast.error("Please input name with at least 6 characters")
         return
     }
     if( isNaN(values.phone) || values.phone.toString().length < 11){
@@ -40,7 +40,7 @@ const VisitMail = () => {
       return
     }
     if(values.message.length < 6){
-        toast.error("Please input message with at least 6 letters")
+        toast.error("Please input message with at least 6 characters")
         return
     }
 

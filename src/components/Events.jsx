@@ -1,7 +1,7 @@
 import { toast } from "react-hot-toast";
 import EventItem from "./EventItem";
 import EventsSearch from "./EventsSearch";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { MonthFormatter } from "@/hooks/DateFormatter";
 
 const months = [
@@ -29,12 +29,11 @@ const Events = ({ eventsData }) => {
     e.preventDefault();
 
     if (searchTerm === "") {
-      toast.error("Please Input Event Name!");
+      toast.error("Please input an event name");
       return;
     }
-    
-    
-    
+
+    //search filter
     const newFilterData = eventsData.filter((event) => {
       const data = event.EventName.toLowerCase().includes(
         searchTerm.toLowerCase()
@@ -42,14 +41,13 @@ const Events = ({ eventsData }) => {
 
       return data;
     });
-    
-    if(newFilterData.length === 0){
-      toast.error("Aba wala nyan oii!")
-    }else if(newFilterData.length){
 
-      toast.success("Oh YAN OH")
+    if (newFilterData.length === 0) {
+      toast.error(`${searchTerm} doesn't match any events`);
+    } else if (newFilterData.length) {
+      toast.success(`${searchTerm} Event Found!`);
     }
-    
+
     setFilterInput(newFilterData);
   };
 
@@ -77,22 +75,18 @@ const Events = ({ eventsData }) => {
   const handleSelect = (e) => {
     const data = e.target.value;
     setMonth(data);
+
+    //date filter
     const monthIndex = months.indexOf(data);
     const filteredByMonth = eventsData.filter((event) => {
       const eventMonth = MonthFormatter(event);
       return eventMonth === monthIndex;
     });
+
     setFilterInput(filteredByMonth);
     setSearchTerm("");
     setDateVisible(true);
   };
-
-  useEffect(() => {
-    filterInput.filter((event) =>{
-      searchTerm === event.EventName && toast.success("Yan oh")
-   })
-  }, [filterInput])
-
 
   return (
     <>
@@ -118,12 +112,10 @@ const Events = ({ eventsData }) => {
                 .slice(0, 3)
                 .map((events) => <EventItem key={events.id} events={events} />)}
 
-
-
           {/* promise handler */}
           {searchTerm !== "" && filterInput.length === 0 ? (
             <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">
-              ano hanap te..
+              What event are you looking for?
             </h1>
           ) : (
             dateVisible &&
@@ -134,8 +126,6 @@ const Events = ({ eventsData }) => {
               </h1>
             )
           )}
-
-      
         </>
       </section>
     </>

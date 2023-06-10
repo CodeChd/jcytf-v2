@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const LifeGroup = ({id}) => {
   return (
-    <section id={id} className="w-full min-h-[65vh] py-20 grid place-items-center">
+    <section id={id} className="w-full min-h-[80vh] py-20 grid place-items-center">
                 <div id="inner" className="flex flex-col items-center">
 
                 <div id="heading_holder" className="max-w-5xl mx-auto">

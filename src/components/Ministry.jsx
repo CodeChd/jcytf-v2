@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa'
 import { Youth,Kids, Junior,Prayer, Worship } from './SVG'
@@ -6,7 +5,7 @@ import { Youth,Kids, Junior,Prayer, Worship } from './SVG'
 
 const Ministry = ({id}) => {
   return (
-    <section id={id} className='w-full py-20 min-h-[60vh] bg-ministry bg-mediumPos bg-no-repeat brightness-110'>
+    <section id={id} className='w-full py-20 min-h-[65vh] bg-ministry bg-mediumPos bg-no-repeat brightness-110'>
         <div id='outer' className='max-w-1/2 mx-auto'>
             <div id='inner' className='flex flex-col items-center gap-12'>
 

@@ -33,8 +33,6 @@ const Events = () => {
   //all events
   const [allevents, setAllEvents] = useState([]);
 
-  
-
   //Pagination Actions
 
   const handlePageChange = (pageNumber) => {
@@ -52,9 +50,6 @@ const Events = () => {
       setCurrentPage(currentPage + 1);
     }
   };
-
-
-
 
   //page numbers
   const renderPaginationButtons = () => {
@@ -103,7 +98,6 @@ const Events = () => {
     return buttons;
   };
 
-
   //Actions -start
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -142,7 +136,7 @@ const Events = () => {
         setAllEvents(data.data);
         setTotalPages(data.total_pages);
         if (data.data.length > 0) {
-          setEventsPaginate(allevents);
+          setEventsPaginate(data.data);
         }
         console.log(data.data, "RESET EVENTS");
       })
@@ -165,21 +159,16 @@ const Events = () => {
     setMonth("");
   };
 
-
-
   //Date filter
   const handleSelect = (e) => {
     const current = e.target.value;
 
-    if(current === ""){
-        setEventsPaginate(allevents)
+    if (current === "") {
+      setEventsPaginate(allevents);
     }
 
-
     setMonth(current);
-    
 
-    
     fetch(
       `https://jcytfchurch.online/querydata.php?page=1&per_page=3&month=${current}`
     )
@@ -187,7 +176,7 @@ const Events = () => {
       .then((data) => {
         setEventsPaginate(data.data);
         setTotalPages(data.total_pages);
-        
+
         setDateVisible(true); // indicate that select element is fired
         setCurrentPage(1); // reset current page when changing filters
 
@@ -206,20 +195,7 @@ const Events = () => {
 
   // Actions -end
 
-
-
-
-
-
-
-
-
-
-
-
-
   //side effects
-
 
   //Events Handler
   useEffect(() => {
@@ -240,11 +216,6 @@ const Events = () => {
         .catch((error) => console.error(error));
     }
   }, [currentPage]);
-
-
-
-
-
 
   //Month Filter
   useEffect(() => {
@@ -269,20 +240,6 @@ const Events = () => {
       })
       .catch((error) => console.error(error));
   }, [currentPage, month]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   return (
     <>
@@ -309,15 +266,14 @@ const Events = () => {
               !dateVisible &&
               allevents.map((evt) => <EventItem key={evt.id} events={evt} />)}
 
-
-
-
-
-
           {/* promise handler */}
-          {searchTerm !== "" && eventsPaginate.length === 0 && !isSubmit ? (
+          {searchTerm !== "" && eventsPaginate.length === 0 ? (
             <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">
-              What event are you looking for?
+              What{" "}
+              <span className="inline-block border-dashed border-b-2 border-amber-600 p-2 er-600 ">
+                event
+              </span>{" "}
+              are you looking for?
             </h1>
           ) : (
             dateVisible &&
@@ -329,11 +285,9 @@ const Events = () => {
             )
           )}
 
-
-
-
-        {/* pagination */}
-          {(dateVisible && eventsPaginate.length === 0) ||
+          {/* pagination */}
+          {dateVisible ||
+          eventsPaginate.length === 0 ||
           totalPages === 1 ? null : (
             <div className="self-center text-white">
               <button

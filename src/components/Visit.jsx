@@ -10,7 +10,7 @@ const FaqItems = ({ q, desc }) => {
   });
 
   return (
-    <div id="faq-container" className="my-3 self-start select-none  ">
+    <div id="faq-container" className="my-3 self-start select-none  transition-all">
       <button
         {...getToggleProps({
           style: { display: "block" },
@@ -26,7 +26,7 @@ const FaqItems = ({ q, desc }) => {
         )}
       </button>
 
-      <a className="text-[1.3rem] font-extrabold font-gilLight">{q}</a>
+      <a className="text-[1.28rem] font-extrabold font-gilLight">{q}</a>
 
 
       <div {...getCollapseProps()} className="rounded-md my-4">
@@ -59,7 +59,7 @@ const Visit = ({ id }) => {
         </div>
 
         <div className="max-w-5xl mx-auto my-8 flex gap-[10rem]">
-          <div>
+          <div className="">
 
 
           <FaqItems
@@ -98,7 +98,7 @@ const Visit = ({ id }) => {
               className="justify-center "
               />
               </div>
-            <div className="sticky top-0 z-30 ml-8">
+            <div className="ml-8 sticky top-0 z-30">
 
               <VisitMail/>
             </div>

@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        dark: "#1b1b1b",
+      },
       fontFamily: {
         mont: ["var(--font-poppins)", ...fontFamily.sans],
         gil: ["var(--font-gil-bold)", ...fontFamily.sans],

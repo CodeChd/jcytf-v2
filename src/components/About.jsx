@@ -28,12 +28,12 @@ const About = ({ id }) => {
             </Link>
           </article>
 
-          <div className="inline-block ">
+          <div className=" ">
             <Image
               src="/images/about.jpg"
-              width={450}
-              height={450}
-              className="w-full inline-block object-fit rounded"
+              width={500}
+              height={500}
+              className="  rounded-md"
             />
           </div>
         </div>

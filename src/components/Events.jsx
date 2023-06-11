@@ -83,7 +83,7 @@ const Events = () => {
       }
       buttons.push(
         <button
-          className="px-4 mt-4 text-lg text-gray-800 font-gil"
+          className="px-8 mt-4 text-lg text-gray-800 font-gil"
           key={i}
           onClick={() => handlePageChange(i)}
           disabled={i === currentPage}

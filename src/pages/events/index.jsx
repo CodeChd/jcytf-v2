@@ -1,26 +1,16 @@
 import Events from "@/components/Events";
 import { Toaster } from "react-hot-toast";
 
-const index = ({ evt }) => {
-  const events = evt.filter((e) => e.Status === "1");
+const index = () => {
+
 
   return (
     <main className=" bg-slate-200 min-h-screen py-20 flex flex-col">
       <Toaster/>
-      <Events eventsData={events} />
+      <Events />
     </main>
   );
 };
 
 export default index;
 
-export async function getServerSideProps() {
-  //fetch events
-  const res = await fetch("https://jcytfchurch.online/api.php");
-
-  const evt = await res.json();
-
-  return {
-    props: { evt },
-  };
-}

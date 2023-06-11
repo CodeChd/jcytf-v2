@@ -1,8 +1,7 @@
 import { toast } from "react-hot-toast";
 import EventItem from "./EventItem";
 import EventsSearch from "./EventsSearch";
-import { useState } from "react";
-import { MonthFormatter } from "@/hooks/DateFormatter";
+import { useState, useEffect } from "react";
 
 const months = [
   "January",
@@ -19,12 +18,93 @@ const months = [
   "December",
 ];
 
-const Events = ({ eventsData }) => {
+const Events = () => {
+  //misc
   const [searchTerm, setSearchTerm] = useState("");
-  const [filterInput, setFilterInput] = useState([]);
   const [month, setMonth] = useState("");
   const [dateVisible, setDateVisible] = useState(false);
+  const [isSubmit, setIsSubmit] = useState(false);
 
+  //paginated data from backend
+  const [eventsPaginate, setEventsPaginate] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(0);
+
+  //all events
+  const [allevents, setAllEvents] = useState([]);
+
+  
+
+  //Pagination Actions
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const handlePrevClick = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const handleNextClick = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+
+
+
+  //page numbers
+  const renderPaginationButtons = () => {
+    const buttons = [];
+
+    // display up to 4 page numbers at a time
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(totalPages, startPage + 4);
+    if (currentPage < 3) {
+      endPage = Math.min(totalPages, 3);
+    } else if (currentPage > totalPages - 2) {
+      startPage = Math.max(1, totalPages - 4);
+    }
+
+    // add page buttons with skipped numbers as dots
+    for (let i = startPage; i <= endPage; i++) {
+      if (i === startPage && i > 1) {
+        buttons.push(
+          <span
+            key="start-dots"
+            className="inline-block text-gray-800 text-4xl"
+          >
+            ...
+          </span>
+        );
+      }
+      buttons.push(
+        <button
+          className="px-4 mt-4 text-lg text-gray-800 font-gil"
+          key={i}
+          onClick={() => handlePageChange(i)}
+          disabled={i === currentPage}
+        >
+          <span className="text-2xl">{i}</span>
+        </button>
+      );
+      if (i === endPage && i < totalPages) {
+        buttons.push(
+          <span key="end-dots" className="inline-block text-gray-800 text-4xl">
+            ...
+          </span>
+        );
+      }
+    }
+
+    return buttons;
+  };
+
+
+  //Actions -start
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -33,38 +113,51 @@ const Events = ({ eventsData }) => {
       return;
     }
 
-    //search filter
-    const newFilterData = eventsData.filter((event) => {
-      const data = event.EventName.toLowerCase().includes(
-        searchTerm.toLowerCase()
-      );
+    fetch(
+      `https://jcytfchurch.online/querydata.php?page=1&per_page=3&search=${searchTerm}`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setTotalPages(data.total_pages);
+        console.log(data.data, "SUBMIT EVENTS");
+        setEventsPaginate(data.data);
 
-      return data;
-    });
+        if (data.data.length === 0) {
+          toast.error(`${searchTerm} doesn't match any events`);
+        } else if (data.data.length > 0) {
+          toast.success(`Event found related with "${searchTerm}"`);
+        }
+      })
+      .catch((error) => console.error(error));
 
-    if (newFilterData.length === 0) {
-      toast.error(`${searchTerm} doesn't match any events`);
-    } else if (newFilterData.length) {
-      toast.success(`${searchTerm} Event Found!`);
-    }
-
-    setFilterInput(newFilterData);
+    setIsSubmit(true);
   };
 
   const handleReset = (e) => {
     e.preventDefault();
 
-    if (filterInput.length > 0) {
-      setFilterInput([]);
-    }
+    fetch(`https://jcytfchurch.online/querydata.php?page=1&per_page=3`)
+      .then((response) => response.json())
+      .then((data) => {
+        setAllEvents(data.data);
+        setTotalPages(data.total_pages);
+        if (data.data.length > 0) {
+          setEventsPaginate(allevents);
+        }
+        console.log(data.data, "RESET EVENTS");
+      })
+      .catch((error) => console.error(error));
+
+    setCurrentPage(1);
     setSearchTerm("");
     setMonth("");
     setDateVisible(false);
   };
 
+  //Controlled Input
   const handleChange = (e) => {
-    if (e.target.value.length === 32) {
-      toast.error("Input exceed 32 characters!");
+    if (e.target.value.length === 22) {
+      toast.error("Input exceed 22 characters!");
       setSearchTerm("");
       return;
     }
@@ -72,21 +165,124 @@ const Events = ({ eventsData }) => {
     setMonth("");
   };
 
+
+
+  //Date filter
   const handleSelect = (e) => {
-    const data = e.target.value;
-    setMonth(data);
+    const current = e.target.value;
 
-    //date filter
-    const monthIndex = months.indexOf(data);
-    const filteredByMonth = eventsData.filter((event) => {
-      const eventMonth = MonthFormatter(event);
-      return eventMonth === monthIndex;
-    });
+    if(current === ""){
+        setEventsPaginate(allevents)
+    }
 
-    setFilterInput(filteredByMonth);
+
+    setMonth(current);
+    
+
+    
+    fetch(
+      `https://jcytfchurch.online/querydata.php?page=1&per_page=3&month=${current}`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setEventsPaginate(data.data);
+        setTotalPages(data.total_pages);
+        
+        setDateVisible(true); // indicate that select element is fired
+        setCurrentPage(1); // reset current page when changing filters
+
+        if (data.data.length === 0 && month) {
+          toast.error(`No events found in ${current}`);
+        }
+        if (data.data.length) {
+          toast.success(`Events found in ${current}`);
+        }
+      })
+      .catch((error) => console.error(error));
+
     setSearchTerm("");
     setDateVisible(true);
   };
+
+  // Actions -end
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //side effects
+
+
+  //Events Handler
+  useEffect(() => {
+    // fetch all events data and set eventsPaginate to initial data
+    const page = currentPage;
+    const perPage = 3;
+
+    if (eventsPaginate.length === 0 || !dateVisible) {
+      fetch(
+        `https://jcytfchurch.online/querydata.php?page=${page}&per_page=${perPage}`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          setAllEvents(data.data);
+          setTotalPages(data.total_pages);
+          console.log(data.data, "ALL EVENTS");
+        })
+        .catch((error) => console.error(error));
+    }
+  }, [currentPage]);
+
+
+
+
+
+
+  //Month Filter
+  useEffect(() => {
+    const page = currentPage;
+    // build API URL with query parameters
+    let apiUrl = `https://jcytfchurch.online/querydata.php?page=${[
+      page,
+    ]}&per_page=3`;
+
+    if (month) {
+      const monthIndex = months.indexOf(month);
+      apiUrl += `&month=${months[monthIndex]}`;
+    }
+    // make API request
+
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        setEventsPaginate(data.data);
+        setTotalPages(data.total_pages);
+        console.log(data.data, "EVENTSPAGINATE");
+      })
+      .catch((error) => console.error(error));
+  }, [currentPage, month]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <>
@@ -97,6 +293,7 @@ const Events = ({ eventsData }) => {
         handleSelect={handleSelect}
         handleReset={handleReset}
       />
+
       <section className="w-full mt-14 flex flex-col relative">
         <h2 className="border-b-4 border-solid border-amber-700 self-center text-3xl font-gilLight font-bold ">
           {month === "" ? null : month}
@@ -105,26 +302,60 @@ const Events = ({ eventsData }) => {
         <>
           {/* events display */}
           {searchTerm !== "" || month
-            ? filterInput
-                .slice(0, 3)
-                .map((events) => <EventItem key={events.id} events={events} />)
-            : eventsData
-                .slice(0, 3)
-                .map((events) => <EventItem key={events.id} events={events} />)}
+            ? eventsPaginate.map((events) => (
+                <EventItem key={events.id} events={events} />
+              ))
+            : searchTerm === "" &&
+              !dateVisible &&
+              allevents.map((evt) => <EventItem key={evt.id} events={evt} />)}
+
+
+
+
+
 
           {/* promise handler */}
-          {searchTerm !== "" && filterInput.length === 0 ? (
+          {searchTerm !== "" && eventsPaginate.length === 0 && !isSubmit ? (
             <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">
               What event are you looking for?
             </h1>
           ) : (
             dateVisible &&
-            filterInput.length === 0 &&
+            eventsPaginate.length === 0 &&
             month !== "" && (
               <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">
                 No Events to Show...
               </h1>
             )
+          )}
+
+
+
+
+        {/* pagination */}
+          {(dateVisible && eventsPaginate.length === 0) ||
+          totalPages === 1 ? null : (
+            <div className="self-center text-white">
+              <button
+                className={`bg-amber-600 p-2 px-4 mx-4 rounded-full ${
+                  totalPages === 1 && "cursor-not-allowed bg-amber-700"
+                }`}
+                onClick={handlePrevClick}
+                disabled={currentPage === 1}
+              >
+                Prev
+              </button>
+              {renderPaginationButtons()}
+              <button
+                className={`bg-amber-600 p-2 px-4 mx-4 rounded-full ${
+                  totalPages === 1 && "cursor-not-allowed bg-amber-700 "
+                }`}
+                onClick={handleNextClick}
+                disabled={currentPage === totalPages}
+              >
+                Next
+              </button>
+            </div>
           )}
         </>
       </section>

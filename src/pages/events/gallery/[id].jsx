@@ -26,7 +26,7 @@ const gallery = ({ data, detailsId }) => {
 
       {images[0].isValid[4] === "" || images[0].isValid[4] === undefined ? (
         <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight pt-20">
-         No Images yet, try adding an Image
+         No Images yet..
         </h1>
       ) : (
         <ImageGallery items={images} />

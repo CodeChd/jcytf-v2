@@ -11,8 +11,8 @@ const connect = () => {
     <main>
       <Toaster/>
       <ConnectHero dataImg="bg-connect bg-no-repeat sml:bg-smallsc  lgDesktop:bg-widesc wide:bg-ultrasc" />
-      <Kids />
-      <Youth/>
+      <Kids id="kids" />
+      <Youth id="youth"/>
       <LifeGroup id="programs"/>
       <Ministry id="ministry"/>
     </main>

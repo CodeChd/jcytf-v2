@@ -1,9 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const Youth = () => {
+const Youth = ({id}) => {
   return (
-    <section className="py-12 bg-slate-50 text-black ">
+    <section id={id} className="py-12 bg-slate-50 text-black ">
       <div className="max-w-7xl sml:max-w-6xl mx-auto flex items-cente min-h-[50vh]">
 
         <div className="flex gap-[5rem] items-center font-gilLight font-bold text-xl">

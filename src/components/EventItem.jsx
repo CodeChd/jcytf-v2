@@ -24,7 +24,7 @@ const EventItem = ({ events }) => {
         </div>
 
         <div className="flex-[2] flex flex-col justify-center p-4">
-          <Link href="/">
+          <Link href={`/events/${events.id}`}>
             <h3 className="text-4xl font-gilLight font-semibold">
               {events.EventName}
             </h3>

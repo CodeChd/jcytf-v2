@@ -39,7 +39,7 @@ const about = () => {
         href="new"
         className="bg-about bg-aboutPos bg-no-repeat sml:bg-mediumsc lgDesktop:bg-widesc wide:bg-ultrasc"
       />
-      <Mission />
+      <Mission id="mission"/>
       <Identity />
       <Visit id="new" />
       <Mapa />

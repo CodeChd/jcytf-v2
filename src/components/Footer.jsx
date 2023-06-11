@@ -28,17 +28,17 @@ const Footer = () => {
             </h3>
             <ul className="flex flex-col not-italic font-medium">
               <li>
-                <Link href="/" className="">
+                <Link href="/about/#mission" className="">
                   Mission
                 </Link>
               </li>
               <li>
-                <Link href="/" className="">
+                <Link href="/partners" className="">
                   Partners
                 </Link>
               </li>
               <li>
-                <Link href="/" className="">
+                <Link href="/devotional" className="">
                   Devotionals
                 </Link>
               </li>
@@ -56,22 +56,22 @@ const Footer = () => {
             </h3>
             <ul className="flex flex-col not-italic font-medium">
               <li>
-                <Link href="/" className="">
+                <Link href="/connect/#kids" className="">
                   Kids
                 </Link>
               </li>
               <li>
-                <Link href="/" className="">
+                <Link href="/connect/#youth" className="">
                   Youth
                 </Link>
               </li>
               <li>
-                <Link href="/" className="">
+                <Link href="/connect/#programs" className="">
                   Group Life
                 </Link>
               </li>
               <li>
-                <Link href="/" className="">
+                <Link href="/connect/#ministry" className="">
                   Join Us
                 </Link>
               </li>

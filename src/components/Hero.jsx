@@ -17,7 +17,7 @@ const Hero = ({ id }) => {
     <>
       <section id={id}>
         <div className="w-full relative ">
-          <article className="bg-home sml:bg-smallsc  sml:bg-identityPos lgDesktop:bg-widesc lgDesktop:bg-home wide:bg-ultraschome wide:bg-widePos bg-no-repeat bg-fixed">
+          <article className="bg-home sml:bg-smallsc  sml:bg-identityPos llg:bg-widesc llg:bg-home wide:bg-ul-wide wide:bg-widePos bg-no-repeat bg-fixed">
             
           <div  className="z-10 flex flex-col px-32  text-white  text-left py-7">
           <p className="uppercase font-gilLight font-extrabold text-lg ml-2 mb-6 sml:mb-4 lgDesktop:mb-12 drop-shadow-xl  border-white border-l-2 p-2 rounded border-solid">Welcome Home</p>

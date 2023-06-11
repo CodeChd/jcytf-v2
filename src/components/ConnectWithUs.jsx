@@ -25,7 +25,7 @@ const Connect = ({id}) => {
               A fun and safe first step for kids to grow in their faith.
             </p>
 
-            <Link href="/">LEARN MORE ||</Link>
+            <Link href="/" className="border-b-[1px] border-solid border-gray-700 pb-1">LEARN MORE</Link>
           </div>
           <div className="inline-block col-span-1">
             <Image
@@ -41,7 +41,7 @@ const Connect = ({id}) => {
             <p className="font-medium text-xl sml:text-[0.980rem] mt-2 mb-4">
               Impacting students in their relationship with Jesus.
             </p>
-            <Link href="/">LEARN MORE ||</Link>
+            <Link href="/" className="border-b-[1px] border-solid border-gray-700 pb-1">LEARN MORE</Link>
 
           </div>
           <div className="inline-block p-8 col-span-1 bg-green-300">
@@ -49,7 +49,7 @@ const Connect = ({id}) => {
             <p className="font-medium text-xl sml:text-[0.980rem] mt-2 mb-4">
               Adults connecting and growing together. Find your group here.
             </p>
-            <Link href="/">LEARN MORE ||</Link>
+            <Link href="/" className="border-b-[1px] border-solid border-gray-700 pb-1">LEARN MORE</Link>
 
           </div>
           <div className="inline-block  col-span-1 bg-white">
@@ -66,7 +66,7 @@ const Connect = ({id}) => {
             <p className="font-medium text-xl sml:text-[0.980rem] mt-2 mb-4">
               Serving others, locally and internationally.
             </p>
-            <Link href="/">LEARN MORE ||</Link>
+            <Link href="/" className="border-b-[1px] border-solid border-gray-700 pb-1">LEARN MORE</Link>
 
           </div>
           <div className="inline-block  col-span-1">

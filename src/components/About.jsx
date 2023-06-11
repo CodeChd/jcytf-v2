@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const About = ({ id }) => {
   return (
-    <section id={id} className="w-full px-20 py-20 sml:pt-8 lgDesktop:pt-14 min-h-[70vh] sml:min-h-[80vh] lgDesktop:min-h-[60vh] wide:min-h-[45vh] ">
+    <section id={id} className="w-full px-20 py-20 min-h-[70vh] sml:pt-8 sml:min-h-[80vh] llg:pt-14   llg:min-h-[60vh] wide:bg-ul-wide wide:bg-widePos wide:min-h-[45vh] ">
       <div className="px-24 flex flex-col gap-4">
         <h2 className="flex self-center text-7xl sml:text-6xl  not-italic font-extrabold uppercase border-solid border-b-[6px] pb-2 border-gray-900">
           About Jcytf church

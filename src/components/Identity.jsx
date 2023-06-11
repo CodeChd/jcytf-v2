@@ -1,19 +1,43 @@
+import Image from "next/image";
+
 const Identity = () => {
   return (
-    <section className="py-14 xxl:py-8 text-white min-h-[50vh]  wide:bg-ultrasc bg-who bg-no-repeat bg-cover bg-mediumsc bg-identityPos flex items-center ">
-      <div className="z-30 w-full flex flex-col items-center justify-center">
-        <h3 className="self-center shadow-md text-3xl border-b-[3px] border-solid border-amber-800 font-gil mb-8">
-          Who We Are
-        </h3>
-        <p className="max-w-4xl mx-auto text-xl shadow-lg font-gilLight font-extrabold leading-10">
-          We prioritize simple and clear opportunities to help people take Jesus
-          Christ Yesterday, Today and Forever is a church in La Trinidad Street,
-          Payatas Quezon City. It is founded by Pastora Casimira "Baby" Cabacoy
-          in 1990 and by the grace of God, the church continues to hold services
-          on Sundays and other gatherings on weekdays. The church has mostly
-          young people members who are actively participating in the Kingdom
-          work of God in Payatas. .
-        </p>
+    <section className="py-14 bg-slate-50 xxl:py-8 text-gray-950 min-h-[80vh] flex items-center ">
+      <div className="max-w-7xl mx-auto xxl:max-w-6xl wide:max-w-8xl">
+        <div className="flex gap-14 items-center font-gilLight font-bold text-xl">
+          <div className="w-full h-full">
+            <Image
+              src="/images/who.jpg"
+              loading="lazy"
+              width={700}
+              height={500}
+              className="rounded-md h-[20rem]"
+            />
+          </div>
+
+
+          <div className="flex flex-col gap-2 justify-end">
+            <div className="mb-4">
+              <h3 className="text-2xl text-[1.5rem] mb-2 leading-8 text-left font-gilLight font-bold uppercase text-amber-700">
+                Who We Are
+              </h3>
+
+            <p className="max-w-7xl mx-auto text-xl font-gilLight font-extrabold leading-10 tracking-wide">
+              We prioritize simple and clear opportunities to help people take
+              Jesus Christ Yesterday, Today and Forever is a church in La
+              Trinidad Street, Payatas Quezon City. It is founded by Pastora
+              Casimira "Baby" Cabacoy in 1990 and by the grace of God, the
+              church continues to hold services on Sundays and other gatherings
+              on weekdays. The church has mostly young people members who are
+              actively participating in the Kingdom work of God in Payatas. .
+            </p>
+
+            </div>
+
+        
+          </div>
+
+        </div>
       </div>
     </section>
   );

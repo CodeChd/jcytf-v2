@@ -31,6 +31,7 @@ module.exports = {
     },
     backgroundSize: {
       'iconsize': '1.8rem',
+      "ul-wide": "180rem",
       "ultrasc": "150rem",
       "widesc": "120rem",
       "mediumsc": "100rem",
@@ -47,10 +48,11 @@ module.exports = {
 
     },
     screens: {
+      ultra : {min: "3001px"},
 
       wide: {max: "3000px"},
 
-      lgDesktop: {max: "1920px"},
+      llg: {max: "1920px"},
 
       sml: {max: "1500px"},
   

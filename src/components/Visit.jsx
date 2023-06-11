@@ -1,40 +1,43 @@
 import { useState } from "react";
 import { FaPlus, FaMinus, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import VisitMail from "./MailVisit";
+import { useCollapse } from "react-collapsed";
 
-const FaqItems = ({ q, desc, className = "" }) => {
-  const [isClick, setIsClick] = useState(false);
-
-  const handleClick = () => {
-    setIsClick(!isClick);
-  };
+const FaqItems = ({ q, desc }) => {
+  const [isExpanded, setExpanded] = useState(false);
+  const { getToggleProps, getCollapseProps } = useCollapse({
+    isExpanded,
+  });
 
   return (
-    <div id="faq-container" className="mt-3 select-none relative">
-      <article
-        className={`${className} flex items-center gap-2 cursor-pointer border-solid border-1 border-gray-500`}
+    <div id="faq-container" className="my-3 self-start select-none  ">
+      <button
+        {...getToggleProps({
+          style: { display: "block" },
+          onClick: () => setExpanded((x) => !x),
+          
+        })}
+        className="bg-orange-600 p-1 rounded-full text-white transition-all mr-2"
       >
-        <button
-          onClick={handleClick}
-          className="bg-orange-600 p-1 rounded-full text-white transition-all"
-        >
-          {isClick ? <FaMinus className="z-10" /> : <FaPlus className="z-10" />}
-        </button>
-        <a
-          className="text-[1.3rem] text-right  font-extrabold font-gilLight"
-          onClick={handleClick}
-        >
-          {q}
-        </a>
-      </article>
+        {isExpanded ? (
+          <FaMinus className="z-10" />
+        ) : (
+          <FaPlus className="z-10" />
+        )}
+      </button>
 
-      <div className={`${isClick ? "block py-3 mx-auto" : "hidden"} `}>
-        <p className="text-lg font-gilLight text-left font-extrabold">{desc}</p>
+      <a className="text-[1.3rem] font-extrabold font-gilLight">{q}</a>
+
+
+      <div {...getCollapseProps()} className="rounded-md my-4">
+        <p  className="py-3 text-lg font-gilLight font-extrabold transition-all">
+          {desc}
+        </p>
       </div>
+
     </div>
   );
 };
-
 const Visit = ({ id }) => {
   return (
     <section id={id} className="bg-slate-50 pt-12">
@@ -46,7 +49,7 @@ const Visit = ({ id }) => {
           <h2 className="text-5xl uppercase font-gil font-bold mb-4 ">
             Coming to visit?
           </h2>
-          <p className="max-w-5xl mx-auto font-gilLight font-extrabold text-[1.40rem] leading-10">
+          <p className="max-w-7xl text-center mx-auto font-gilLight font-extrabold text-[1.40rem] leading-10">
             We know visiting a church for the first time can be intimidating,
             and we want to make your visit at Jesus Christ Yesterday Today And
             Forever Church a great one! When you come in. Further inquiries about the church? you
@@ -55,7 +58,7 @@ const Visit = ({ id }) => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto my-8 flex gap-32">
+        <div className="max-w-5xl mx-auto my-8 flex gap-[10rem]">
           <div>
 
 
@@ -64,39 +67,41 @@ const Visit = ({ id }) => {
             desc="To find directions to our church, you can check the address at the
               bottom of our page or visit our About page
               where you will find a map showing our location."
-            className="justify-center mr-[4.8rem]"
+            className="justify-center "
           />
           <FaqItems
             q="WHAT IS A TYPICAL SERVICE LIKE?"
             desc="To find directions to our church, you can check the address at the
             bottom of our page or visit our About page
             where you will find a map showing our location."
-            className="justify-center ml-4"
+            className="justify-center"
             />
           <FaqItems
             q="WHERE DO I GO WHEN I ARRIVE?"
             desc="To find directions to our church, you can check the address at the
               bottom of our page or visit our About page
               where you will find a map showing our location."
-            className="justify-center ml-2"
+            className="justify-center"
           />
           <FaqItems
             q=" DO I NEED TO BE A MEMBER?"
             desc="To find directions to our church, you can check the address at the
               bottom of our page or visit our About page
               where you will find a map showing our location."
-              className="justify-center mr-7 "
+              className="justify-center "
               />
           <FaqItems
             q="HOW CAN I GIVE?"
             desc="To find directions to our church, you can check the address at the
               bottom of our page or visit our About page
               where you will find a map showing our location."
-              className="justify-center mr-[8.5rem] "
+              className="justify-center "
               />
               </div>
+            <div className="sticky top-0 z-30 ml-8">
 
               <VisitMail/>
+            </div>
         </div>
       </div>
       <section className="w-full bg-sched bg-mediumPos bg-no-repeat bg-cover lgDesktop:bg-widesc wide:bg-ultrasc min-h-[50vh] py-8">

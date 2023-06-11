@@ -1,29 +1,39 @@
-import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { useCollapse } from "react-collapsed";
+import { useState } from "react";
 
 const FaqItems = ({ q, desc }) => {
-  const [isClick, setIsClick] = useState(false);
-
-  const handleClick = () => {
-    setIsClick(!isClick);
-  };
+  const [isExpanded, setExpanded] = useState(false);
+  const { getToggleProps, getCollapseProps } = useCollapse({
+    isExpanded,
+  });
 
   return (
     <div id="faq-container" className="my-3 self-start select-none ">
-      <article className="flex items-center gap-2 cursor-pointer border-solid border-1 border-gray-500">
-        <button onClick={handleClick} className="bg-orange-600 p-1 rounded-full text-white transition-all">
-          {isClick ? <FaMinus className="z-10" /> : <FaPlus className="z-10" />}
-        </button>
-        <a
-          className="text-[1.3rem] font-extrabold font-gilLight"
-          onClick={handleClick}
-        >
-          {q}
-        </a>
-      </article>
-      <div className={`${isClick ? "block p-3" : "hidden"} `}>
-        <p className="text-lg font-gilLight font-extrabold">{desc}</p>
+      <button
+        {...getToggleProps({
+          style: { display: "block" },
+          onClick: () => setExpanded((x) => !x),
+          
+        })}
+        className="bg-orange-600 p-1 rounded-full text-white transition-all mr-4"
+      >
+        {isExpanded ? (
+          <FaMinus className="z-10" />
+        ) : (
+          <FaPlus className="z-10" />
+        )}
+      </button>
+
+      <a className="text-[1.3rem] font-extrabold font-gilLight">{q}</a>
+
+
+      <div {...getCollapseProps({ style: { backgroundColor: "#f1f5f9" } })} className="rounded-md my-4">
+        <p  className="p-3 text-lg font-gilLight font-extrabold transition-all">
+          {desc}
+        </p>
       </div>
+
     </div>
   );
 };

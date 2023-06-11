@@ -55,7 +55,6 @@ const VisitMail = () => {
     }
   }
 
-// console.log(values)
 
   return (
     <main className=" flex items-center">

@@ -164,7 +164,7 @@ const Events = () => {
     const current = e.target.value;
 
     if (current === "") {
-      setEventsPaginate(allevents);
+      return;
     }
 
     setMonth(current);
@@ -203,7 +203,7 @@ const Events = () => {
     const page = currentPage;
     const perPage = 3;
 
-    if (eventsPaginate.length === 0 || !dateVisible) {
+    if (eventsPaginate.length === 0 || !dateVisible || month === "") {
       fetch(
         `https://jcytfchurch.online/querydata.php?page=${page}&per_page=${perPage}`
       )
@@ -262,12 +262,12 @@ const Events = () => {
             ? eventsPaginate.map((events) => (
                 <EventItem key={events.id} events={events} />
               ))
-            : searchTerm === "" &&
-              !dateVisible &&
-              allevents.map((evt) => <EventItem key={evt.id} events={evt} />)}
+              : searchTerm === "" &&  month === "" && dateVisible ||
+                !dateVisible  &&
+                allevents.map((evt) => <EventItem key={evt.id} events={evt} />)}
 
           {/* promise handler */}
-          {searchTerm !== "" && eventsPaginate.length === 0 ? (
+          {searchTerm !== "" &&  eventsPaginate.length === 0 && isSubmit ? (
             <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">
               What{" "}
               <span className="inline-block border-dashed border-b-2 border-amber-600 p-2 er-600 ">
@@ -286,7 +286,7 @@ const Events = () => {
           )}
 
           {/* pagination */}
-          {dateVisible ||
+          {dateVisible && searchTerm !== "" ||
           eventsPaginate.length === 0 ||
           totalPages === 1 ? null : (
             <div className="self-center text-white">

@@ -11,7 +11,7 @@ const initValues = {
 };
 const initState = { values: initValues };
 
-const PartnersContact = () => {
+const MailPartners = () => {
   const [state, setState] = useState(initState)
 
   const {values} = state
@@ -140,4 +140,4 @@ const PartnersContact = () => {
   );
 };
 
-export default PartnersContact;
+export default MailPartners;

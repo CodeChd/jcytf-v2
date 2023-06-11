@@ -1,4 +1,4 @@
-import PartnersContact from '@/components/PartnersContact'
+import PartnersContact from '@/components/MailPartners'
 import { Toaster } from 'react-hot-toast'
 
 const becomeapartner = () => {

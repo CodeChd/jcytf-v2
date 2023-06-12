@@ -54,23 +54,23 @@ const Events = () => {
   //page numbers
   const renderPaginationButtons = () => {
     const buttons = [];
-
-    // display up to 4 page numbers at a time
-    let startPage = Math.max(1, currentPage - 2);
-    let endPage = Math.min(totalPages, startPage + 4);
-    if (currentPage < 3) {
+  
+    // display up to 3 page numbers at a time
+    let startPage = Math.max(1, currentPage - 1);
+    let endPage = Math.min(totalPages, startPage + 2);
+    if (currentPage === 1) {
       endPage = Math.min(totalPages, 3);
-    } else if (currentPage > totalPages - 2) {
-      startPage = Math.max(1, totalPages - 4);
+    } else if (currentPage === totalPages) {
+      startPage = Math.max(1, totalPages - 2);
     }
-
     // add page buttons with skipped numbers as dots
     for (let i = startPage; i <= endPage; i++) {
       if (i === startPage && i > 1) {
         buttons.push(
           <span
             key="start-dots"
-            className="inline-block text-gray-800 text-4xl"
+            className="inline-block text-gray-800 text-4xl cursor-pointer"
+            onClick={() => handlePageChange(1)}
           >
             ...
           </span>
@@ -78,7 +78,9 @@ const Events = () => {
       }
       buttons.push(
         <button
-          className="px-8 mt-4 text-lg text-gray-800 font-gil"
+          className={`px-8 mt-4 text-lg font-gil ${
+            i === currentPage ? "text-amber-400" : "text-gray-800"
+          }`}
           key={i}
           onClick={() => handlePageChange(i)}
           disabled={i === currentPage}
@@ -88,15 +90,20 @@ const Events = () => {
       );
       if (i === endPage && i < totalPages) {
         buttons.push(
-          <span key="end-dots" className="inline-block text-gray-800 text-4xl">
+          <span
+            key="end-dots"
+            className="inline-block text-gray-800 text-4xl cursor-pointer"
+            onClick={() => handlePageChange(totalPages)}
+          >
             ...
           </span>
         );
       }
     }
-
+  
     return buttons;
   };
+  
 
   //Actions -start
   const handleSubmit = (e) => {

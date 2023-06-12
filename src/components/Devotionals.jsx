@@ -1,7 +1,7 @@
 const Devotionals = () => {
   return (
-    <section className="w-full py-20 grid place-content-center font-gilLight font-bold ">
-      <div className="max-w-5xl  px-8 border-solid border-2 border-black rounded-md rounded-br-3xl p-4">
+    <section className="w-full grid place-content-center font-gilLight font-bold p-14">
+      <div className="max-w-5xl  px-8 border-solid border-2 border-black rounded-md rounded-br-3xl p-4 ">
         <div className="w-full flex flex-col gap-10 sml:gap-8 text-2xl ">
           <h2 className="text-4xl">Walking in the Garden</h2>
 

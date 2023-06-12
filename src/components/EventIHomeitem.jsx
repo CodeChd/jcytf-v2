@@ -10,13 +10,13 @@ const EventHomeItem = ({events}) => {
 
   return (
     <div>
-      <div className="w-full">
+      <div className="w-full menu:h-[17rem]">
 
       <Image
         src={events.length === 0 ? "/favicon.svg" : `https://jcytfchurch.online/images/${events.featuredimage}`}
         width={440}
         height={400}
-        className="md:w-[30rem] xxl:w-[40rem] rounded"
+        className="w-full h-full md:w-[30rem] xxl:w-[40rem] rounded"
         />
         </div>
 

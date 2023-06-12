@@ -10,7 +10,7 @@ const Connect = ({id}) => {
         </h2>
 
         <div className="grid grid-cols-4 sm:grid-cols-1 xxl:grid-cols-2 w-[75%] mx-auto xxl:text-lg text-gray-900 border-b-0 border-x-white mt-4 border-solid border-2 rounded overflow-hidden">
-          <div className=" col-span-1">
+          <div className=" col-span-1 sm:row-start-1">
             <Image
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685075224/kids-2408614_1920_fxs3md.jpg"
               width={300}
@@ -19,15 +19,15 @@ const Connect = ({id}) => {
               className="w-full h-full "
             />
           </div>
-          <div className=" p-8 col-span-1 bg-white">
-            <p className="xxl:text-2xl text-lg font-gilLight font-extrabold uppercase">Kids</p>
-            <p className="font-medium xxl:text-xl  sml:text-[0.980rem] text-xl  mt-2 mb-4">
+          <div className=" p-8 col-span-1 sm:row-start-2  bg-white">
+            <p className="  md:text-xl xxl:text-2xl text-lg font-gilLight font-extrabold uppercase">Kids</p>
+            <p className="font-medium md:text-lg xxl:text-xl  sml:text-[0.980rem] text-xl  mt-2 mb-4">
               A fun and safe first step for kids to grow in their faith.
             </p>
 
             <Link href="/connect/#kids" className="border-b-[1px] border-solid border-gray-700 pb-1">LEARN MORE</Link>
           </div>
-          <div className=" col-span-1">
+          <div className=" col-span-1 sm:row-start-3 xxl:order-2 xxl:row-start-2">
             <Image
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685075876/pexels-nappy-935944_h6qveq.jpg"
               width={300}
@@ -36,23 +36,23 @@ const Connect = ({id}) => {
               className="w-full h-full"
             />
           </div>
-          <div className=" p-8 col-span-1 bg-yellow-300">
-            <p className="xxl:text-2xl text-lg font-gilLight font-extrabold uppercase">Youths</p>
-            <p className="font-medium xxl:text-xl  sml:text-[0.980rem] text-xl mt-2 mb-4">
+          <div className=" p-8 col-span-1 sm:row-start-4 xxl:order-1 xxl:row-start-2 bg-yellow-300">
+            <p className="md:text-xl xxl:text-2xl text-lg font-gilLight font-extrabold uppercase">Youths</p>
+            <p className="font-medium md:text-lg  xxl:text-xl  sml:text-[0.980rem] text-xl mt-2 mb-4">
               Impacting students in their relationship with Jesus.
             </p>
             <Link href="/connect/#youth" className="border-b-[1px] border-solid border-gray-700 pb-1">LEARN MORE</Link>
 
           </div>
-          <div className=" p-8 col-span-1 sm:row-start-6 bg-green-300">
-            <p className="xxl:text-2xl text-lg font-gilLight font-extrabold uppercase">Group Life</p>
-            <p className="font-medium xxl:text-xl  sml:text-[0.980rem] text-xl mt-2 mb-4">
+          <div className=" p-8 col-span-1 sm:row-start-6  xxl:order-2 xxl:row-start-3 bg-green-300">
+            <p className="md:text-xl xxl:text-2xl text-lg font-gilLight font-extrabold uppercase">Group Life</p>
+            <p className="font-medium md:text-lg  xxl:text-xl  sml:text-[0.980rem] text-xl mt-2 mb-4">
               Adults connecting and growing together. Find your group here.
             </p>
             <Link href="/connect/#programs" className="border-b-[1px] border-solid border-gray-700 pb-1">LEARN MORE</Link>
 
           </div>
-          <div className="  col-span-1 bg-white">
+          <div className="col-span-1 sm:row-start-5 xxl:order-1 xxl:row-start-3 bg-white">
             <Image
               src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685076438/second-grid_kyeuhe.jpg"
               width={300}
@@ -61,9 +61,9 @@ const Connect = ({id}) => {
               className="w-full h-full"
             />
           </div>
-          <div className=" p-8 col-span-1  bg-blue-300">
-            <p className="xxl:text-2xl text-lg font-gilLight font-extrabold uppercase">Join Us</p>
-            <p className="font-medium xxl:text-xl  sml:text-[0.980rem] text-xl mt-2 mb-4">
+          <div className=" p-8 col-span-1 sm:row-start-8  bg-blue-300">
+            <p className="md:text-xl xxl:text-2xl text-lg font-gilLight font-extrabold uppercase">Join Us</p>
+            <p className="font-medium md:text-lg  xxl:text-xl  sml:text-[0.980rem] text-xl mt-2 mb-4">
               Serving others, locally and internationally.
             </p>
             <Link href="/connect/#ministry" className="border-b-[1px] border-solid border-gray-700 pb-1">LEARN MORE</Link>

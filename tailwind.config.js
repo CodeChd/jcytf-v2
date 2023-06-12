@@ -46,7 +46,7 @@ module.exports = {
       "aboutPos": "center top -100px",
       "widePos": "center top -38rem",
       "mediumPos": "center top -160px",
-      "smallPos": "center top -150px",
+      "smallPos": "center top -20px",
       "home": "center top -22rem",
       "identityPos": "center bottom -120px"
 

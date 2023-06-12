@@ -48,7 +48,7 @@ const MobileUserInfo = ({ name, role, href = "/", className = ""}) => {
 const Pastors = ({ id }) => {
   return (
     <section id={id} className="py-14 min-h-[70vh]">
-      <div className="py-8">
+      <div className="">
         <div className="flex flex-col items-center justify-center">
           <h3 className=" xs:text-xl text-2xl font-gilLight font-extrabold uppercase text-gray-700">
             Our Pastors
@@ -116,8 +116,8 @@ const Pastors = ({ id }) => {
 
 
         {/* mobile */}
-        <div className="menu:hidden relative">
-          <Swiper navigation={true} modules={[Navigation]} className="mySwiper md:max-w-xl max-w-2xl">
+        <div className="menu:hidden ">
+          <Swiper navigation={true} modules={[Navigation]} className="mySwiper md:h-[480px] md:max-w-xl max-w-2xl">
             <SwiperSlide>
               <Image
                 src="/images/pastors/first.png"

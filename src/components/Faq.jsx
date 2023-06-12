@@ -43,17 +43,17 @@ const Faq = ({ id }) => {
     <section id={id} className="py-[3.84rem] w-full min-h-[80vh]">
       <div className="bg-[#d97706] text-white text-center py-10">
         <div className=" flex flex-col gap-2">
-          <h2 className="text-7xl sml:text-6xl not-italic font-bold font-gil self-center border-b-4 py-2 mb-2 border-white">
+          <h2 className="xs:text-3xl md:text-4xl xxl:text-5xl sml:text-6xl text-7xl not-italic font-bold font-gil self-center border-b-4 py-2 mb-2 border-white">
             JCYTF CHURCH FAQ
           </h2>
-          <p className="text-xl font-medium">
+          <p className="md:text-[16px] text-center xxl:txt-lg llg:text-xl font-medium">
             Below are Frequently Asked Questions on Our Church
           </p>
         </div>
       </div>
 
-      <div className="mt-14 flex flex-col items-center w-full wide:w-[38%] mx-auto ">
-        <h3 className="uppercase text-3xl font-gil border-solid border-b-4 border-orange-600 mb-8">
+      <div className="max-w-5xl mx-auto pt-14 px-8 flex flex-col items-center ">
+        <h3 className="uppercase  md:text-2xl text-3xl font-gil border-solid border-b-4 border-orange-600 mb-8">
           Questions
         </h3>
 

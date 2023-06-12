@@ -10,7 +10,7 @@ const SmoothScroll = ({id, title,offset, icon = null , className = ""}) => {
           offset={offset}
           duration={500}
           
-          className={`${className} cursor-pointer font-gil`}
+          className={`${className} cursor-pointer font-gil text-center`}
         >
           {title}
           {icon}

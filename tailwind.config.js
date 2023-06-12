@@ -59,6 +59,8 @@ module.exports = {
       llg: {max: "1920px"},
 
       sml: {max: "1500px"},
+      
+      mdDsk: {max: "1410px"},
   
       menu: { min: "1281px" },
 

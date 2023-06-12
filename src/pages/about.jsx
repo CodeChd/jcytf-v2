@@ -37,7 +37,7 @@ const about = () => {
         desc="MONDAY - SUNDAY AT 9:00AM - 5:00PM | SATURDAY - CLOSED"
         btnName="New Here?"
         href="new"
-        className="bg-about bg-aboutPos bg-no-repeat sml:bg-mediumsc lgDesktop:bg-widesc wide:bg-ultrasc"
+        className="bg-about bg-aboutPos bg-no-repeat sml:bg-mediumsc  sml:bg-smallPos llg:bg-widesc wide:bg-ultrasc "
       />
       <Mission id="mission"/>
       <Identity />

@@ -3,16 +3,16 @@ import Link from "next/link";
 
 const Mission = ({id}) => {
   return (
-    <section id={id} className="py-14 bg-[#d97706] text-white min-h-[52vh] ">
-      <div className="max-w-7xl mx-auto xxl:max-w-6xl wide:max-w-8xl">
+    <section id={id} className=" bg-[#d97706] text-white min-h-[52vh] ">
+      <div className="p-14 px-20 max-w-7xl mx-auto xxl:px-22 xxl:max-w-5xl wide:max-w-8xl">
      
 
-        <div className="flex gap-18 font-gilLight font-bold text-xl">
-          <div className="flex flex-col gap-2 justify-end">
+        <div className="flex xxl:flex-col xxl:items-center gap-14 font-gilLight font-bold text-xl">
+          <div className="flex flex-col gap-2 justify-end xxl:order-2">
 
           <div className="mb-4">
           <h3 className="text-2xl text-[1.5rem] mb-1 leading-8 text-left font-gilLight font-bold uppercase text-white">
-            Our Misson
+            Our Misson & Vision
           </h3>
           <p className="text-3xl mt-1 max-w-[45ch] text-left font-gil uppercase">
             Helping People Take Their Next Steps Toward Christ…Together.
@@ -38,13 +38,13 @@ const Mission = ({id}) => {
             </Link>
           </div>
 
-          <div>
+          <div className=" w-full lg:w-full lg:h-full  xxl:w-full xxl:h-[20rem] xxl:order-1">
             <Image
               src="/images/place.jpg"
               loading="lazy"
               width={500}
               height={300}
-              className="rounded"
+              className="xxl:w-full xxl:h-full rounded"
             />
           </div>
         </div>

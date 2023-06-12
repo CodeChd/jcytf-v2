@@ -2,16 +2,16 @@ import Image from "next/image";
 
 const Identity = () => {
   return (
-    <section className="py-14 bg-slate-50 xxl:py-8 text-gray-950 min-h-[80vh] flex items-center ">
-      <div className="max-w-7xl mx-auto xxl:max-w-6xl wide:max-w-8xl">
-        <div className="flex gap-14 items-center font-gilLight font-bold text-xl">
-          <div className="w-full h-full">
+    <section className=" bg-slate-50  text-gray-950 min-h-[80vh] flex items-center ">
+      <div className="max-w-7xl mx-auto xxl:max-w-6xl wide:max-w-8xl xxl:py-8 p-20">
+        <div className="flex xxl:flex-col xxl:items-center gap-14 items-center font-gilLight font-bold text-xl">
+          <div className="w-full h-full menu:w-[80rem] menu:h-[20rem]">
             <Image
               src="/images/who.jpg"
               loading="lazy"
               width={700}
               height={500}
-              className="rounded-md h-[20rem]"
+              className="rounded-md w-full h-full"
             />
           </div>
 

@@ -5,16 +5,17 @@ const HeroComponent = ({ title, desc, btnName, href = "/", className}) => {
 
 
   return (
-    <>
-      <header className={` ${className} flex items-end w-full brightness-[.65] min-h-[85vh] relative`}></header>
-      <div className="absolute z-20 text-white top-1/2 translate-y-[50px] ">
-        <div className="p-32 sml:px-[8.5rem]">
-          <h1 className="text-6xl font-gil shadow-lg">{title}</h1>
+    <header className="relative ">
+      <div className={` ${className} flex w-full brightness-[.65] min-h-[85vh]  `}/>
+        
+      <div className="text-white absolute md:top-[53vh] top-[60vh] xxl:-left-10 sml:px-0 px-32  left-0 mb-4  ">
+        <div className="sml:px-[8.5rem]">
+          <h1 className="xxl:text-5xl text-6xl font-gil shadow-lg">{title}</h1>
           <p className="text-xl shadow-lg pt-2">{desc}</p>
           <SmoothScroll id={href} title={btnName} offset="" icon={ <FaArrowRight className=" ml-2 inline-block" />} className="text-lg inline-block mt-4 p-2 font-gilLioght font-bold rounded bg-amber-700" />
         </div>
       </div>
-    </>
+    </header>
   );
 };
 

@@ -10,7 +10,7 @@ const FaqItems = ({ q, desc }) => {
   });
 
   return (
-    <div id="faq-container" className="my-3 self-start select-none  transition-all">
+    <div id="faq-container" className="my-3  transition-all xxl:max-w-5xl mx-auto">
       <button
         {...getToggleProps({
           style: { display: "block" },
@@ -40,8 +40,8 @@ const FaqItems = ({ q, desc }) => {
 };
 const Visit = ({ id }) => {
   return (
-    <section id={id} className="bg-slate-50 pt-12">
-      <div className="w-full h-full grid place-content-center min-h-[60vh]">
+    <section id={id} className="bg-slate-50 ">
+      <div className="w-full h-full grid place-content-center min-h-[60vh] p-14">
         <div className="flex flex-col items-center ">
           <h3 className="text-xl font-gilLight font-bold text-amber-800">
             NEW HERE?
@@ -49,7 +49,7 @@ const Visit = ({ id }) => {
           <h2 className="text-5xl uppercase font-gil font-bold mb-4 ">
             Coming to visit?
           </h2>
-          <p className="max-w-7xl text-center mx-auto font-gilLight font-extrabold text-[1.40rem] leading-10">
+          <p className="max-w-7xl text-center mx-auto font-gilLight font-extrabold xxl:text-xl text-[1.40rem] leading-10">
             We know visiting a church for the first time can be intimidating,
             and we want to make your visit at Jesus Christ Yesterday Today And
             Forever Church a great one! When you come in. Further inquiries about the church? you
@@ -58,8 +58,8 @@ const Visit = ({ id }) => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto my-8 flex gap-[10rem]">
-          <div className="">
+        <div className="max-w-5xl mx-auto my-8 flex   xxl:flex-col xxl:items-start xxl:gap-14  gap-[10rem]">
+          <div className="order-2 xxl:max-w-4xl">
 
 
           <FaqItems
@@ -98,19 +98,19 @@ const Visit = ({ id }) => {
               className="justify-center "
               />
               </div>
-            <div className="ml-8 sticky top-0 z-30">
+            <div className=" ml-8 xxl:ml-0 menu:sticky menu:top-0 menu:z-30 order-1">
 
               <VisitMail/>
             </div>
         </div>
       </div>
-      <section className="w-full bg-sched bg-mediumPos bg-no-repeat bg-cover lgDesktop:bg-widesc wide:bg-ultrasc min-h-[50vh] py-8">
+      <section className="w-full p-14 bg-sched bg-mediumPos bg-no-repeat bg-cover lgDesktop:bg-widesc wide:bg-ultrasc min-h-[50vh] py-8">
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center ">
           <h2 className="text-3xl uppercase font-gilLight font-extrabold text-white border-b-2 border-solid border-white">
             Schedule of Services
           </h2>
 
-          <div className="grid grid-cols-2 justify-center gap-8">
+          <div className="grid grid-cols-1 place-content-center justify-center items-center gap-8">
             <div className=" col-span-2 uppercase font-gilLight font-extrabold text-xl text-white">
               <div className="flex flex-col items-center gap-2 mt-4">
                 <h3 className="mb-2 text-2xl">Sunday Service</h3>
@@ -124,6 +124,8 @@ const Visit = ({ id }) => {
                 </p>
               </div>
             </div>
+
+        <div className="col-span-2 flex xxl:flex-col gap-8">
 
             <p className=" text-2xl flex flex-col items-center text-white gap-2">
               <FaMapMarkerAlt />
@@ -139,6 +141,7 @@ const Visit = ({ id }) => {
                 (+63) 997 574 4318 jcytfchurch92@gmail.com
               </span>
             </p>
+        </div>
           </div>
         </div>
       </section>

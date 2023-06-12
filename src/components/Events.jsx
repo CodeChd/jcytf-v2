@@ -299,7 +299,7 @@ const Events = () => {
             <div className="self-center text-white">
               <button
                 className={`bg-amber-600 p-2 px-4 mx-4 rounded-full ${
-                  totalPages === 1 && "cursor-not-allowed bg-amber-700"
+                  currentPage === 1   && "cursor-not-allowed bg-amber-700"
                 }`}
                 onClick={handlePrevClick}
                 disabled={currentPage === 1}
@@ -309,7 +309,7 @@ const Events = () => {
               {renderPaginationButtons()}
               <button
                 className={`bg-amber-600 p-2 px-4 mx-4 rounded-full ${
-                  totalPages === 1 && "cursor-not-allowed bg-amber-700 "
+                 currentPage === totalPages && "cursor-not-allowed bg-amber-700 "
                 }`}
                 onClick={handleNextClick}
                 disabled={currentPage === totalPages}

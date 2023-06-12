@@ -17,16 +17,16 @@ const Hero = ({ id }) => {
     <>
       <section id={id}>
         <div className="w-full relative ">
-          <article className="bg-home sml:bg-smallsc  sml:bg-identityPos llg:bg-widesc llg:bg-home wide:bg-ul-wide wide:bg-widePos bg-no-repeat bg-fixed">
+          <article className="bg-home lg:bg-mediumsc lg:bg-smallPos sml:bg-widesc llg:bg-widesc llg:bg-home wide:bg-ul-wide wide:bg-widePos bg-no-repeat bg-fixed">
             
           <div  className="z-10 flex flex-col px-32  text-white  text-left py-7">
-          <p className="uppercase font-gilLight font-extrabold text-lg ml-2 mb-6 sml:mb-4 lgDesktop:mb-12 drop-shadow-xl  border-white border-l-2 p-2 rounded border-solid">Welcome Home</p>
+          <p className="uppercase font-gilLight font-extrabold text-lg ml-2 mb-6 sml:mb-4 llg:mb-12 drop-shadow-xl  border-white border-l-2 p-2 rounded border-solid">Welcome Home</p>
           <h1 className="capitalize text-[5.6rem] leading-[1] font-gil max-w-[10ch] drop-shadow-xl xl:text-5xl sml:text-[4.5rem]">Jesus Christ Yesterday Today and Forever Church</h1>
           </div>
            
           </article>
         </div>
-        <div className="w-full flex gap-1 text-2xl font-bold uppercase">
+        <div className="w-full flex md:flex-col gap-1 text-2xl font-bold uppercase">
           <Link
             href="/partners"
             className="flex-1 text-center p-6 sml:p-4 lgDesktop:p-7 bg-[#d97706] text-white hover:text-black hover:bg-white"
@@ -52,7 +52,7 @@ const Hero = ({ id }) => {
         className={`${classNames(
           scrollPosition > 760 && "bg-white text-gray-950 transition-all"
         )} 
-      w-full p-4 px-20 uppercase font-gil flex justify-between text-xl font-bold sticky top-0 z-30`}
+      w-full p-4 px-20 uppercase font-gil flex md:flex-col md:items-center md:gap-4 justify-between text-xl font-bold sticky top-0 z-30`}
       >
         <SmoothScroll
           id="home"

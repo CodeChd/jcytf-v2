@@ -94,14 +94,9 @@ const Header = () => {
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.4, type: "spring" }}
-          className="min-w-[80vw] flex flex-col fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  items-center z-50 bg-dark/80 rounded/lg backdrop-blur-xl py-14 rounded-lg "
+          className="menu:hidden min-w-[80vw] flex flex-col fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  items-center z-50 bg-dark/80 rounded/lg backdrop-blur-xl py-14 rounded-lg "
         >
           <nav className="flex items-center flex-col justify-center gap-3">
-            <MobileCustomLink
-              href="/"
-              title="Home"
-              toggle={handleClick}
-            />
             <MobileCustomLink
               href="/about"
               title="About"

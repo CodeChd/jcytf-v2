@@ -7,20 +7,20 @@ const Ftevents = ({ id, data }) => {
 
 
   return (
-    <section id={id} className="w-full my-14 py-14 ">
-      <main className="flex flex-col items-center">
-        <div className="uppercase ml-[4.5rem]">
+    <section id={id} className="w-full ">
+      <main className="flex flex-col items-center  my-14 p-14">
+        <div className="uppercase xxl:text-center  xxl:ml-0 ml-[4.5rem]">
           <h3 className="font-gilLight font-extrabold text-gray-700 text-lg">
             What's Happening
           </h3>
-          <h2 className="text-7xl sml:text-6xl font-gil">Upcoming Events</h2>
-          <p className="normal-case text-xl max-w-[60ch] font-extrabold font-gilLight mt-2 ">
+          <h2 className=" md:text-5xl sml:text-6xl text-7xl font-gil">Upcoming Events</h2>
+          <p className="normal-case text-xl max-w-[60ch]  font-extrabold font-gilLight mt-2 self-start">
             Church doesn’t just happen on Sundays. Find times and locations for
             events you don’t want to miss by clicking below.
           </p>
         </div>
 
-        <div className="flex py-14 gap-10 items-center justify-center overflow-hidden">
+        <div className="flex xxl:flex-col py-14 gap-10 items-center justify-center overflow-hidden">
           {data.length === 0 ? (
             <h1 className="text-4xl font-gilLight font-bold italic">No events to show&nbsp;!</h1>
           ) : (

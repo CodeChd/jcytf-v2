@@ -5,8 +5,8 @@ const ChurchPartners = ({id}) => {
   return (
     <main>
       <div>
-        <div className="bg-[#d97706] text-white flex flex-col items-center  py-8 lgDesktop:py-14  gap-4">
-          <h2 className="text-7xl sml:text-6xl lgDesktop:text-7xl font-gil">
+        <div className="bg-[#d97706] text-white flex flex-col items-center  py-8 llg:py-20  gap-4">
+          <h2 className="text-7xl sml:text-6xl llg:text-7xl font-gil">
             PARTNERS IN THE CHURCH
           </h2>
           <p className="text-2xl">

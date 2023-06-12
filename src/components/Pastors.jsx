@@ -1,6 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation } from "swiper";
 
 const UserInfo = ({ name, role, href = "/", className = "" }) => {
   return (
@@ -19,17 +27,41 @@ const UserInfo = ({ name, role, href = "/", className = "" }) => {
   );
 };
 
-const Pastors = ({id}) => {
+const MobileUserInfo = ({ name, role, href = "/", className = ""}) => {
+  // absolute left-1/2 -translate-x-1/2 top-[50%]
+  return (
+    <div
+      className={`${className} text-center   `}
+    >
+      <p className="font-semibold text-2xl mb-2">{name}</p>
+      <p className="font-gilLight font-extrabold">{role}</p>
+      <Link
+        href={href}
+        className="p-2 mt-2 px-8 inline-block border-solid border-amber-900 text-amber-900 font-semibold uppercase border-2 rounded-full "
+      >
+        Email
+      </Link>
+    </div>
+  );
+};
+
+const Pastors = ({ id }) => {
   return (
     <section id={id} className="py-14 min-h-[70vh]">
       <div className="py-8">
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-2xl font-gilLight font-extrabold uppercase text-gray-700">Our Pastors</h3>
-          <h2 className="text-7xl sml:text-6xl non-italic font-gil font-bold mt-2">Meet Our Team</h2>
+          <h3 className=" xs:text-xl text-2xl font-gilLight font-extrabold uppercase text-gray-700">
+            Our Pastors
+          </h3>
+          <h2 className="xxs:text-3xl xs:text-4xl sml:text-6xl text-7xl non-italic font-gil font-bold mt-2">
+            Meet Our Team
+          </h2>
         </div>
 
-        <main className="">
-          <div className="grid grid-cols-3 justify-items-center">
+
+        {/* desktop */}
+        <main >
+          <div className="grid grid-cols-3 justify-items-center xxl:hidden">
             <div className="inline-block relative">
               <Image
                 src="/images/pastors/first.png"
@@ -63,11 +95,11 @@ const Pastors = ({id}) => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center sml:mt-8 sml:max-w-5xl sml:mx-auto ">
+          <div className="flex justify-center items-center sml:mt-8 xxl:max-w-4xl sml:max-w-5xl sml:mx-auto  xxl:hidden">
             <div className="relative">
               <Image
                 src="/images/pastors/fourth.png"
-                width={700}
+                width={650}
                 height={700}
               />
               <UserInfo
@@ -76,11 +108,76 @@ const Pastors = ({id}) => {
               />
             </div>
             <div className="relative">
-              <Image src="/images/pastors/fifth.png" width={700} height={700} />
+              <Image src="/images/pastors/fifth.png" width={650} height={700} />
               <UserInfo name="Ptr. Ronald Zonio" role="ADMINISTRATIVE PASTOR" />
             </div>
           </div>
-        </main>
+
+
+
+        {/* mobile */}
+        <div className="menu:hidden relative">
+          <Swiper navigation={true} modules={[Navigation]} className="mySwiper md:max-w-xl max-w-2xl">
+            <SwiperSlide>
+              <Image
+                src="/images/pastors/first.png"
+                alt=""
+                width={650}
+                height={700}
+              />
+                
+              <MobileUserInfo name="Ptra. Edna Te" role="PULPIT & HEAD PASTOR" />
+              
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/images/pastors/second.png"
+                alt=""
+                width={650}
+                height={700}
+              />
+              <MobileUserInfo
+                name="Ptr. Ruden Barcelona"
+                role="CARE PASTOR"
+              
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/images/pastors/third.png"
+                alt=""
+                width={650}
+                height={700}
+              />
+              <MobileUserInfo name="Ptra. Almira Zonio" role="WORSHIP PASTOR"/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/images/pastors/fourth.png"
+                alt=""
+                width={650}
+                height={700}
+                />
+
+              <MobileUserInfo
+                name="Ptra. Edna Heraldo"
+                role="CHRISTIAN EDUCATION PASTOR"
+              
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/images/pastors/fifth.png"
+                alt=""
+                width={650}
+                height={700}
+              />
+
+              <MobileUserInfo name="Ptr. Ronald Zonio" role="ADMINISTRATIVE PASTOR"/>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+                </main>
       </div>
     </section>
   );

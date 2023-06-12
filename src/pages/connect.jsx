@@ -1,4 +1,4 @@
-import ConnectHero from "@/components/ConnectHero"
+import HeroComponent from "@/components/HeroComponent";
 import Kids from "@/components/Kids"
 import LifeGroup from "@/components/LifeGroup";
 import Ministry from "@/components/Ministry";
@@ -10,7 +10,15 @@ const connect = () => {
   return (
     <main>
       <Toaster/>
-      <ConnectHero dataImg="bg-connect bg-no-repeat sml:bg-smallsc  lgDesktop:bg-widesc wide:bg-ultrasc" />
+      <header>
+        <HeroComponent
+         title="Get Connected"
+         desc="No matter where you are in life, there is a place for you here"
+         btnName="Join Us"
+         href="ministry"
+         className="bg-connect bg-no-repeat sml:bg-smallsc  llg:bg-widesc wide:bg-ultrasc"
+        />
+    </header>
       <Kids id="kids" />
       <Youth id="youth"/>
       <LifeGroup id="programs"/>

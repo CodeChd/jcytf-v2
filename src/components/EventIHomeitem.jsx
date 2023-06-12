@@ -16,7 +16,7 @@ const EventHomeItem = ({events}) => {
         src={events.length === 0 ? "/favicon.svg" : `https://jcytfchurch.online/images/${events.featuredimage}`}
         width={440}
         height={400}
-        className="rounded"
+        className="md:w-[30rem] xxl:w-[40rem] rounded"
         />
         </div>
 

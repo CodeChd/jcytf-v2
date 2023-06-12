@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>JCYTF</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
 
       <main

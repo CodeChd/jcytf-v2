@@ -46,6 +46,7 @@ module.exports = {
       "aboutPos": "center top -100px",
       "widePos": "center top -38rem",
       "mediumPos": "center top -160px",
+      "smallPos": "center top -150px",
       "home": "center top -22rem",
       "identityPos": "center bottom -120px"
 
@@ -59,15 +60,21 @@ module.exports = {
 
       sml: {max: "1500px"},
   
+      menu: { min: "1281px" },
+
+      xxl: { max: "1280px" },
+
       xl: { max: "1200px" },
   
-      lg: { max: "1023px" },
+      lg: { max: "1080px" },
   
       md: { max: "767px" },
   
-      sm: { max: "639px" },
+      sm: { max: "670px" },
   
-      xs: { max: "479px" },
+      xs: { max: "525px" },
+
+      xxs: { max: "380px" },
   },
   },
   plugins: [],

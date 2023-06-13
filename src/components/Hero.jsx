@@ -53,7 +53,7 @@ const Hero = ({ id }) => {
         className={`${classNames(
           scrollPosition > 760 && "bg-white text-gray-950 transition-all"
         )} 
-      w-full p-4 px-20 uppercase font-gil  flex md:flex-col md:items-center md:gap-2 justify-between  md:text-sm text-xl font-bold sticky top-0 z-30`}
+      w-full p-4 px-20 uppercase font-gil  flex sm:text-[12px] sm:px-2 md:px-4 md:items-center md:gap-2 justify-between  md:text-sm text-xl font-bold sticky top-0 z-30`}
       >
         <SmoothScroll
           id="home"

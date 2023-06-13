@@ -69,7 +69,7 @@ const ChurchPartners = ({id}) => {
           <div className="w-full mt-14 flex flex-col items-center gap-8">
             <div className="w-full">
               <Image src="/images/Students_Worship.jpg" width={900} height={700} className="w-full max-w-8xl" />
-              <h3 className="text-5xl font-gil text-center mt-4">The Big Picture</h3>
+              <h3 className="md:text-4xl text-5xl font-gil text-center mt-4">The Big Picture</h3>
             </div>
             <p className="text-xl">We know that the church is made of people, not buildings. But for people to gather and thrive in community, the right facilities can be dynamic tools for God’s glory. God is calling us to expand our spaces to enable us to better live out Jesus Christ Yesterday Today And Forever Church Values.</p>
 
@@ -93,10 +93,10 @@ const ChurchPartners = ({id}) => {
             </h3>
             </div>
 
-            <div className="uppercase bg-slate-100 flex flex-col rounded xs:px-2 p-4 mt-8">
+            <div className="uppercase bg-slate-100 flex flex-col rounded-md xs:px-2 p-4 mt-8">
                 <h3 className="text-center xs md:text-2xl text-3xl font-gilLight font-bold">FIND OUT MORE ABOUT PARTNERS IN THE CHURCH</h3>
                 <div className="flex justify-center items-center mt-8 menu:-translate-x-[2rem] gap-8">
-                    <Link href="/becomeapartner" className="bg-amber-600 rounded-full text-white font-gil xs:text-sm text-xl p-2 xs:px-2 px-4">Become A Partner</Link>
+                    <Link href="/becomeapartner" className="bg-amber-600 rounded-full text-white font-gil xs:text-sm text-xl xs:px-2 p-2  px-4">Become A Partner</Link>
                     <Link href="/give" className="bg-amber-600 rounded-full text-white font-gil xs:text-sm text-xl p-2 px-4">Give Now</Link>
                 </div>
             </div>

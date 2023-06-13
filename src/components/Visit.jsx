@@ -29,8 +29,8 @@ const FaqItems = ({ q, desc }) => {
       <a className="text-[1.28rem] font-extrabold font-gilLight">{q}</a>
 
 
-      <div {...getCollapseProps()} className="rounded-md my-4">
-        <p  className="py-3 text-lg font-gilLight font-extrabold transition-all">
+      <div {...getCollapseProps()} className="rounded-md my-4 ">
+        <p  className="py-3 text-lg font-gilLight font-extrabold transition-all max-w-[30ch]">
           {desc}
         </p>
       </div>
@@ -58,7 +58,7 @@ const Visit = ({ id }) => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto my-8 flex   xxl:flex-col xxl:items-start xxl:gap-14  gap-[10rem]">
+        <div className="max-w-5xl mx-auto my-8 flex xxl:flex-col xxl:items-start xxl:gap-14  gap-[10.2rem]">
           <div className="order-2 xxl:max-w-4xl">
 
 

@@ -5,10 +5,10 @@ import Link from "next/link";
 const Give = ({id}) => {
   return (
     <main className="pb-14">
-        <div className="bg-[#d97706] p-14">
+        <div className="bg-[#d97706] xs:px-4 md:px-8 p-14">
           <div className="max-w-5xl mx-auto text-center text-white">
-            <p className="text-5xl font-gil mb-4">Why We Give</p>
-            <p className="text-[1.35rem] leading-9 font-gilLight font-bold">
+            <p className="md:text-4xl text-5xl font-gil mb-4">Why We Give</p>
+            <p className="md:text-xl text-[1.35rem] leading-9 font-gilLight font-bold">
               At our church we want to see people know Christ, grow together,
               and go serve the world. When you give it fuels the ministries of
               the church to help more and more people become disciples of Jesus
@@ -60,11 +60,11 @@ const Give = ({id}) => {
         </div>
 <div className="p-8">
 
-        <div className="uppercase bg-slate-100 flex flex-col items-center rounded p-8 max-w-5xl mx-auto">
-                <h3 className="text-center text-3xl font-gilLight font-bold">FIND OUT MORE ABOUT GIVING IN THE CHURCH</h3>
+        <div className="uppercase bg-slate-100 flex flex-col items-center rounded-md xs:px-2 p-4 max-w-5xl mx-auto">
+                <h3 className="text-center md:text-2xl text-3xl font-gilLight font-bold">FIND OUT MORE ABOUT GIVING IN THE CHURCH</h3>
                 <div className="flex justify-center items-center mt-8 menu:-translate-x-[2rem] gap-8">
-                    <Link href="/#pastors" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4">EMAIL PASTOR</Link>
-                    <Link href="/about/#new" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4">EMAIL US</Link>
+                    <Link href="/#pastors" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4 xs:text-sm ">EMAIL PASTOR</Link>
+                    <Link href="/about/#new" className="bg-amber-600 rounded-full text-white font-gil xs:text-sm  text-xl p-2 px-4">EMAIL US</Link>
                 </div>
             </div>
 </div>

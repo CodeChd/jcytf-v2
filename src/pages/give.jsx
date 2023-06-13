@@ -9,7 +9,7 @@ const give = () => {
         desc="Your generosity makes a difference."
         btnName="Give Now"
         href="give"
-        className="bg-give bg-aboutPos bg-no-repeat file:sml:bg-mediumsc lgDesktop:bg-widesc wide:bg-ultrasc"
+        className="bg-give bg-aboutPos bg-no-repeat sml:bg-mediumsc llg:bg-widesc wide:bg-ultrasc"
       />
       <Give id="give"/>
     </>

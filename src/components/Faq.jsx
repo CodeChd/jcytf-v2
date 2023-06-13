@@ -25,10 +25,11 @@ const FaqItems = ({ q, desc }) => {
         )}
       </button>
 
-      <button  {...getToggleProps({
+      <a  {...getToggleProps({
+          style: { display: "inline-block" },
           onClick: () => setExpanded((x) => !x),
           
-        })} className="text-[1.3rem] font-extrabold font-gilLight">{q}</button>
+        })} className="text-[1.3rem] font-extrabold font-gilLight">{q}</a>
 
 
       <div {...getCollapseProps({ style: { backgroundColor: "#f1f5f9" } })} className="rounded-md my-4">

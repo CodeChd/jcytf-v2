@@ -4,7 +4,7 @@ import Link from "next/link"
 const Youth = ({id}) => {
   return (
     <section id={id} className=" bg-slate-50 text-black ">
-      <div className="max-w-7xl sml:max-w-6xl mx-auto flex items-cente min-h-[50vh] p-14">
+      <div className="max-w-7xl sml:max-w-6xl mx-auto flex items-cente min-h-[50vh] sm:px-4 p-14">
 
         <div className="flex xxl:flex-col gap-[5rem] xxl:items-start items-center font-gilLight font-bold text-xl">
 
@@ -19,7 +19,7 @@ const Youth = ({id}) => {
           <h3 className="text-2xl text-amber-800 text-[1.5rem] leading-8 tracking-wide text-left font-gilLight font-bold uppercase">
             Youth
           </h3>
-          <p className="text-4xl mt-1 max-w-[45ch] text-left font-gil uppercase">
+          <p className="sm:text-2xl text-4xl mt-1 max-w-[45ch] text-left font-gil uppercase">
           A safe place for teens to develop real relationships. 
           </p>
         </div>

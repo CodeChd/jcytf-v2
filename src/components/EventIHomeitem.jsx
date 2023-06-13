@@ -1,5 +1,6 @@
 import { DateFormatter } from "@/hooks/DateFormatter";
 import Image from "next/image";
+import Link from "next/link";
 import { FaCalendarAlt, FaClock } from "react-icons/fa";
 
 
@@ -11,13 +12,14 @@ const EventHomeItem = ({events}) => {
   return (
     <div>
       <div className="w-full menu:h-[17rem]">
-
+    <Link href={`/events/${events.id}`} className="">
       <Image
         src={events.length === 0 ? "/favicon.svg" : `https://jcytfchurch.online/images/${events.featuredimage}`}
         width={440}
         height={400}
         className="w-full h-full md:w-[30rem] xxl:w-[40rem] rounded"
         />
+        </Link>
         </div>
 
       <h2 className="md:text-3xl text-4xl flex flex-wrap font-gilLight font-extrabold mt-2">

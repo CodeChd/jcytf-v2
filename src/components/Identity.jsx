@@ -4,8 +4,8 @@ const Identity = () => {
   return (
     <section className=" bg-slate-50  text-gray-950 min-h-[80vh] flex items-center ">
       <div className="max-w-7xl mx-auto sm:px-4  xxl:max-w-6xl wide:max-w-8xl xxl:py-8 p-20">
-        <div className="flex xxl:flex-col xxl:items-center gap-14 items-center font-gilLight font-bold text-xl">
-          <div className="w-full h-full menu:w-[80rem] menu:h-[20rem]">
+        <div className="flex xl:flex-col xl:items-center gap-14 items-center font-gilLight font-bold text-xl">
+          <div className="xl:w-full xl:h-full w-[85rem] h-[20rem]">
             <Image
               src="/images/who.jpg"
               loading="lazy"
@@ -18,7 +18,7 @@ const Identity = () => {
 
           <div className="flex flex-col gap-2 justify-end">
             <div className="mb-4">
-              <h3 className="text-2xl text-[1.5rem] mb-2 leading-8 text-left font-gilLight font-bold uppercase text-amber-700">
+              <h3 className="xl:self-center text-2xl text-[1.5rem] mb-2 leading-8 text-left font-gilLight font-bold uppercase text-amber-700">
                 Who We Are
               </h3>
 

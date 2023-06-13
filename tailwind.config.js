@@ -73,7 +73,9 @@ module.exports = {
       lg: { max: "1080px" },
   
       mdItem: { max: "900px" },
-
+      
+      mdIcons: { min: "781px" },
+      
       md: { max: "780px" },
   
       sm: { max: "670px" },
@@ -81,7 +83,7 @@ module.exports = {
       xs: { max: "525px" },
 
       xxs: { max: "380px" },
-  },
+  }
   },
   plugins: [],
 }

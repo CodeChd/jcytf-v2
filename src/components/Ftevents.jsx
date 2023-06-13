@@ -22,7 +22,9 @@ const Ftevents = ({ id, data }) => {
 
         <div className="flex xxl:flex-col py-14 gap-10 items-center justify-center overflow-hidden">
           {data.length === 0 ? (
-            <h1 className="text-4xl font-gilLight font-bold italic">No events to show&nbsp;!</h1>
+            <h1 className="max-w-5xl mx-auto text-4xl italic font-gilLight mt-4">
+            No Events to Show...
+          </h1>
           ) : (
             evt.slice(0,3).map((evt)=> (
               <EventHomeItem key={evt.id} data={data} events={evt}/>

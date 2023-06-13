@@ -1,4 +1,5 @@
-import { toast } from "react-hot-toast";
+import {FaCheck, FaTrash } from "react-icons/fa";
+
 
 const EventsSearch = ({
   handleChange,
@@ -16,9 +17,9 @@ const EventsSearch = ({
         Upcoming Events
       </h1>
 
-      <div className="md:w-[70%] xl:w-[40rem] w-[60rem] ">
+      <div className="xs:w-full md:w-[90%] xl:w-[40rem] w-[60rem] p-4">
 
-        <form className="uppercase bg-white flex md:px-2 md:py-0 p-2 rounded relative">
+        <form className="uppercase bg-white flex md:px-2 p-2 rounded relative">
 
           <input
              type="text"
@@ -31,23 +32,26 @@ const EventsSearch = ({
 
 
 
-          <div className="flex gap-4 items-center ">
+          <div className="flex md:gap-8 gap-2 items-center justify-end ">
             <button
               onClick={handleSubmit}
-              className="bg-amber-600 p-1 mx-2 font-gilLight rounded text-white cursor-pointer font-extrabold  w-[7rem] h-[3rem] md:absolute md:h-[2.5rem] left-[45%] top-[4rem]"
+              className="md:hidden bg-amber-600 p-1 mx-2 font-gilLight rounded text-white cursor-pointer font-extrabold  w-[7rem] h-[3rem] xs:h-[2rem] "
             >
               Find events
             </button>
 
-
-
-
             <button
               onClick={handleReset}
-              className="bg-amber-600 p-1 mx-2 font-gilLight rounded text-white cursor-pointer font-extrabold  w-[7rem] h-[3rem] md:absolute md:h-[2.5rem] left-[73%] top-[4rem]"
+              className="md:hidden bg-amber-600 p-1 mx-2 font-gilLight rounded text-white cursor-pointer font-extrabold  w-[7rem] h-[3rem] xs:h-[2rem]"
             >
               Reset
             </button>
+
+
+            <FaCheck   onClick={handleSubmit} role="button" className="mdIcons:hidden text-2xl fill-amber-600"/>
+            
+            <FaTrash onClick={handleReset} role="button" className="mdIcons:hidden text-2xl text-amber-600 mr-5"/>
+
           </div>
 
 
@@ -55,8 +59,7 @@ const EventsSearch = ({
 
 
         </form>
-
-        <div className="mt-2 ">
+        <div className="mt-2">
           <select onChange={handleSelect} name="EVENTS" className="p-2">
             <option value="">Select Month</option>
             <option value="January">January</option>
@@ -73,6 +76,7 @@ const EventsSearch = ({
             <option value="December">December</option>
           </select>
         </div>
+
       </div>
     </header>
   );

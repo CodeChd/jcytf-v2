@@ -11,7 +11,7 @@ const Ministry = ({id}) => {
 
                 <div className='text-center text-white'>
                 <h2 className='text-6xl capitalize font-gil font-extrabold mb-2 text-amber-600'>Ministries</h2>
-                <p className='text-3xl font-gilLight font-semibold mt-4'>Our Team is committed to walking you through life's events.</p>
+                <p className='md:text-2xl text-3xl font-gilLight font-semibold mt-4'>Our Team is committed to walking you through life's events.</p>
                 </div>
 
             <div className='flex xl:flex-wrap justify-center items-center gap-20 font-gilLight font-semibold text-white '>

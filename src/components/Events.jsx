@@ -265,17 +265,24 @@ const Events = () => {
 
         <>
           {/* events display */}
-          {searchTerm !== "" || month
-            ? eventsPaginate.map((events) => (
+          {searchTerm !== "" || month ?
+          allevents.length === 0 && eventsPaginate.length === 0
+            ?   <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">
+            No Events to Show...
+          </h1> 
+              : eventsPaginate.map((events) => (
                 <EventItem key={events.id} events={events} />
-              ))
-              : searchTerm === "" &&  month === "" && dateVisible ||
+              )) 
+              :
+              searchTerm === "" &&  month === "" && dateVisible ||
                 !dateVisible  &&
-                allevents.map((evt) => <EventItem key={evt.id} events={evt} />)}
+                allevents.map((evt) => <EventItem key={evt.id} events={evt} />)
+            
+              }
 
           {/* promise handler */}
           {searchTerm !== "" &&  eventsPaginate.length === 0 && isSubmit ? (
-            <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">
+            <h1 className="max-w-5xl mx-auto sm:text-2xl mdItem:text-4xl text-5xl italic font-gilLight mt-20">
               What{" "}
               <span className="inline-block border-dashed border-b-2 border-amber-600 p-2 er-600 ">
                 event

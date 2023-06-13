@@ -85,7 +85,7 @@ const Footer = () => {
         id="footer-line"
         className="flex flex-col relative"
       >
-        <div className="max-w-4xl flex p-4 justify-center items-center">
+        <div className="lg:max-w-4xl flex p-4 justify-center items-center">
 
         <hr className=" w-1/2 flex-grow-1" />
         <Link href="/">

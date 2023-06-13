@@ -4,7 +4,6 @@ import Link from "next/link";
 const ChurchPartners = ({id}) => {
   return (
     <main>
-      <div>
         <div className="bg-[#d97706] text-white flex flex-col items-center  py-8 llg:py-20  gap-4">
           <h2 className="text-7xl xs:text-3xl md:text-4xl mdItem:text-5xl sml:text-6xl llg:text-7xl text-center font-gil">
             PARTNERS IN THE CHURCH
@@ -105,7 +104,6 @@ const ChurchPartners = ({id}) => {
         </section>
 
         </div>
-      </div>
     </main>
   );
 };

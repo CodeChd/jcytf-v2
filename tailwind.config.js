@@ -48,6 +48,7 @@ module.exports = {
       "widePos": "center top -38rem",
       "mediumPos": "center top -160px",
       "smallPos": "center top -20px",
+      "Solo": " -120px",
       "itemPos": "center bottom -20px",
       "home": "center top -22rem",
       "identityPos": "center bottom -120px"

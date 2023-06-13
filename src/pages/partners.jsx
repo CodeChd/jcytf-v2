@@ -10,7 +10,7 @@ const partners = () => {
          desc="Discover the organizations and individuals that help us make a difference in our community and beyond."
          btnName="Become A Partner?"
          href="partners"
-         className="bg-mediumPos bg-partners sml:bg-mediumsc lgDesktop:bg-widesc bg-no-repeat wide:bg-ultrasc"
+         className="bg-partners sml:bg-mediumsc sml:bg-Solo llg:bg-widesc llg:bg-mediumPos bg-no-repeat wide:bg-ultrasc"
          />
         <ChurchPartners id="partners"/>
     </>

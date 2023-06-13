@@ -12,12 +12,13 @@ const EventsSearch = ({
 
   return (
     <header className="flex flex-col items-center gap-14 py-6">
-      <h1 className="text-gray-950 font-gilLight font-extrabold text-7xl">
+      <h1 className="text-gray-950 font-gilLight font-extrabold md:text-4xl md:font-gil xl:text-5xl text-7xl">
         Upcoming Events
       </h1>
 
-      <div className="w-[60%]">
-        <form className="uppercase bg-white flex p-2 rounded">
+      <div className="md:w-[70%] xl:w-[40rem] w-[60rem] ">
+
+        <form className="uppercase bg-white flex md:px-2 md:py-0 p-2 rounded relative">
 
           <input
              type="text"
@@ -30,10 +31,10 @@ const EventsSearch = ({
 
 
 
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center ">
             <button
               onClick={handleSubmit}
-              className="bg-amber-600 p-1 font-gilLight rounded text-white cursor-pointer font-extrabold w-[7rem] h-[3rem]"
+              className="bg-amber-600 p-1 mx-2 font-gilLight rounded text-white cursor-pointer font-extrabold  w-[7rem] h-[3rem] md:absolute md:h-[2.5rem] left-[45%] top-[4rem]"
             >
               Find events
             </button>
@@ -43,7 +44,7 @@ const EventsSearch = ({
 
             <button
               onClick={handleReset}
-              className="bg-amber-600 p-1 font-gilLight rounded text-white cursor-pointer font-extrabold w-[7rem] h-[3rem]"
+              className="bg-amber-600 p-1 mx-2 font-gilLight rounded text-white cursor-pointer font-extrabold  w-[7rem] h-[3rem] md:absolute md:h-[2.5rem] left-[73%] top-[4rem]"
             >
               Reset
             </button>

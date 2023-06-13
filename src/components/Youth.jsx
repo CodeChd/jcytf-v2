@@ -3,13 +3,14 @@ import Link from "next/link"
 
 const Youth = ({id}) => {
   return (
-    <section id={id} className="py-12 bg-slate-50 text-black ">
-      <div className="max-w-7xl sml:max-w-6xl mx-auto flex items-cente min-h-[50vh]">
+    <section id={id} className=" bg-slate-50 text-black ">
+      <div className="max-w-7xl sml:max-w-6xl mx-auto flex items-cente min-h-[50vh] p-14">
 
-        <div className="flex gap-[5rem] items-center font-gilLight font-bold text-xl">
+        <div className="flex xxl:flex-col gap-[5rem] xxl:items-start items-center font-gilLight font-bold text-xl">
 
-          <div>
-            <Image src="/images/Youth.jpg"  loading="lazy" width={600} height={500} className="rounded-md"/>
+          <div className="lg:h-full xxl:w-full xxl:h-[30rem]">
+            <Image src="/images/Youth.jpg"  loading="lazy" width={600} height={500}
+             className="xxl:w-full xxl:h-full rounded-md"/>
           </div>
 
           <div className="flex flex-col justify-end gap-2 py-2">
@@ -19,7 +20,7 @@ const Youth = ({id}) => {
             Youth
           </h3>
           <p className="text-4xl mt-1 max-w-[45ch] text-left font-gil uppercase">
-          A safe place for teens to develop real relationships.
+          A safe place for teens to develop real relationships. 
           </p>
         </div>
         

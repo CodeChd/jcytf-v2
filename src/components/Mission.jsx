@@ -38,7 +38,7 @@ const Mission = ({id}) => {
             </Link>
           </div>
 
-          <div className=" w-full lg:w-full lg:h-full  xxl:w-full xxl:h-[20rem] xxl:order-1">
+          <div className=" w-full  md:h-full  xxl:w-full xxl:h-[20rem] xxl:order-1">
             <Image
               src="/images/place.jpg"
               loading="lazy"

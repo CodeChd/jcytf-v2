@@ -40,6 +40,7 @@ module.exports = {
       "mediumsc": "100rem",
       "smallsc": "93rem",
       "ultraschome": "143rem",
+      "itemsc": "140rem",
     },
     backgroundPosition: {
       'searchBt': '10px',
@@ -47,6 +48,7 @@ module.exports = {
       "widePos": "center top -38rem",
       "mediumPos": "center top -160px",
       "smallPos": "center top -20px",
+      "itemPos": "center bottom -20px",
       "home": "center top -22rem",
       "identityPos": "center bottom -120px"
 
@@ -70,7 +72,9 @@ module.exports = {
   
       lg: { max: "1080px" },
   
-      md: { max: "767px" },
+      mdItem: { max: "900px" },
+
+      md: { max: "780px" },
   
       sm: { max: "670px" },
   

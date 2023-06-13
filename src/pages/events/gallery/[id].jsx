@@ -19,7 +19,7 @@ const gallery = ({ data, detailsId }) => {
   console.log(images[0].isValid);
 
   return (
-    <main className="p-14 flex flex-col  gap-8 bg-slate-100 min-h-screen ">
+    <main className="p-14 flex flex-col items-center justify-center  gap-8 bg-slate-100 min-h-screen ">
       <h1 className="text-4xl font-gil font-sm italic self-center border-solid border-b-[3px] pb-4 border-amber-600">
         <span className="inline-block">{evtData[0].EventName}</span> Gallery
       </h1>

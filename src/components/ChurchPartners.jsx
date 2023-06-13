@@ -6,18 +6,20 @@ const ChurchPartners = ({id}) => {
     <main>
       <div>
         <div className="bg-[#d97706] text-white flex flex-col items-center  py-8 llg:py-20  gap-4">
-          <h2 className="text-7xl sml:text-6xl llg:text-7xl font-gil">
+          <h2 className="text-7xl md:text-4xl mdItem:text-5xl sml:text-6xl llg:text-7xl font-gil">
             PARTNERS IN THE CHURCH
           </h2>
-          <p className="text-2xl">
+          <p className=" md:text-lg text-2xl">
             God is transforming lives here at JCYTF Church.
           </p>
         </div>
 
         <div className="flex flex-col gap-14 max-w-[75.6rem] mx-auto p-8 leading-7 text-gray-700">
-          <div className=" bg-gray-100 p-4 rounded-md flex gap-8">
-            <div className="w-[130rem] sml:w-[100rem]">
-              <Image src="/images/samaritana.jpg" width={500} height={300} />
+          <div className=" bg-gray-100 p-4 rounded-md flex mdItem:flex-col gap-8">
+            <div className="w-[130rem] mdItem:w-full">
+              <Image src="/images/samaritana.jpg" width={500} height={300}
+                className="w-full h-full"
+              />
             </div>
 
             <div className="flex flex-col justify-center">
@@ -31,8 +33,8 @@ const ChurchPartners = ({id}) => {
             </div>
           </div>
 
-          <div className="bg-gray-100 p-4 rounded-md flex gap-8">
-            <div className="flex flex-col justify-center">
+          <div className="bg-gray-100 p-4 rounded-md flex mdItem:flex-col gap-8">
+            <div className="flex flex-col justify-center mdItem:order-2">
               <h3 className="text-2xl mb-2">Bawat Isa Mahalaga - B1M</h3>
               <p className="text-xl">
                 A movement of citizens and groups of citizens, whose mission is
@@ -40,14 +42,18 @@ const ChurchPartners = ({id}) => {
               </p>
             </div>
 
-            <div className="w-[50rem]">
-              <Image src="/images/b1m.png" width={600} height={500} />
+            <div className="w-[50rem] mdItem:w-full mdItem:order-1">
+              <Image src="/images/b1m.png" width={600} height={500} 
+                className="w-full h-full"
+              />
             </div>
           </div>
 
-          <div className="bg-gray-100 p-4 rounded-md flex gap-8">
-            <div className="w-[40rem] sml:w-[35rem]">
-              <Image src="/images/pem.jpg" width={400} height={300} />
+          <div className="bg-gray-100 p-4 rounded-md flex mdItem:flex-col gap-8">
+            <div className="w-[40rem] mdItem:w-full">
+              <Image src="/images/pem.jpg" width={400} height={300}
+                className="w-full "
+              />
             </div>
 
             <div className="flex flex-col justify-center">

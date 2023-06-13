@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const Kids = ({id}) => {
   return (
-    <section id={id} className="py-12 bg-[#d97706] text-white ">
-      <div className="max-w-7xl sml:max-w-6xl mx-auto min-h-[50vh] flex  items-center">
-        <div className="flex gap-20 font-gilLight  font-bold text-xl">
-          <div className="flex flex-col justify-end gap-3 py-2">
+    <section id={id} className=" bg-[#d97706] text-white ">
+      <div className="max-w-7xl sml:max-w-6xl mx-auto min-h-[50vh] flex  items-center p-14">
+        <div className="flex xxl:flex-col xxl:gap-14  gap-20 font-gilLight  font-bold text-xl">
+          <div className="flex flex-col  gap-3 py-2  xxl:order-2">
             <div className="mb-2">
-              <h3 className="text-2xl text-[1.5rem] leading-8 tracking-wide text-left font-gilLight font-bold uppercase text-white">
+              <h3 className="xxl:self-center text-2xl text-[1.5rem] leading-8 tracking-wide text-left font-gilLight font-bold uppercase text-white">
                 Kids
               </h3>
               <p className="text-4xl mt-1 max-w-[45ch] text-left font-gil uppercase">
@@ -33,13 +33,13 @@ const Kids = ({id}) => {
             </Link>
           </div>
 
-          <div>
+          <div className="xxl:order-1 md:h-full xxl:w-full xxl:h-[30rem]">
             <Image
               src="/images/Kids.jpg"
               loading="lazy"
               width={600}
               height={500}
-              className="rounded-md brightness-90 "
+              className="xxl:w-full xxl:h-full rounded-md brightness-90 "
             />
           </div>
         </div>

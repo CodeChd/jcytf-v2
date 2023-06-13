@@ -78,7 +78,7 @@ const Events = () => {
       }
       buttons.push(
         <button
-          className={`px-8 mt-4 text-lg font-gil ${
+          className={`md:px-2 px-8 mt-4 text-lg font-gil ${
             i === currentPage ? "text-amber-400" : "text-gray-800"
           }`}
           key={i}
@@ -296,7 +296,7 @@ const Events = () => {
           {dateVisible && searchTerm !== "" ||
           eventsPaginate.length === 0 ||
           totalPages === 1 ? null : (
-            <div className="self-center text-white">
+            <div className="self-center text-white ">
               <button
                 className={`bg-amber-600 p-2 px-4 mx-4 rounded-full ${
                   currentPage === 1   && "cursor-not-allowed bg-amber-700"

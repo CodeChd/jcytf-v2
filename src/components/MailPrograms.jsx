@@ -60,8 +60,8 @@ const MailPrograms = () => {
   }
 
   return (
-    <main className="min-h-screen py-8 flex items-center">
-      <div className="h-full max-w-6xl mx-auto">
+    <main className="min-h-screen  flex items-center">
+      <div className="h-full max-w-6xl mx-auto p-14">
         <div>
           <h1 className="text-5xl text-center font-gil">
             Let us know what Group you would like to find out more about.
@@ -73,13 +73,13 @@ const MailPrograms = () => {
           </p>
         </div>
 
-        <div className="w-full flex mt-8 gap-8">
+        <div className="w-full flex mdItem:flex-col  mt-8 gap-8">
           <div className="w-full">
             <Image
               src="/images/collegeminimage.jpg"
               width={700}
               height={400}
-              className="rounded-md h-full"
+              className="rounded-md w-full h-full"
               priority
             />
           </div>

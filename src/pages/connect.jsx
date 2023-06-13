@@ -16,7 +16,7 @@ const connect = () => {
          desc="No matter where you are in life, there is a place for you here"
          btnName="Join Us"
          href="ministry"
-         className="bg-connect bg-no-repeat sml:bg-smallsc  llg:bg-widesc wide:bg-ultrasc"
+         className="bg-connect bg-no-repeat sml:bg-mediumsc sml:bg-smallPos  llg:bg-widesc wide:bg-ultrasc"
         />
     </header>
       <Kids id="kids" />

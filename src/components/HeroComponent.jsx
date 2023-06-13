@@ -10,8 +10,8 @@ const HeroComponent = ({ title, desc, btnName, href = "/", className}) => {
         
       <div className="text-white absolute md:top-[53vh] top-[60vh] xxl:-left-10 sml:px-0 px-32  left-0 mb-4  ">
         <div className="sml:px-[8.5rem]">
-          <h1 className="xxl:text-5xl text-6xl font-gil shadow-lg">{title}</h1>
-          <p className="text-xl shadow-lg pt-2">{desc}</p>
+          <h1 className="xxl:text-5xl text-6xl font-gil">{title}</h1>
+          <p className="text-xl pt-2">{desc}</p>
           <SmoothScroll id={href} title={btnName} offset="" icon={ <FaArrowRight className=" ml-2 inline-block" />} className="text-lg inline-block mt-4 p-2 font-gilLioght font-bold rounded bg-amber-700" />
         </div>
       </div>

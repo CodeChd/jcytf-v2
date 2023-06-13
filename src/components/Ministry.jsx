@@ -5,38 +5,38 @@ import { Youth,Kids, Junior,Prayer, Worship } from './SVG'
 
 const Ministry = ({id}) => {
   return (
-    <section id={id} className='w-full py-20 min-h-[65vh] bg-ministry bg-mediumPos bg-no-repeat brightness-110'>
-        <div id='outer' className='max-w-1/2 mx-auto'>
-            <div id='inner' className='flex flex-col items-center gap-12'>
+    <section id={id} className='w-full p-14 min-h-[65vh]  bg-ministry  bg-no-repeat lg:bg-itemsc xxl:bg-mediumsc wide:bg-ultraschome brightness-110 grid place-items-center'>
+        <div id='outer' className='mx-auto '>
+            <div id='inner' className='flex flex-col items-center justify-center gap-12'>
 
                 <div className='text-center text-white'>
-                <h2 className='text-6xl uppercase font-gil font-extrabold mb-2 text-amber-600'>Ministries</h2>
+                <h2 className='text-6xl capitalize font-gil font-extrabold mb-2 text-amber-600'>Ministries</h2>
                 <p className='text-3xl font-gilLight font-semibold mt-4'>Our Team is committed to walking you through life's events.</p>
                 </div>
 
-            <div className='flex gap-20 font-gilLight font-semibold text-white'>
+            <div className='flex xl:flex-wrap justify-center items-center gap-20 font-gilLight font-semibold text-white '>
                 <p className='flex flex-col items-center  '>
-                    <Kids className="h-24 fill-white"/>
-                    <span className='text-2xl inline-block mt-4'>Kids Ministry</span>
+                    <Kids className="md:h-18 xl:h-20 h-24  fill-white"/>
+                    <span className='xl:text-xl text-2xl inline-block mt-4'>Kids Ministry</span>
                 </p>
                 <p className='flex flex-col items-center'>
-                <Youth className="h-24 fill-white"/>
-                    <span className='text-2xl inline-block mt-4'>Youth Ministry</span>
+                <Youth className="md:h-18 xl:h-20 h-24  fill-white"/>
+                    <span className='xl:text-xl text-2xl inline-block mt-4'>Youth Ministry</span>
                     
                 </p>
                 <p className='flex flex-col items-center'>
-                    <Junior className="h-24 fill-white"/>
-                    <span className='text-2xl inline-block mt-4'>Junior Ministry</span>
+                    <Junior className="md:h-18 xl:h-20 h-24  fill-white"/>
+                    <span className='xl:text-xl text-2xl inline-block mt-4'>Junior Ministry</span>
                     
                 </p>
                 <p className='flex flex-col items-center mt-2'>
-                    <Prayer className="h-24 fill-white"/>
-                    <span className='text-2xl inline-block mt-4'>Prayer Ministry</span>
+                    <Prayer className="md:h-18 xl:h-20 h-24  fill-white"/>
+                    <span className='xl:text-xl text-2xl inline-block mt-4'>Prayer Ministry</span>
                     
                 </p>
                 <p className='flex flex-col items-center mt-2'>
-                    <Worship className="h-24 fill-white"/>
-                    <span className='text-2xl inline-block mt-4'>Worship Ministry</span>
+                    <Worship className="md:h-18 xl:h-20 h-24  fill-white"/>
+                    <span className='xl:text-xl text-2xl inline-block mt-4'>Worship Ministry</span>
                     
                 </p>
 

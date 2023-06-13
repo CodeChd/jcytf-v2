@@ -5,8 +5,8 @@ import { FaArrowRight } from "react-icons/fa";
 
 const LifeGroup = ({id}) => {
   return (
-    <section id={id} className="w-full min-h-[80vh] py-20 grid place-items-center">
-                <div id="inner" className="flex flex-col items-center">
+    <section id={id} className="w-full min-h-[80vh] grid place-items-center">
+                <div id="inner" className="flex flex-col items-center p-14">
 
                 <div id="heading_holder" className="max-w-5xl mx-auto">
                     <h2 className="text-center text-8xl font-gil">
@@ -16,7 +16,7 @@ const LifeGroup = ({id}) => {
                     <p className="text-2xl my-8 font-gilLight font-semibold">Our Groups are designed to help you experience real community and grow in your faith. We have a variety of groups with different focuses but all aimed at the same purpose:</p>
                 </div>
 
-                <div id="Groups" className="flex gap-8 justify-center items-center text-3xl font-gilLight font-extrabold">
+                <div id="Groups" className="flex xl:flex-wrap gap-8 justify-center items-center text-3xl font-gilLight font-extrabold">
                         <div>
                             <span className="border-dashed border-b-2 border-amber-500 py-2">CellGroup</span>
                         </div>

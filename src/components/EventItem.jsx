@@ -8,12 +8,12 @@ const EventItem = ({ events }) => {
   const currentDate = DateFormatter(events)
 
   return (
-    <div id="outer" className="w-[70%] mx-auto my-8">
+    <div id="outer" className=" p-8">
       <div
         id="inner"
-        className="flex w-full border-2 border-solid border-orange-100 bg-slate-50 rounded-md overflow-hidden"
+        className="flex md:flex-col w-full border-2 border-solid border-orange-100 bg-slate-50 rounded-md overflow-hidden max-w-7xl mx-auto "
       >
-        <div className="flex-1 w-full">
+        <div className="flex-1 ">
           <Image
             src={`https://jcytfchurch.online/images/${events.featuredimage}`}
             alt={events.featuredimage}
@@ -23,7 +23,7 @@ const EventItem = ({ events }) => {
           />
         </div>
 
-        <div className="flex-[2] flex flex-col justify-center p-4">
+        <div className="flex-[2] flex flex-col  flex-wrap justify-center p-4">
           <Link href={`/events/${events.id}`}>
             <h3 className="text-4xl font-gilLight font-semibold">
               {events.EventName}
@@ -32,7 +32,7 @@ const EventItem = ({ events }) => {
           <p className="mt-2 text-xl">{events.Description}</p>
         </div>
 
-        <div className=" flex-1  flex flex-col gap-5 py-4 font-gilLight font-bold justify-center items-center border-l-2 border-orange-100 border-solid text-left ">
+        <div className=" flex-1  flex flex-col gap-5 py-4 font-gilLight font-bold md:items-start  md:px-4 justify-center items-center border-l-2 border-orange-100 border-solid text-left ">
           <span className=" text-xl font-gil ">
             <AiOutlineCalendar className="inline-block" />&nbsp;{currentDate}
           </span>

@@ -59,10 +59,10 @@ const MailPartners = () => {
 // console.log(values)
 
   return (
-    <main className="min-h-screen py-8 flex items-center">
-      <div className="h-full max-w-6xl mx-auto">
+    <main className="min-h-screen flex items-center">
+      <div className="h-full max-w-6xl mx-auto p-8">
         <div>
-          <h1 className="text-7xl text-center font-gil">
+          <h1 className="lg:text-5xl text-7xl text-center font-gil">
           BECOMING A PARTNER
           </h1>
           <p className="text-xl text-center my-4 font-gilLight">
@@ -70,19 +70,19 @@ const MailPartners = () => {
           </p>
         </div>
 
-        <div className="w-full flex mt-8 max-w-5xl gap-10 mx-auto">
-          <div className=" flex flex-col items-center gap-2">
+        <div className="w-full flex mdItem:flex-col mt-8 max-w-5xl gap-10 mx-auto">
+          <div className=" flex flex-col items-center gap-2 mdItem:order-2">
             <h2 className="text-4xl font-gil text-gray-600">Way to Give:</h2>
             <Image
               src="/images/gcash.jpg"
               width={400}
               height={400}
-              className="hover:scale-125 rounded-md"
+              className="mdItem:pointer-events-none hover:scale-125 rounded-md"
               priority
             />
           </div>
           
-          <form onSubmit={handleSubmit} className="w-full h-[33rem] bg-slate-200 rounded-md flex flex-col p-4 justify-around  outline-none text-xl">
+          <form onSubmit={handleSubmit} className="w-full h-[33rem] bg-slate-200 rounded-md flex flex-col p-4 justify-around  outline-none text-xl  mdItem:order-1">
             <label htmlFor="name" className="my-2">Name</label>
             <input
               type="text"

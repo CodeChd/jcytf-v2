@@ -104,7 +104,7 @@ const Footer = () => {
           <div className="pb-8">
             <ul className="flex md:flex-col justify-between gap-4 items-center ">
 
-            <div className="flex md:flex-col items-center gap-4 xs:text-sm md:order-2 ">
+            <div className="flex md:flex-col items-center gap-4 xs:text-sm md:order-2 font-medium">
             <li className=" text-center"><span className="">&copy; 2023 All Rights Reserved.</span></li>
             <Link href="/">Terms</Link>
             <Link href="/">Privacy</Link>

@@ -20,12 +20,12 @@ const gallery = ({ data, detailsId }) => {
 
   return (
     <main className="p-14 flex flex-col lg:items-center justify-center  gap-8 bg-slate-100 min-h-screen ">
-      <h1 className="text-4xl font-gil font-sm italic self-center border-solid border-b-[3px] pb-4 border-amber-600">
+      <h1 className="md:3xl text-4xl text-center font-gil font-sm italic self-center border-solid border-b-[3px] pb-4 border-amber-600">
         <span className="inline-block">{evtData[0].EventName}</span> Gallery
       </h1>
 
       {images[0].isValid[4] === "" || images[0].isValid[4] === undefined ? (
-        <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight pt-20">
+        <h1 className="max-w-5xl mx-auto xs:text-2xl md:text-4xl text-5xl italic font-gilLight pt-20">
          No Images yet..
         </h1>
       ) : (

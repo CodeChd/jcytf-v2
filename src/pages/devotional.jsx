@@ -7,7 +7,7 @@ const HeroDevotion = ({ title, desc, className }) => {
         className={` ${className} flex justify-center items-center w-full min-h-[85vh]`}
         >
       <div className="z-20 text-white ">
-        <div className="p-32 text-center">
+        <div className="sm:px-8 md:px-14 p-32 text-center">
           <h1 className="md:text-5xl xxl:text-6xl text-8xl font-gil shadow-lg">{title}</h1>
           <p className="text-xl shadow-lg pt-2 max-w-2xl">{desc}</p>
         </div>

@@ -41,7 +41,7 @@ const Ministry = ({id}) => {
                 </p>
 
             </div>
-            <Link href="/ministry" className=" mr-8  text-2xl font-gilLight font-extrabold ml-4 border-2 border-white border-solid p-2 px-4  rounded text-white">
+            <Link href="/ministry" className=" mr-8  md:text-lg text-2xl font-gilLight font-extrabold ml-4 border-2 border-white border-solid p-2 px-4  rounded text-white">
                         Join Us <FaArrowRight className="inline-block ml-2 "/>
                     </Link>
 

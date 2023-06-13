@@ -121,7 +121,8 @@ const Pastors = ({ id }) => {
             <SwiperSlide>
               <Image
                 src="/images/pastors/first.png"
-                alt=""
+                alt="PULPIT & HEAD PASTOR"
+                priority
                 width={650}
                 height={700}
               />
@@ -132,7 +133,8 @@ const Pastors = ({ id }) => {
             <SwiperSlide>
               <Image
                 src="/images/pastors/second.png"
-                alt=""
+                alt="CARE PASTOR"
+                priority
                 width={650}
                 height={700}
               />
@@ -145,7 +147,8 @@ const Pastors = ({ id }) => {
             <SwiperSlide>
               <Image
                 src="/images/pastors/third.png"
-                alt=""
+                alt="WORSHIP PASTOR"
+                priority
                 width={650}
                 height={700}
               />
@@ -154,7 +157,8 @@ const Pastors = ({ id }) => {
             <SwiperSlide>
               <Image
                 src="/images/pastors/fourth.png"
-                alt=""
+                alt="CHRISTIAN EDUCATION PASTOR"
+                priority
                 width={650}
                 height={700}
                 />
@@ -168,7 +172,8 @@ const Pastors = ({ id }) => {
             <SwiperSlide>
               <Image
                 src="/images/pastors/fifth.png"
-                alt=""
+                alt="ADMINISTRATIVE PASTOR"
+                priority
                 width={650}
                 height={700}
               />

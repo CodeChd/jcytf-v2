@@ -62,7 +62,7 @@ const VisitMail = () => {
 
         <div className="">
         
-          <form onSubmit={handleSubmit} className="w-[30rem] h-[30rem] bg-slate-200 rounded-md flex flex-col p-4 justify-around  outline-none text-xl">
+          <form onSubmit={handleSubmit} className="xl:w-[20rem] xl:h-[25rem] w-[30rem] h-[30rem] bg-slate-200 rounded-md flex flex-col p-4 justify-around  outline-none text-xl">
             <label htmlFor="name" className='mb-2'>Name</label>
             <input
               type="text"

@@ -13,8 +13,8 @@ const Ftevents = ({ id, data }) => {
           <h3 className="font-gilLight font-extrabold text-gray-700 text-lg">
             What's Happening
           </h3>
-          <h2 className=" md:text-5xl sml:text-6xl text-7xl font-gil">Upcoming Events</h2>
-          <p className="normal-case text-xl max-w-[60ch]  font-extrabold font-gilLight mt-2 self-start">
+          <h2 className=" md:text-4xl sml:text-6xl text-7xl font-gil">Upcoming Events</h2>
+          <p className="normal-case md:text-lg text-xl max-w-[60ch]  font-extrabold font-gilLight mt-2 self-start">
             Church doesn’t just happen on Sundays. Find times and locations for
             events you don’t want to miss by clicking below.
           </p>

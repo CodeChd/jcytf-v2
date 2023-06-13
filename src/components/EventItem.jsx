@@ -39,7 +39,7 @@ const EventItem = ({ events }) => {
           <span className="">
             <AiOutlineClockCircle className="inline-block" /> {events.Time}
           </span>
-          <span className="">
+          <span className="max-w-[20ch] text-center">
             <FaMapMarkerAlt className="inline-block" /> {events.Venue}
           </span>
           <Link href={`/events/${events.id}`} className="self-center rounded-sm p-2 px-4 bg-amber-600 text-white">

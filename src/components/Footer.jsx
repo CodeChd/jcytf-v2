@@ -79,10 +79,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+
       <div
         id="footer-line"
-        className="flex justify-center items-center pt-4 pb-8 relative"
+        className="flex flex-col relative"
       >
+        <div className="max-w-4xl flex p-4 justify-center items-center">
+
         <hr className=" w-1/2 flex-grow-1" />
         <Link href="/">
           <Image
@@ -93,9 +97,18 @@ const Footer = () => {
           />
         </Link>
         <hr className=" w-1/2 flex-grow-1" />
-        <div className="relative">
-          <ul className="flex gap-4 mt-4 items-center -left-24 absolute">
-            <li>
+        </div>
+
+
+
+          <div className="float-right pb-8">
+            <ul className="flex xs:flex-col justify-between gap-4 items-center ">
+
+            <li className="xs:order-2"><span className="xs:text-sm">&copy; 2023 All Rights Reserved.</span></li>
+
+          <div className="flex gap-4 xs:order-1">
+
+            <li >
               <Link
                 href="https://web.facebook.com/jcytfchurchpayatas"
                 target="_blank"
@@ -109,8 +122,13 @@ const Footer = () => {
                 <AiFillMail />
               </Link>
             </li>
-          </ul>
-        </div>
+          </div>
+            </ul>
+
+           
+          </div>
+
+
       </div>
     </footer>
   );

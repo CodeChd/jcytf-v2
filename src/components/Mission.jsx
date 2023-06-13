@@ -4,11 +4,12 @@ import Link from "next/link";
 const Mission = ({id}) => {
   return (
     <section id={id} className=" bg-[#d97706] text-white min-h-[52vh] ">
-      <div className="p-14 px-20 max-w-7xl mx-auto xxl:px-22 xxl:max-w-5xl wide:max-w-8xl">
+      <div className="p-14 px-20 max-w-7xl mx-auto sm:px-4 xxl:max-w-5xl wide:max-w-8xl">
      
 
-        <div className="flex xxl:flex-col xxl:items-center gap-14 font-gilLight font-bold text-xl">
-          <div className="flex flex-col gap-2 justify-end xxl:order-2">
+        <div className="flex mdItem:flex-col mdItem:items-center gap-14 font-gilLight font-bold text-xl">
+
+          <div className="flex flex-col gap-2 justify-end mdItem:order-2">
 
           <div className="mb-4">
           <h3 className="text-2xl text-[1.5rem] mb-1 leading-8 text-left font-gilLight font-bold uppercase text-white">
@@ -38,13 +39,13 @@ const Mission = ({id}) => {
             </Link>
           </div>
 
-          <div className=" w-full  md:h-full  xxl:w-full xxl:h-[20rem] xxl:order-1">
+          <div className=" w-full  md:h-full  mdItem:w-full mdItem:h-[20rem] mdItem:order-1">
             <Image
               src="/images/place.jpg"
               loading="lazy"
               width={500}
               height={300}
-              className="xxl:w-full xxl:h-full rounded"
+              className="mdItem:w-full mdItem:h-full rounded"
             />
           </div>
         </div>

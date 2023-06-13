@@ -3,7 +3,7 @@ import Image from "next/image";
 const Identity = () => {
   return (
     <section className=" bg-slate-50  text-gray-950 min-h-[80vh] flex items-center ">
-      <div className="max-w-7xl mx-auto xxl:max-w-6xl wide:max-w-8xl xxl:py-8 p-20">
+      <div className="max-w-7xl mx-auto sm:px-4  xxl:max-w-6xl wide:max-w-8xl xxl:py-8 p-20">
         <div className="flex xxl:flex-col xxl:items-center gap-14 items-center font-gilLight font-bold text-xl">
           <div className="w-full h-full menu:w-[80rem] menu:h-[20rem]">
             <Image

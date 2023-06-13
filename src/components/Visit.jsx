@@ -41,15 +41,15 @@ const FaqItems = ({ q, desc }) => {
 const Visit = ({ id }) => {
   return (
     <section id={id} className="bg-slate-50 ">
-      <div className="w-full h-full grid place-content-center min-h-[60vh] p-14">
+      <div className="w-full h-full grid place-content-center min-h-[60vh] sm:px-4 p-14">
         <div className="flex flex-col items-center ">
           <h3 className="text-xl font-gilLight font-bold text-amber-800">
             NEW HERE?
           </h3>
-          <h2 className="text-5xl uppercase font-gil font-bold mb-4 ">
+          <h2 className="md:text-4xl text-5xl uppercase font-gil font-bold mb-4 ">
             Coming to visit?
           </h2>
-          <p className="max-w-7xl text-center mx-auto font-gilLight font-extrabold xxl:text-xl text-[1.40rem] leading-10">
+          <p className="max-w-7xl text-center mx-auto font-gilLight font-extrabold md:max-w-3xl md:text-lg xxl:text-xl text-[1.40rem] leading-10 ">
             We know visiting a church for the first time can be intimidating,
             and we want to make your visit at Jesus Christ Yesterday Today And
             Forever Church a great one! When you come in. Further inquiries about the church? you
@@ -104,23 +104,23 @@ const Visit = ({ id }) => {
             </div>
         </div>
       </div>
-      <section className="w-full p-14 bg-sched bg-mediumPos bg-no-repeat bg-cover lgDesktop:bg-widesc wide:bg-ultrasc min-h-[50vh] py-8">
+      <section className="w-full xs:px-4 p-14 bg-sched bg-mediumPos bg-no-repeat bg-cover llg:bg-widesc wide:bg-ultrasc min-h-[50vh] py-8">
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center ">
-          <h2 className="text-3xl uppercase font-gilLight font-extrabold text-white border-b-2 border-solid border-white">
+          <h2 className="xs:text-2xl text-3xl uppercase font-gilLight font-extrabold text-white border-b-2 border-solid border-white">
             Schedule of Services
           </h2>
 
           <div className="grid grid-cols-1 place-content-center justify-center items-center gap-8">
-            <div className=" col-span-2 uppercase font-gilLight font-extrabold text-xl text-white">
+            <div className=" col-span-2 uppercase font-gilLight font-extrabold xs:text-lg  text-xl text-white">
               <div className="flex flex-col items-center gap-2 mt-4">
-                <h3 className="mb-2 text-2xl">Sunday Service</h3>
+                <h3 className="mb-2 xs:text-xl text-2xl">Sunday Service</h3>
                 <p>KID'S MINISTRY | 8:00AM - 9:00AM</p>
                 <p>SUNDAY SCHOOL | 9:30AM - 10:00AM</p>
                 <p>DIVINE SERVICE | 10:30AM - 12:30NN</p>
                 <p>YOUTH SERVICE | 3:00PM - 5:00PM</p>
-                <p className="text-2xl mt-2 flex flex-col items-center">
+                <p className="xs:text-xl  text-2xl mt-2 flex flex-col items-center">
                   WEDNESDAY PRAYER MEETING
-                  <span className="text-xl mt-2">7:00PM - 9:00PM</span>
+                  <span className="xs:text-lg  text-xl mt-2">7:00PM - 9:00PM</span>
                 </p>
               </div>
             </div>
@@ -130,14 +130,14 @@ const Visit = ({ id }) => {
             <p className=" text-2xl flex flex-col items-center text-white gap-2">
               <FaMapMarkerAlt />
               <span className="">Join Us</span>
-              <span className="max-w-[30ch] text-center font-gilLight font-extrabold text-xl ">
+              <span className="max-w-[30ch] text-center font-gilLight font-extrabold xs:text-lg  text-xl ">
                 MADJAAS STREET GROUP 2, AREA B, QUEZON CITY, 1119 MANILA
               </span>
             </p>
             <p className="text-2xl flex flex-col items-center text-white gap-2">
               <FaPhoneAlt />
               <span className="">Contact Us</span>
-              <span className=" uppercase max-w-[30ch] text-center font-gilLight font-extrabold text-xl ">
+              <span className=" uppercase max-w-[30ch] text-center font-gilLight font-extrabold xs:text-lg  text-xl ">
                 (+63) 997 574 4318 jcytfchurch92@gmail.com
               </span>
             </p>

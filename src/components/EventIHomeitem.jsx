@@ -20,7 +20,7 @@ const EventHomeItem = ({events}) => {
         />
         </div>
 
-      <h2 className="text-4xl flex flex-wrap font-gilLight font-extrabold mt-2">
+      <h2 className="md:text-3xl text-4xl flex flex-wrap font-gilLight font-extrabold mt-2">
         {events.EventName}
       </h2>
 

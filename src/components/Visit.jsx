@@ -26,7 +26,10 @@ const FaqItems = ({ q, desc }) => {
         )}
       </button>
 
-      <a className="text-[1.28rem] font-extrabold font-gilLight">{q}</a>
+      <button  {...getToggleProps({
+          onClick: () => setExpanded((x) => !x),
+          
+        })} className="text-[1.3rem] font-extrabold font-gilLight">{q}</button>
 
 
       <div {...getCollapseProps()} className="rounded-md my-4 ">
@@ -58,7 +61,7 @@ const Visit = ({ id }) => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto my-8 flex xxl:flex-col xxl:items-start xxl:gap-14  gap-[10.2rem]">
+        <div className="max-w-5xl mx-auto my-8 flex xxl:flex-col xxl:items-start xxl:gap-14  gap-[5rem]">
           <div className="order-2 xxl:max-w-4xl">
 
 

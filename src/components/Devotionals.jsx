@@ -63,7 +63,7 @@ const Devotionals = () => {
               className="bg-amber-600 text-white xs:text-xl text-2xl rounded-full p-1 px-4 font-gilLight border-2  border-solid capitalize transition-all hover:text-gray-900 hover:bg-white hover:hover:border-amber-600 self-center -translate-x-[0.25rem]"
               target="_blank"
               >
-              More of Our Devotionals
+             More Daily Inspiration
             </a>
               </div>
     </section>

@@ -187,7 +187,7 @@ const Events = () => {
         setDateVisible(true); // indicate that select element is fired
         setCurrentPage(1); // reset current page when changing filters
 
-        if (data.data.length === 0 && month) {
+        if (data.data.length === 0 ) {
           toast.error(`No events found in ${current}`);
         }
         if (data.data.length) {

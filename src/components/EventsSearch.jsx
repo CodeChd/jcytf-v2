@@ -32,17 +32,17 @@ const EventsSearch = ({
 
 
 
-          <div className="flex md:gap-8 gap-2 items-center justify-end ">
+          <div className="flex  gap-3 items-center justify-end ">
             <button
               onClick={handleSubmit}
-              className="md:hidden bg-amber-600 p-1 mx-2 font-gilLight rounded text-white cursor-pointer font-extrabold  w-[7rem] h-[3rem] xs:h-[2rem] "
+              className="md:hidden bg-amber-600 p-1  font-gilLight rounded text-white cursor-pointer font-extrabold  w-[7rem] h-[3rem] xs:h-[2rem] "
             >
               Find events
             </button>
 
             <button
               onClick={handleReset}
-              className="md:hidden bg-amber-600 p-1 mx-2 font-gilLight rounded text-white cursor-pointer font-extrabold  w-[7rem] h-[3rem] xs:h-[2rem]"
+              className="md:hidden bg-amber-600 p-1  font-gilLight rounded text-white cursor-pointer font-extrabold  w-[7rem] h-[3rem] xs:h-[2rem]"
             >
               Reset
             </button>

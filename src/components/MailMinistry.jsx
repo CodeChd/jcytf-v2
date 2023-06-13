@@ -62,7 +62,7 @@ const MailMinistry = () => {
     <main className="min-h-screen flex items-center">
       <div className="h-full max-w-6xl mx-auto p-8">
         <div>
-          <h1 className="text-6xl text-center font-gil">
+          <h1 className="md:text-5xl text-6xl text-center font-gil">
           Got Questions? Want More Information?
           </h1>
           <p className="text-2xl text-center my-4 font-gilLight">

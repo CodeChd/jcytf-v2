@@ -6,10 +6,10 @@ const ChurchPartners = ({id}) => {
     <main>
       <div>
         <div className="bg-[#d97706] text-white flex flex-col items-center  py-8 llg:py-20  gap-4">
-          <h2 className="text-7xl md:text-4xl mdItem:text-5xl sml:text-6xl llg:text-7xl font-gil">
+          <h2 className="text-7xl xs:text-3xl md:text-4xl mdItem:text-5xl sml:text-6xl llg:text-7xl text-center font-gil">
             PARTNERS IN THE CHURCH
           </h2>
-          <p className=" md:text-lg text-2xl">
+          <p className=" md:text-lg text-2xl text-center">
             God is transforming lives here at JCYTF Church.
           </p>
         </div>
@@ -94,11 +94,11 @@ const ChurchPartners = ({id}) => {
             </h3>
             </div>
 
-            <div className="uppercase bg-slate-100 flex flex-col rounded p-4 mt-8">
-                <h3 className="text-center text-3xl font-gilLight font-bold">FIND OUT MORE ABOUT PARTNERS IN THE CHURCH</h3>
-                <div className="flex justify-center mt-8 -translate-x-[2rem] gap-8">
-                    <Link href="/becomeapartner" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4">Become A Partner</Link>
-                    <Link href="/give" className="bg-amber-600 rounded-full text-white font-gil text-xl p-2 px-4">Give Now</Link>
+            <div className="uppercase bg-slate-100 flex flex-col rounded xs:px-2 p-4 mt-8">
+                <h3 className="text-center xs md:text-2xl text-3xl font-gilLight font-bold">FIND OUT MORE ABOUT PARTNERS IN THE CHURCH</h3>
+                <div className="flex justify-center items-center mt-8 menu:-translate-x-[2rem] gap-8">
+                    <Link href="/becomeapartner" className="bg-amber-600 rounded-full text-white font-gil xs:text-sm text-xl p-2 xs:px-2 px-4">Become A Partner</Link>
+                    <Link href="/give" className="bg-amber-600 rounded-full text-white font-gil xs:text-sm text-xl p-2 px-4">Give Now</Link>
                 </div>
             </div>
 

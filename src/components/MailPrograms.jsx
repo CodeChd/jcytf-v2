@@ -63,7 +63,7 @@ const MailPrograms = () => {
     <main className="min-h-screen  flex items-center">
       <div className="h-full max-w-6xl mx-auto p-14">
         <div>
-          <h1 className="text-5xl text-center font-gil">
+          <h1 className="xs:text-3xl md:text-4xl text-5xl text-center font-gil">
             Let us know what Group you would like to find out more about.
           </h1>
           <p className="text-2xl text-center my-4 font-gilLight">

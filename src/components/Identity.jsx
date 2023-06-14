@@ -5,7 +5,7 @@ const Identity = () => {
     <section className=" bg-slate-50  text-gray-950 min-h-[80vh] flex items-center ">
       <div className="max-w-7xl mx-auto sm:px-4  xxl:max-w-6xl wide:max-w-8xl xxl:py-8 p-20">
         <div className="flex xl:flex-col xl:items-center gap-14 items-center font-gilLight font-bold text-xl">
-          <div className="xl:w-full xl:h-full w-[85rem] h-[20rem]">
+          <div className="xl:w-full  w-[85rem] h-[20rem]">
             <Image
               src="/images/who.jpg"
               loading="lazy"

@@ -5,7 +5,7 @@ import { Youth,Kids, Junior,Prayer, Worship } from './SVG'
 
 const Ministry = ({id}) => {
   return (
-    <section id={id} className='w-full p-14 min-h-[65vh]  bg-ministry  bg-no-repeat lg:bg-itemsc xxl:bg-mediumsc wide:bg-ultraschome brightness-110 grid place-items-center'>
+    <section id={id} className='w-full p-14 min-h-[65vh]  bg-ministry  bg-no-repeat sml:bg-medimsc     llg:bg-constant  wide:bg-ul-wide ultra:bg-ul-wide brightness-110 grid place-items-center'>
         <div id='outer' className='mx-auto '>
             <div id='inner' className='flex flex-col items-center justify-center gap-12'>
 

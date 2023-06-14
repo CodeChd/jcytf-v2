@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper";
 
-const UserInfo = ({ name, role, href = "/", className = "" }) => {
+const UserInfo = ({ name, role, href = "jcytfchurch92@gmail.com", className = "" }) => {
   return (
     <div
       className={`${className} text-center absolute left-1/2 -translate-x-1/2 top-[85%]`}
@@ -18,7 +18,7 @@ const UserInfo = ({ name, role, href = "/", className = "" }) => {
       <p className="font-semibold text-2xl mb-2">{name}</p>
       <p className="font-gilLight font-extrabold">{role}</p>
       <Link
-        href={href}
+        href={`mailto:${href}`}
         className="p-2 mt-2 px-8 inline-block border-solid border-amber-900 text-amber-900 font-semibold uppercase border-2 rounded-full "
       >
         Email
@@ -27,7 +27,7 @@ const UserInfo = ({ name, role, href = "/", className = "" }) => {
   );
 };
 
-const MobileUserInfo = ({ name, role, href = "/", className = ""}) => {
+const MobileUserInfo = ({ name, role, href = "jcytfchurch92@gmail.com", className = ""}) => {
   // absolute left-1/2 -translate-x-1/2 top-[50%]
   return (
     <div
@@ -35,12 +35,14 @@ const MobileUserInfo = ({ name, role, href = "/", className = ""}) => {
     >
       <p className="font-semibold text-2xl mb-2">{name}</p>
       <p className="font-gilLight font-extrabold">{role}</p>
+
       <Link
-        href={href}
+        href={`mailto:${href}`}
         className="p-2 mt-2 px-8 inline-block border-solid border-amber-900 text-amber-900 font-semibold uppercase border-2 rounded-full "
       >
         Email
       </Link>
+
     </div>
   );
 };
@@ -61,11 +63,11 @@ const Pastors = ({ id }) => {
 
         {/* desktop */}
         <main >
-          <div className="grid grid-cols-3 justify-items-center xxl:hidden">
+          <div className="grid grid-cols-3  justify-items-center xxl:hidden">
             <div className="inline-block relative">
               <Image
                 src="/images/pastors/first.png"
-                width={700}
+                width={650}
                 height={700}
                 className=""
               />
@@ -74,20 +76,19 @@ const Pastors = ({ id }) => {
             <div className="inline-block relative">
               <Image
                 src="/images/pastors/second.png"
-                width={700}
+                width={650}
                 height={700}
                 className=""
               />
               <UserInfo
                 name="Ptr. Ruden Barcelona"
                 role="CARE PASTOR"
-                className="left-[52%]"
               />
             </div>
             <div className="inline-block relative">
               <Image
                 src="/images/pastors/third.png"
-                width={700}
+                width={650}
                 height={700}
                 className=""
               />
@@ -95,20 +96,25 @@ const Pastors = ({ id }) => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center sml:mt-8 xxl:max-w-4xl sml:max-w-5xl sml:mx-auto  xxl:hidden">
-            <div className="relative">
+          <div className="flex justify-center items-center pt-14  sml:max-w-5xl mx-auto  max-w-7xl xxl:hidden ">
+            <div className=" relative">
               <Image
                 src="/images/pastors/fourth.png"
-                width={650}
+                width={700}
                 height={700}
+                className=""
+
               />
               <UserInfo
                 name="Ptra. Edna Heraldo"
                 role="CHRISTIAN EDUCATION PASTOR"
               />
             </div>
-            <div className="relative">
-              <Image src="/images/pastors/fifth.png" width={650} height={700} />
+            <div className=" relative">
+              <Image src="/images/pastors/fifth.png" width={700} height={700} 
+              className=""
+
+              />
               <UserInfo name="Ptr. Ronald Zonio" role="ADMINISTRATIVE PASTOR" />
             </div>
           </div>

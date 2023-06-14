@@ -34,13 +34,13 @@ module.exports = {
     },
     backgroundSize: {
       'iconsize': '1.8rem',
-      "ul-wide": "180rem",
-      "ultrasc": "150rem",
+      "ul-wide": "100vw",
       "widesc": "120rem",
       "mediumsc": "100rem",
       "smallsc": "93rem",
-      "ultraschome": "143rem",
       "itemsc": "140rem",
+      "constant": "180rem",
+      
     },
     backgroundPosition: {
       'searchBt': '10px',
@@ -59,6 +59,8 @@ module.exports = {
       ultra : {min: "3001px"},
 
       wide: {max: "3000px"},
+
+      gap: {max: "2500px"},
 
       llg: {max: "1920px"},
 

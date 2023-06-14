@@ -9,9 +9,9 @@ const Details = ({data, dtl}) => {
 
 
   return (
-    <main className='min-h-screen bg-slate-100'>
+    <main className='min-h-screen bg-slate-100 '>
 
-      <div className="max-w-6xl mx-auto p-14 flex flex-col gap-14">
+      <div className=" p-14 flex flex-col items-center gap-14">
 
           <div className="flex flex-col justify-between items-start">
 
@@ -21,16 +21,15 @@ const Details = ({data, dtl}) => {
        
 
 
-        <div>
+        <div className="w-[80%]">
 
         <Image src={`https://jcytfchurch.online/images/${evtData[0].featuredimage}`} width={400} height={400} className="rounded-md w-full border-solid border-2 border-amber-500"/>
-      <p className="mt-4 text-2xl font-gilLight font-medium ">{evtData[0].Description}</p>
-        </div>
 
-        <Link href={`/events/gallery/${evtData[0].id}`} className="bg-amber-600 p-2 px-8 self-start text-white font-gilLight font-bold rounded">Gallery</Link>
+      <p className="w-full h-full mt-4 text-2xl font-gilLight font-medium mb-8">{evtData[0].Description}</p>
+      
+        <Link href={`/events/gallery/${evtData[0].id}`} className="bg-amber-600 p-2 px-8 self-start text-white font-gilLight font-bold rounded ">Gallery</Link>
 
-
-        <div className="flex md:flex-col gap-14  font-gilLight font-bold tracking-wide">
+        <div className="flex md:flex-col gap-14  font-gilLight font-bold tracking-wide my-8">
 
           <div className="flex flex-col gap-3">
 
@@ -52,7 +51,16 @@ const Details = ({data, dtl}) => {
           </div>
 
         </div>
-          <Link href={`/events`} className="bg-gray-800 self-start p-2 px-8 text-white font-gilLight font-bold rounded">Go Back</Link>
+        <Link
+        href={`/events/${evtData[0].id}`}
+        className="bg-gray-700  self-start p-2 px-8 text-white font-gilLight font-bold rounded"
+      >
+       {"<"}&nbsp;&nbsp;Go Back
+      </Link>
+        </div>
+
+
+
 
 
       </div>

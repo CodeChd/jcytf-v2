@@ -16,7 +16,7 @@ const Hero = ({ id }) => {
     <>
       <section id={id}>
         <div className="w-full relative ">
-          <article className="bg-home lg:min-h-[65vh] md:bg-smallsc md:bg-smallPos lg:bg-mediumsc lg:bg-smallPos sml:bg-widesc llg:bg-widesc llg:bg-home wide:bg-ul-wide wide:bg-widePos bg-no-repeat bg-fixed">
+          <article className="bg-home lg:min-h-[65vh] md:bg-smallsc md:bg-smallPos lg:bg-mediumsc lg:bg-smallPos sml:bg-widesc llg:bg-widesc  wide:bg-ul-wide ultra:bg-ul-wide bg-no-repeat bg-fixed">
             
           <div  className="z-10 flex flex-col md:px-10 xxl:px-20 px-32  text-white  text-left py-7">
 

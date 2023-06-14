@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Mission = ({id}) => {
   return (
-    <section id={id} className=" bg-[#d97706] text-white min-h-[52vh] ">
+    <section id={id} className=" bg-[#d97706] text-white min-h-[52vh] grid place-content-center">
       <div className="p-14 px-20 max-w-7xl mx-auto sm:px-4 xxl:max-w-5xl wide:max-w-8xl">
      
 

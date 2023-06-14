@@ -67,39 +67,25 @@ const Visit = ({ id }) => {
 
           <FaqItems
             q="WHAT SHOULD I WEAR?"
-            desc="To find directions to our church, you can check the address at the
-              bottom of our page or visit our About page
-              where you will find a map showing our location."
+            desc="There is no dress code for our church services. We welcome everyone to come as they are, whether that means wearing casual or formal attire. The most important thing is that you feel comfortable and welcome in our community"
             className="justify-center "
           />
           <FaqItems
             q="WHAT IS A TYPICAL SERVICE LIKE?"
-            desc="To find directions to our church, you can check the address at the
-            bottom of our page or visit our About page
-            where you will find a map showing our location."
+            desc="Our church services typically include music, prayer, and a sermon. We offer a variety of worship styles, from traditional to contemporary, to suit the preferences of our community. We welcome everyone to join us in celebrating and exploring our faith, and we hope to see you at one of our services soon."
             className="justify-center"
             />
           <FaqItems
             q="WHERE DO I GO WHEN I ARRIVE?"
-            desc="To find directions to our church, you can check the address at the
-              bottom of our page or visit our About page
-              where you will find a map showing our location."
+            desc="When you arrive at our church, please look for our greeters or ushers who will welcome you and direct you to our guest area. If you have any questions or need assistance, please feel free to ask our greeters or ushers. We are here to help you feel comfortable and welcome in our community."
             className="justify-center"
           />
           <FaqItems
             q=" DO I NEED TO BE A MEMBER?"
-            desc="To find directions to our church, you can check the address at the
-              bottom of our page or visit our About page
-              where you will find a map showing our location."
+            desc="No, you do not need to be a member to attend our church services or events. We welcome everyone, regardless of their background or beliefs."
               className="justify-center "
               />
-          <FaqItems
-            q="HOW CAN I GIVE?"
-            desc="To find directions to our church, you can check the address at the
-              bottom of our page or visit our About page
-              where you will find a map showing our location."
-              className="justify-center "
-              />
+        
               </div>
             <div className=" ml-8 xxl:ml-0 menu:sticky menu:top-0 menu:z-30 order-1">
 
@@ -107,7 +93,7 @@ const Visit = ({ id }) => {
             </div>
         </div>
       </div>
-      <section className="w-full xs:px-4 p-14 bg-sched bg-mediumPos bg-no-repeat bg-cover llg:bg-widesc wide:bg-ultrasc min-h-[50vh] py-8">
+      <section className="w-full xs:px-4 p-14 bg-sched bg-mediumPos bg-no-repeat bg-cover llg:bg-widesc wide:bg-ul-wide min-h-[50vh] py-8 grid place-content-center">
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center ">
           <h2 className="xs:text-2xl text-3xl uppercase font-gilLight font-extrabold text-white border-b-2 border-solid border-white">
             Schedule of Services

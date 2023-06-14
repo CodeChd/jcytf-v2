@@ -11,7 +11,7 @@ const Details = ({data, dtl}) => {
   return (
     <main className='min-h-screen bg-slate-100 '>
 
-      <div className=" p-14 flex flex-col items-center gap-14">
+      <div className=" md:px-2 p-14 flex flex-col items-center flex-wrap gap-14">
 
           <div className="flex flex-col justify-between items-start">
 
@@ -21,7 +21,7 @@ const Details = ({data, dtl}) => {
        
 
 
-        <div className="w-[80%]">
+        <div className="md:w-[90%] w-[80%]">
 
         <Image src={`https://jcytfchurch.online/images/${evtData[0].featuredimage}`} width={400} height={400} className="rounded-md w-full border-solid border-2 border-amber-500"/>
 

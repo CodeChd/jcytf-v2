@@ -293,7 +293,7 @@ const Events = () => {
             dateVisible &&
             eventsPaginate.length === 0 &&
             month !== "" && (
-              <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">
+              <h1 className="max-w-5xl mx-auto md:text-2xl lg:text-4xl text-5xl italic font-gilLight mt-20">
                 No Events to Show...
               </h1>
             )

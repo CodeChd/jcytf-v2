@@ -15,7 +15,7 @@ const Mapa = () => {
       <>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution="&copy; <a href=&quot;http://cjfrancisco.vercel.app&quot;>CJ</a> Developer"
+          attribution="&copy; <a href=&quot;http://cjfrancisco.vercel.app&quot;>JCYTF</a> Developer"
         />
         <Marker position={DEFAULT_CENTER}>
           <Popup>

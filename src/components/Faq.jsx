@@ -70,7 +70,7 @@ const Faq = ({ id }) => {
 
         <FaqItems
           q="Do you have programs for children and youth?"
-          desc="Yes, we offer programs for children and youth. Our organization recognizes the importance of providing opportunities for young people to learn and grow, and we have developed a variety of programs tailored to different age groups and interests. Please check out our 'Connect' Page or contact us directly for more information on our youth programs."
+          desc="Yes, we offer programs for children and youth. Our organization recognizes the importance of providing opportunities for young people to learn and grow, and we have developed a variety of programs tailored to different age groups and interests. Please check out our 'Connect' Page in 'Life Group' section or contact us directly for more information on our youth programs."
         />
 
         <FaqItems

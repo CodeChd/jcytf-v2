@@ -13,6 +13,6 @@ export const SendFormGroup = async (data) => {
       toast.error("Too Many Requests.. try again in 1 minute");
     } else if (res.ok) {
       toast.success("Email Sent!");
-    }
+    } 
   });
 };

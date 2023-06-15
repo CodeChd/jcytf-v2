@@ -29,7 +29,7 @@ const genEmailTemplate = (data) => {
 
 
 
-const rateLimit = 2; // Number of allowed requests per minute
+const rateLimit = 3; // Number of allowed requests per minute
 
 const rateLimiter = {};
 

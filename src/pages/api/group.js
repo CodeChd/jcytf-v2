@@ -50,7 +50,7 @@ const rateLimiterMiddleware = (ip) => {
 
 
 
-export async function handler(req, res) {
+export default async function handler(req, res) {
   const ip = req.headers["x-real-ip"] || req.connection.remoteAddress;
 
   if (!rateLimiterMiddleware(ip)) {

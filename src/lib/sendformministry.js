@@ -11,7 +11,6 @@ export const SendFormMinistry = async (data) => {
     }).then((res) => {
         if (!res.ok) {
             toast.error("Too Many Requests.. try again in 1 minute");
-                    console.log(res)
           } 
           else if (res.ok) {
             toast.success("Email Sent!");

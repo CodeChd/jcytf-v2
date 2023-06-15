@@ -11,10 +11,7 @@ export const SendFormVisit = async (data) => {
     }).then((res) => {
         if (!res.ok) {
             toast.error("Too Many Requests.. try again in 1 minute");
-          } 
-          
-          
-          else if (res.ok) {
+          } else if (res.ok) {
             toast.success("Email Sent!");
           }
     })

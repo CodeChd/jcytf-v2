@@ -95,15 +95,15 @@ const Faq = ({ id }) => {
         />
         <FaqItems
           q="Are there any events or upcoming activities?"
-          desc="Yes, we have a variety of events and activities where you can visit in our 'Events' Page to know about upcoming events. Please contact us in 'About' Page then click 'New here' you will be directed to our contact form there or the floating message icon on your lower right side of the screen, to learn about upcoming events and how you can get involved."
+          desc="Yes, we have a variety of events and activities where you can visit in our 'Events' Page to know about upcoming events. Please contact us in 'About' Page then click 'New here' you will be directed to our contact form there to learn about upcoming events and how you can get involved."
         />
         <FaqItems
           q="How can I join the church membership?"
-          desc="Joining our church membership is easy! Please contact us in 'About' Page or speak with a church pastor to find out more info or if you want to get response quickly please click the floating message icon on the lower right side of your screen to speak with our staff directly"
+          desc="Joining our church membership is easy! Please contact us in 'About' Page or speak with a church pastor to find out more info or if you have more inquiries please click the floating message icon on the lower right side of your screen to speak with our staff directly"
         />
         <FaqItems
           q="Can I request prayer or seek pastoral counseling?"
-          desc="To request prayer or counseling, you can contact us through our 'About' page, speak with a church pastor, or click the floating message icon on the lower right side of your screen to speak with one of our staff members. We offer prayer support and pastoral counseling services to guide and support you in your spiritual journey. We welcome everyone, regardless of their background or beliefs, to seek our support. "
+          desc="To request prayer or counseling, you can contact us through our 'About' page, speak with a church pastor, or click the floating message icon on the lower right side of your screen to speak with one of our staff members directly. We offer prayer support and pastoral counseling services to guide and support you in your spiritual journey. We welcome everyone, regardless of their background or beliefs, to seek our support. "
         />
      
       </div>

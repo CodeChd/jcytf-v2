@@ -8,10 +8,10 @@ export const SendFormPartners = async (data) => {
             "Content-Type": "application/json",
             "Accept": "application/json",
         }
-    }).then(() => {
+    }).then((res) => {
        
         
-            toast.success("Email Sent!");
+        if(res.ok) toast.success("Email Sent!");
           
     })
 

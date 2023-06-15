@@ -52,7 +52,7 @@ const Details = ({data, dtl}) => {
 
         </div>
         <Link
-        href={`/events/${evtData[0].id}`}
+        href="/events"
         className="bg-gray-700  self-start p-2 px-8 text-white font-gilLight font-bold rounded"
       >
        {"<"}&nbsp;&nbsp;Go Back

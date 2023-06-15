@@ -8,14 +8,11 @@ export const SendFormPartners = async (data) => {
             "Content-Type": "application/json",
             "Accept": "application/json",
         }
-    }).then((res) => {
-        if (!res.ok) {
-            toast.error("Too Many Requests.. try again in 1 minute");
-
-          } 
-          else if (res.ok) {
+    }).then(() => {
+       
+        
             toast.success("Email Sent!");
-          }
+          
     })
 
 

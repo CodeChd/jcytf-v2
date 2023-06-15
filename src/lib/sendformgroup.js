@@ -1,3 +1,4 @@
+import { toast } from "react-hot-toast";
 
 export const SendFormGroup = async (data) => {
   fetch("/api/group", {
@@ -9,7 +10,9 @@ export const SendFormGroup = async (data) => {
     },
   }).then(async (res) => {
     if (!res.ok) {
-      throw new Error("Failed to send Data")
-    } 
+      toast.error("Too Many Requests.. try again in 1 minute");
+    } else if (res.ok) {
+      toast.success("Email Sent!");
+    }
   });
 };

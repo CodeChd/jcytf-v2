@@ -22,7 +22,7 @@ const Ftevents = ({ id, data }) => {
 
         <div className="flex xxl:flex-col py-14 gap-10 items-center justify-center overflow-hidden">
           {evt.length === 0 ? (
-            <h1 className="max-w-5xl mx-auto  md:text-3xl text-4xl italic font-gilLight mt-4">
+            <h1 className="max-w-5xl mx-auto  md:text-3xl text-4xl italic font-gilLight mt-4 uppercase">
             No Events to Show...
           </h1>
           ) : (
@@ -32,6 +32,9 @@ const Ftevents = ({ id, data }) => {
             
           )}
         </div>
+
+        { evt.length > 0 &&
+
         <Link
           href="/events"
           className="px-8 p-2 bg-amber-600 rounded text-white font-extrabold
@@ -39,6 +42,7 @@ const Ftevents = ({ id, data }) => {
         >
           All Events
         </Link>
+        }
       </main>
     </section>
   );

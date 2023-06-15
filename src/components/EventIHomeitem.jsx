@@ -11,7 +11,7 @@ const EventHomeItem = ({events}) => {
 
   return (
     <div>
-      <div className="w-full menu:h-[17rem]">
+      <div className="w-full menu:w-[22rem] menu:h-[17rem]">
     <Link href={`/events/${events.id}`} className="">
       <Image
         src={events.length === 0 ? "/favicon.svg" : `https://jcytfchurch.online/images/${events.featuredimage}`}

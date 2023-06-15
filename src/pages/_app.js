@@ -35,10 +35,7 @@ export default function App({ Component, pageProps }) {
         className={`${fontOs.variable} ${gil.variable} ${gilLight.variable} font-poppins h-full w-full min-h-screen`}
       >
         <Header />
-        <script
-          src="//code.tidio.co/c4xjzwfmgevog8zseo86d7sbpwijbjfj.js"
-          async
-        ></script>
+        <script src="//code.tidio.co/hwl7qjk7ztl81sjsxiipinv0medzvjw1.js" async></script>
         <Component {...pageProps}/>
         <Footer />
       </main>

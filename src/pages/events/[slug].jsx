@@ -13,7 +13,7 @@ const Details = ({data, dtl}) => {
 
       <div className=" md:px-2 p-14 flex flex-col items-center flex-wrap gap-14">
 
-          <div className="flex flex-col justify-between items-start">
+          <div className="flex flex-col justify-between items-center  ">
 
           <h1 className="text-5xl font-gil mb-3">{evtData[0].EventName}</h1>
           <p className="text-lg font-medium">{evtData[0].Date} @ {evtData[0].Time} </p>
@@ -23,7 +23,7 @@ const Details = ({data, dtl}) => {
 
         <div className="md:w-[90%] w-[80%]">
 
-        <Image src={`https://jcytfchurch.online/images/${evtData[0].featuredimage}`} width={400} height={400} className="rounded-md w-full border-solid border-2 border-amber-500"/>
+        <Image src={`https://jcytfchurch.online/images/${evtData[0].featuredimage}`} width={400} height={400} className="rounded-md w-full "/>
 
       <p className="w-full h-full mt-4 text-2xl font-gilLight font-medium mb-8">{evtData[0].Description}</p>
       

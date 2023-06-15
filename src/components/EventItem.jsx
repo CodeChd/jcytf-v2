@@ -13,7 +13,7 @@ const EventItem = ({ events }) => {
         id="inner"
         className="flex md:flex-col w-full border-2 border-solid border-orange-100 bg-slate-50 rounded-md overflow-hidden max-w-7xl mx-auto "
       >
-        <div className="flex-1 ">
+        <div className="flex-1 p-2">
           <Image
             src={`https://jcytfchurch.online/images/${events.featuredimage}`}
             alt={events.featuredimage}

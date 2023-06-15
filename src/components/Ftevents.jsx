@@ -21,8 +21,8 @@ const Ftevents = ({ id, data }) => {
         </div>
 
         <div className="flex xxl:flex-col py-14 gap-10 items-center justify-center overflow-hidden">
-          {data.length === 0 ? (
-            <h1 className="max-w-5xl mx-auto text-4xl italic font-gilLight mt-4">
+          {evt.length === 0 ? (
+            <h1 className="max-w-5xl mx-auto  md:text-3xl text-4xl italic font-gilLight mt-4">
             No Events to Show...
           </h1>
           ) : (

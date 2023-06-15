@@ -266,11 +266,8 @@ const Events = () => {
         <>
           {/* events display */}
           {searchTerm !== "" || month ?
-          allevents.length === 0 && eventsPaginate.length === 0
-            ?   <h1 className="max-w-5xl mx-auto text-5xl italic font-gilLight mt-20">
-            No Events to Show...
-          </h1> 
-              : eventsPaginate.map((events) => (
+          
+            eventsPaginate.map((events) => (
                 <EventItem key={events.id} events={events} />
               )) 
               :

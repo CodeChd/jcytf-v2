@@ -14,7 +14,7 @@ export const SendFormVisit = async (data) => {
           } 
           
           
-          if (res.ok) {
+          else if (res.ok) {
             toast.success("Email Sent!");
           }
     })

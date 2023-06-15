@@ -13,7 +13,7 @@ export const SendFormPartners = async (data) => {
             toast.error("Too Many Requests.. try again in 1 minute");
 
           } 
-          if (res.ok) {
+          else if (res.ok) {
             toast.success("Email Sent!");
           }
     })

@@ -8,9 +8,9 @@ export const SendFormMinistry = async (data) => {
             "Content-Type": "application/json",
             "Accept": "application/json",
         }
-    }).then((res) => {
+    }).then(() => {
         
-        if(res.ok) toast.success("Email Sent!");
+         toast.success("Email Sent!");
           
     })
 

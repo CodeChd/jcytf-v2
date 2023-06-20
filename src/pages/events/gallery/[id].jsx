@@ -31,7 +31,7 @@ const gallery = ({ data, detailsId }) => {
         </h1>
       ) : (
         <div className="overflow-hidden">
-        <ImageGallery lazyLoad={true} thumbnailPosition="left" items={images} />
+        <ImageGallery lazyLoad={true} thumbnailPosition="left" items={images} additionalClass="grid md:place-content-center"/>
         </div>
       )}
       <Link

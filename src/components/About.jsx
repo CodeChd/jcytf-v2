@@ -5,7 +5,7 @@ const About = ({ id }) => {
   return (
     <section id={id} className="w-full   min-h-[70vh]  sml:min-h-[80vh]   llg:min-h-[60vh] wide:bg-ul-wide wide:bg-widePos wide:min-h-[45vh] grid place-content-center ">
       <div className="md:px-8 lg:pt-8  sml:px-20 llg:p-14 px-24 flex flex-col gap-4">
-        <h2 className="flex self-center xxs:text-xl xs:text-2xl sm:text-4xl lg:text-5xl sml:text-6xl text-7xl  not-italic font-extrabold uppercase border-solid border-b-[6px] pb-2 border-gray-900">
+        <h2 className="flex self-center xxs:text-xl xs:text-2xl sm:text-4xl lg:text-5xl sml:text-6xl text-7xl  not-italic font-extrabold uppercase border-solid md:border-b-[2px] border-b-[6px] pb-2 border-gray-900">
           About Jcytf church
         </h2>
 
@@ -22,7 +22,7 @@ const About = ({ id }) => {
             <Link
               href="/about"
               className="px-8 p-3 bg-amber-600 rounded text-white font-extrabold
-        inline-block text-lg uppercase font-gilLight"
+        inline-block md:text-sm text-lg uppercase font-gilLight"
             >
               Read more
             </Link>

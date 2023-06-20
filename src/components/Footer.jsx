@@ -90,7 +90,7 @@ const Footer = () => {
         <hr className=" w-1/2 flex-grow-1" />
         <Link href="/">
           <Image
-            src="/images/logo.png"
+            src="/images/brand.png"
             width={90}
             height={90}
             className="px-2"

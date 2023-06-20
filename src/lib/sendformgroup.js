@@ -6,12 +6,15 @@ export const SendFormGroup = async (data) => {
     body: JSON.stringify(data),
     headers: {
       "Content-Type": "application/json",
-      "Accept": "application/json",
+      Accept: "application/json",
     },
-  }).then( () => {
-  
- 
-       toast.success("Email Sent!");
+  }).then( res => {
+    if(res.ok) {
+      toast.success("Email Sent!")
+    }
     
-  });
+    if(!res.ok) {
+      toast.error("Try again in 1 minute..") 
+    }
+  })
 };

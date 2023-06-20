@@ -8,11 +8,15 @@ export const SendFormVisit = async (data) => {
             "Content-Type": "application/json",
             "Accept": "application/json",
         }
-    }).then(() => {
-     
-      toast.success("Email Sent!");
+    }).then( res => {
+        if(res.ok) {
+          toast.success("Email Sent!")
+        }
         
-    })
+        if(!res.ok) {
+          toast.error("Try again in 1 minute..") 
+        }
+      })
 
 
 }

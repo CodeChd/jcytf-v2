@@ -120,7 +120,7 @@ const Events = () => {
       .then((response) => response.json())
       .then((data) => {
         setTotalPages(data.total_pages);
-        console.log(data.data, "SUBMIT EVENTS");
+        // console.log(data.data, "SUBMIT EVENTS");
         setEventsPaginate(data.data);
 
         if (data.data.length === 0) {
@@ -145,7 +145,7 @@ const Events = () => {
         if (data.data.length > 0) {
           setEventsPaginate(data.data);
         }
-        console.log(data.data, "RESET EVENTS");
+        // console.log(data.data, "RESET EVENTS");
       })
       .catch((error) => console.error(error));
 
@@ -218,7 +218,7 @@ const Events = () => {
         .then((data) => {
           setAllEvents(data.data);
           setTotalPages(data.total_pages);
-          console.log(data.data, "ALL EVENTS");
+          // console.log(data.data, "ALL EVENTS");
         })
         .catch((error) => console.error(error));
     }
@@ -243,7 +243,7 @@ const Events = () => {
       .then((data) => {
         setEventsPaginate(data.data);
         setTotalPages(data.total_pages);
-        console.log(data.data, "EVENTSPAGINATE");
+        // console.log(data.data, "EVENTSPAGINATE");
       })
       .catch((error) => console.error(error));
   }, [currentPage, month]);

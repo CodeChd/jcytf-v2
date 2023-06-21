@@ -29,7 +29,7 @@ const Identity = () => {
               Casimira "Baby" Cabacoy in 1990 and by the grace of God, the
               church continues to hold services on Sundays and other gatherings
               on weekdays. The church has mostly young people members who are
-              actively participating in the Kingdom work of God in Payatas. .
+              actively participating in the Kingdom work of God in Payatas.
             </p>
 
             </div>

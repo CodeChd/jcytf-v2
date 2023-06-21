@@ -21,8 +21,8 @@ const gallery = ({ data, detailsId }) => {
 
   return (
     <main className="p-14  flex flex-col lg:items-center justify-center  gap-8 bg-slate-100 min-h-screen">
-      <h1 className="md:3xl text-4xl text-center font-gil font-sm italic self-center border-solid border-b-[3px] pb-4 border-amber-600">
-        <span className="inline-block">{evtData[0].EventName}</span> Gallery
+      <h1 className="md:2xl text-4xl text-center font-gil font-sm italic self-center border-solid border-b-[3px] pb-4 border-amber-600">
+        <span className="md:text-3xl inline-block">{evtData[0].EventName}</span> Gallery
       </h1>
 
       {images[0].isValid[4] === "" || images[0].isValid[4] === undefined ? (
@@ -36,7 +36,7 @@ const gallery = ({ data, detailsId }) => {
       )}
       <Link
         href={`/events/${evtData[0].id}`}
-        className="bg-gray-700 self-center p-2 px-8 text-white font-gilLight font-bold rounded"
+        className="bg-gray-700 self-center p-2 px-8 text-white font-gilLight font-bold rounded mt-14"
       >
        {"<"}&nbsp;&nbsp;Go Back
       </Link>

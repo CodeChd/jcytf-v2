@@ -15,7 +15,7 @@ const Details = ({data, dtl}) => {
 
           <div className="flex flex-col justify-between items-center  ">
 
-          <h1 className="text-5xl font-gil mb-3">{evtData[0].EventName}</h1>
+          <h1 className=" md:text-3xl text-5xl font-gil mb-3">{evtData[0].EventName}</h1>
           <p className="text-lg font-medium">{evtData[0].Date} @ {evtData[0].Time} </p>
           </div>
        

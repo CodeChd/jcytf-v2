@@ -47,7 +47,8 @@ const MailPrograms = () => {
     }
 
     try {
-    await SendFormGroup(values)
+   await SendFormGroup(values)
+
       setState(initState)
     } catch (error) {
 

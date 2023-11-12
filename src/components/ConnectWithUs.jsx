@@ -12,7 +12,7 @@ const Connect = ({id}) => {
         <div className="grid grid-cols-4 sm:grid-cols-1 xxl:grid-cols-2 w-[75%] mx-auto xxl:text-lg text-gray-900 border-b-0 border-x-white mt-4 border-solid border-2 rounded overflow-hidden">
           <div className=" col-span-1 sm:row-start-1">
             <Image
-              src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685075224/kids-2408614_1920_fxs3md.jpg"
+              src="/images/KIDS.webp"
               width={300}
               height={300}
               loading="lazy"
@@ -29,7 +29,7 @@ const Connect = ({id}) => {
           </div>
           <div className=" col-span-1 sm:row-start-3 xxl:order-2 xxl:row-start-2">
             <Image
-              src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685075876/pexels-nappy-935944_h6qveq.jpg"
+              src="/images/BIBLE.webp"
               width={300}
               height={300}
               loading="lazy"
@@ -54,7 +54,7 @@ const Connect = ({id}) => {
           </div>
           <div className="col-span-1 sm:row-start-5 xxl:order-1 xxl:row-start-3 bg-white">
             <Image
-              src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685076438/second-grid_kyeuhe.jpg"
+              src="/images/GROUP.webp"
               width={300}
               height={300}
               loading="lazy"
@@ -71,7 +71,7 @@ const Connect = ({id}) => {
           </div>
           <div className="col-span-1 sm:row-start-7">
             <Image
-              src="https://res.cloudinary.com/dgzvju87l/image/upload/v1685076354/pexels-fox-1595391_lafiwd.jpg"
+              src="/images/MEETING.webp"
               width={300}
               height={300}
               loading="lazy"

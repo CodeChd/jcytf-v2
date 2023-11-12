@@ -54,7 +54,7 @@ const Events = () => {
   //page numbers
   const renderPaginationButtons = () => {
     const buttons = [];
-  
+
     // display up to 3 page numbers at a time
     let startPage = Math.max(1, currentPage - 1);
     let endPage = Math.min(totalPages, startPage + 2);
@@ -100,10 +100,9 @@ const Events = () => {
         );
       }
     }
-  
+
     return buttons;
   };
-  
 
   //Actions -start
   const handleSubmit = (e) => {
@@ -187,7 +186,7 @@ const Events = () => {
         setDateVisible(true); // indicate that select element is fired
         setCurrentPage(1); // reset current page when changing filters
 
-        if (data.data.length === 0 ) {
+        if (data.data.length === 0) {
           toast.error(`No events found in ${current}`);
         }
         if (data.data.length) {
@@ -265,20 +264,18 @@ const Events = () => {
 
         <>
           {/* events display */}
-          {searchTerm !== "" || month ?
-          
-            eventsPaginate.map((events) => (
+          {searchTerm !== "" || month
+            ? eventsPaginate.map((events) => (
                 <EventItem key={events.id} events={events} />
-              )) 
-              :
-              searchTerm === "" &&  month === "" && dateVisible ||
-                !dateVisible  &&
-                allevents.map((evt) => <EventItem key={evt.id} events={evt} />)
-            
-              }
+              ))
+            : (searchTerm === "" && month === "" && dateVisible) ||
+              (!dateVisible &&
+                allevents.map((evt) => (
+                  <EventItem key={evt.id} events={evt} />
+                )))}
 
           {/* promise handler */}
-          {searchTerm !== "" &&  eventsPaginate.length === 0 && isSubmit ? (
+          {searchTerm !== "" && eventsPaginate.length === 0 && isSubmit ? (
             <h1 className="max-w-5xl mx-auto sm:text-2xl mdItem:text-4xl text-5xl italic font-gilLight mt-20">
               What{" "}
               <span className="inline-block border-dashed border-b-2 border-amber-600 p-2 er-600 ">
@@ -297,13 +294,13 @@ const Events = () => {
           )}
 
           {/* pagination */}
-          {dateVisible && searchTerm !== "" ||
+          {(dateVisible && searchTerm !== "") ||
           eventsPaginate.length === 0 ||
           totalPages === 1 ? null : (
             <div className="self-center text-white ">
               <button
                 className={`bg-amber-600 p-2 px-4 mx-4 rounded-full ${
-                  currentPage === 1   && "cursor-not-allowed bg-amber-700"
+                  currentPage === 1 && "cursor-not-allowed bg-amber-700"
                 }`}
                 onClick={handlePrevClick}
                 disabled={currentPage === 1}
@@ -313,7 +310,8 @@ const Events = () => {
               {renderPaginationButtons()}
               <button
                 className={`bg-amber-600 p-2 px-4 mx-4 rounded-full ${
-                 currentPage === totalPages && "cursor-not-allowed bg-amber-700 "
+                  currentPage === totalPages &&
+                  "cursor-not-allowed bg-amber-700 "
                 }`}
                 onClick={handleNextClick}
                 disabled={currentPage === totalPages}
@@ -323,6 +321,10 @@ const Events = () => {
             </div>
           )}
         </>
+
+        <h1 className="max-w-5xl mx-auto md:text-2xl lg:text-4xl text-5xl italic font-gilLight mt-20">
+          No events to show...
+        </h1>
       </section>
     </>
   );

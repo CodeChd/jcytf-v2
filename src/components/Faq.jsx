@@ -9,14 +9,14 @@ const FaqItems = ({ q, desc }) => {
   });
 
   return (
-    <div id="faq-container" className="my-3 self-start select-none ">
+    <div id="faq-container" className="my-3 self-start select-none relative ">
       <button
         {...getToggleProps({
           style: { display: "block" },
           onClick: () => setExpanded((x) => !x),
           
         })}
-        className="bg-orange-600 p-1 rounded-full text-white transition-all mr-4"
+        className="bg-orange-600 p-1 rounded-full text-white transition-all mr-4 absolute -left-[2rem]"
       >
         {isExpanded ? (
           <FaMinus className="z-10" />

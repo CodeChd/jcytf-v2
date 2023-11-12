@@ -11,19 +11,19 @@ export default function Home({ events }) {
       <Hero id="home" />
       <About id="about" />
       <Connect id="connect" />
-      <Ftevents id="ftevents" data={events} />
+      <Ftevents id="ftevents"  />
       <Pastors id="pastors" />
       <Faq id="faq" />
     </main>
   );
 }
 
-export async function getServerSideProps() {
-  //fetch events
-  const res = await fetch("https://jcytfchurch.online/queryimg.php");
-  const events = await res.json();
+// export async function getServerSideProps() {
+//   //fetch events
+//   const res = await fetch("https://jcytfchurch.online/queryimg.php");
+//   const events = await res.json();
 
-  return {
-    props: { events },
-  };
-}
+//   return {
+//     props: { events },
+//   };
+// }

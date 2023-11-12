@@ -1,8 +1,7 @@
 import { get, set } from "lodash";
-import {mailOptions, transporter } from "../../config/nodemailer"
+import { mailOptions, transporter } from "../../config/nodemailer";
 
 const genEmailTemplate = (data) => {
-  
   const msgFields = {
     name: "Name",
     email: "Email",
@@ -25,7 +24,6 @@ const genEmailTemplate = (data) => {
   };
 };
 
-
 const rateLimit = 3; // Number of allowed requests per minute
 
 const rateLimiter = {};
@@ -44,10 +42,6 @@ const rateLimiterMiddleware = (ip) => {
   return requestTimestamps.length <= rateLimit;
 };
 
-
-
-
-
 export default async function handler(req, res) {
   const ip = req.headers["x-real-ip"] || req.connection.remoteAddress;
 
@@ -56,16 +50,13 @@ export default async function handler(req, res) {
     return;
   }
 
-
-
-  if(req.method === "POST"){
-    const data = req.body
-    if(!data.name || !data.email || !data.phone || !data.message){
-      res.status(400).json({ message: 'Bawal yan' })
+  if (req.method === "POST") {
+    const data = req.body;
+    if (!data.name || !data.email || !data.phone || !data.message) {
+      res.status(400).json({ message: "Bawal yan" });
     }
 
     try {
-
       await transporter.sendMail({
         ...mailOptions,
         ...genEmailTemplate(data),
@@ -73,13 +64,10 @@ export default async function handler(req, res) {
       });
 
       res.status(200).json({ success: true });
-      
     } catch (error) {
       res.status(400).json({ message: error.message });
     }
-
   }
 
   res.status(400).json({ message: "Bawal po iyan" });
-
 }
